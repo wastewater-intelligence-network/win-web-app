@@ -1,0 +1,152 @@
+
+/* Larsseit font family */
+@font-face {
+  font-family: LarsseitExtraBold;
+  src: url("./fonts/larsseit/Larsseit-ExtraBold.otf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LarsseitBold;
+  src: url("./fonts/larsseit/Larsseit-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LarsseitMedium;
+  src: url("./fonts/larsseit/Larsseit-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Larsseit;
+  src: url("./fonts/larsseit/Larsseit.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LarsseitLight;
+  src: url("./fonts/larsseit/Larsseit-Light.otf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LarsseitThin;
+  src: url("./fonts/larsseit/Larsseit-Thin.otf");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+/* quicksand font family */
+@font-face {
+  font-family: QuicksandBold;
+  src: url("./fonts/quicksand/Quicksand-Bold.ttf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: QuicksandMedium;
+  src: url("./fonts/quicksand/Quicksand-Medium.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url("./fonts/quicksand/Quicksand-Regular.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: QuicksandLight;
+  src: url("./fonts/quicksand/Quicksand-Light.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html,body {
+  margin: 0;
+  font-family: Larsseit;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+.larsseitextrabold-font-family {
+  font-family: "LarsseitExtraBold" !important;
+}
+
+.larsseitbold-font-family {
+  font-family: "LarsseitBold" !important;
+}
+
+.larsseitmedium-font-family {
+  font-family: "LarsseitMedium" !important;
+}
+
+.larsseit-font-family {
+  font-family: "Larsseit" !important;
+}
+
+.larsseitlight-font-family {
+  font-family: "LarsseitLight" !important;
+}
+
+.larsseitthin-font-family {
+  font-family: "LarsseitThin" !important;
+}
+
+/* QuicksandBold */
+
+.quicksandbold-font-family {
+  font-family: "QuicksandBold" !important;
+}
+
+.quicksandmedium-font-family {
+  font-family: "QuicksandMedium" !important;
+}
+
+.quicksandregular-font-family {
+  font-family: "QuicksandRegular" !important;
+}
+
+.quicksandlight-font-family {
+  font-family: "QuicksandLight" !important;
+}
+
+
+ /* .textFontsize  {
+  font-size: 24px !important;
+  letter-spacing: 0px !important;
+color: #262626;
+opacity: 1;
+}
+
+.headingFontSize{
+font-size: 36px !important;
+}
+.subHeadingFontSize{
+  font-size: 30px !important;
+  } */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

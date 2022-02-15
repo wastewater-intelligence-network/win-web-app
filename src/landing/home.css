@@ -1,0 +1,263 @@
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.customeMarginBottom{
+    margin-bottom: 10rem !important;
+  }
+
+  .customeMarginTop{
+    margin-top: 10rem !important;
+  }
+
+  .css-9mgopn-MuiDivider-root {
+    
+    border-style: dashed !important;
+    border-color: rgb(237 77 107) !important;
+    border-bottom-width: medium !important;
+}
+.mycard{
+    border: 2px solid;
+    box-shadow: none !important;
+    color: #2A4AA7 !important;
+    height: 250px;
+    position: relative;
+    overflow: inherit !important;
+
+}
+.CoreComponentCardTwo{
+    background-color: #F9C100 !important;
+    box-shadow: none !important;
+    text-align: center;
+}
+.CoreComponentsSubheading{
+padding: 0 100px;
+text-align: center;
+margin-bottom: 3.5rem !important;
+}
+.decisionMakerCard{
+    background-color: #FFF2C7 !important;
+    box-shadow: none !important;
+    text-align: center;
+    height: 250px;
+    border-left: 50px solid #F9C100;
+    overflow: visible !important;
+}
+
+.textBold{
+font-weight: bolder;
+}
+
+
+.cardNumbers{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.sideContent {
+    position: relative;
+    transform: rotate(270deg);
+    left: -58%;
+    top: 42%;
+    font-weight: bold;
+}
+
+.CoreComponentCard{
+    background-color: #FFF2C7 !important;
+    box-shadow: none !important;
+    text-align: center;
+    padding: 20px;
+    height: 516px;
+}
+.CoreComponentCardTwo{
+    background-color: #F9C100 !important;
+    box-shadow: none !important;
+    text-align: center;
+    padding: 20px;
+    height: 516px;
+}
+
+.heading{
+font-size: 70px !important;
+font-family: "LarsseitBold" !important;
+color: #262626;
+letter-spacing: 0;
+text-align: center;
+margin-bottom: 3.5rem !important;
+}
+
+.subheading{
+    font-size: 36px !important; 
+    line-height: 4rem !important;
+    padding: 10px 80px !important;
+    font-family: "Larsseit" !important;
+}
+
+.subheading span{
+    font-weight: bolder !important;
+}
+
+.mycardHeading{
+font-family: "larsseitmedium" !important;
+font-size: 28px !important;
+}
+
+.mycardSubHeading{
+    font-family: "Larsseit" !important;
+    font-size: 20px !important;
+}
+
+
+.firstTitle{
+font-size: 46px !important;
+font-family: "LarsseitLight" !important;
+line-height: 80px !important;
+text-align: center;
+color: #292929;
+}
+
+.firstTitle span{
+    background-color: #ED4D6B !important;
+    color:#fff !important;
+    font-weight: bolder !important;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+/* WBE Work Details css */
+
+.wbeDetailsHeading{
+font-family: "larsseitBold" !important;
+font-size: 40px !important;
+}
+
+.wbeDetailsContent{
+font-family: "larsseitlight" !important;
+font-size: 24px !important;
+}
+
+.p-0100{
+    padding: 0 100px !important;
+}
+.mainBox{
+    margin: 48px;
+}
+
+.webworkDetailsIconRight{
+    text-align: right !important;
+}
+
+.wbeWorkDetailsIcon{
+margin-top: 60%;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+    box-shadow: none !important;
+}
+
+.about{
+ margin: 100px;
+ text-align: center;
+}
+
+.login-box{
+height:85vh;
+
+}
+
+.scrollTopButton{
+    position: fixed !important;
+     right: 20px;
+     bottom:40px;
+     z-index: 1
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* .mainContainer{
+margin-top: 100px;
+} */
+
+  /*  Mobile View Css */
+
+  @media only screen and (max-width: 600px) {
+
+    .mainContainer{
+        text-align: center !important;
+        /* margin-top: 60px !important; */
+    }
+
+    .mainBox {
+        margin: 20px  0px !important;
+    }
+
+    .firstTitle {
+        font-size: 26px !important;
+        line-height: 50px !important;
+    }
+    .heading{
+
+        font-size: 26px !important;
+    }
+
+    .subheading{
+    font-size: 20px !important;
+    line-height: 3rem !important;
+    padding: 10px 22px !important;
+    }
+    .customeMarginBottom {
+        margin-bottom: 4rem !important;
+    }
+
+    .customeMarginTop {
+        margin-top: 4rem !important;
+    }
+
+    .mycardHeading {
+        font-size: 20px !important;
+    }
+    .mycardSubHeading {
+        font-size: 18px !important;
+    }
+
+    .p-0100 {
+        padding: 0 20px !important;
+    }
+
+    .wbeDetailsContent {
+        font-size: 18px !important;
+    }
+    .wbeDetailsHeading {
+        font-size: 26px !important;
+    }
+
+    .CoreComponentsSubheading {
+        padding: 0 16px;
+        
+    }
+    .webworkDetailsIconRight{
+        text-align: center !important;
+    }
+
+    .columnReverse{
+        flex-direction: column-reverse !important;
+        
+    }
+
+    .wbeWorkDetailsIcon{
+        margin-top: 0% !important;
+        }
+}
+/* Active Selected Menu Items */
+/* .active_menu {
+    border-bottom: 2px solid #2D4B9A!important;
+    border-radius: 0 !important;
+    font-weight: 900 !important;
+    color: #2D4B9A !important;
+
+} */

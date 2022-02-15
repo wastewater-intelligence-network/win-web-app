@@ -1,0 +1,118 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
+/* Honeywell Css */
+
+/* body,html{
+  font-size: 14px;
+  font-family: quicksand; 
+} */
+
+.list-group-item-black{
+background-color: black !important;
+color: #fff !important;
+}
+
+.css-19z1ozs-MuiPaper-root-MuiAppBar-root,
+ .css-1191obr-MuiPaper-root-MuiAppBar-root,
+ .css-12i7wg6-MuiPaper-root-MuiDrawer-paper,
+ .css-78trlr-MuiButtonBase-root-MuiIconButton-root{
+    background-color: black !important;
+    color: #fff !important;
+}
+.css-1kf81xp-MuiPaper-root-MuiAppBar-root{
+  background-color: black !important;
+    color: #fff !important;
+}
+.css-cveggr-MuiListItemIcon-root{
+    color: #fff !important;
+}
+
+.css-bshv44-MuiButtonBase-root-MuiListItem-root.Mui-selected{
+    background-color: rgb(25 118 210 / 13%);
+    border-left: 3px solid #1976d2 !important;
+
+
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    align-items: flex-start !important;
+  }
+
+  .css-jcwns9-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #101010;
+    background-color: #D1E9FA;
+  }
+
+  .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #101010;
+    background-color: #D1E9FA;
+}
+
+.MuiDataGrid-footerContainer {
+  display: none !important;
+}
+.css-heg063-MuiTabs-flexContainer{
+  flex-direction: column;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #1976d2;
+  background-color: aliceblue !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  visibility: visible;
+}
+.rightBorder{
+  border-right: 5px solid;
+  border-image: linear-gradient(to top, #F29A36 32%, #FFFFFF 30%, #2A8B2C 80%) 3;
+}
+.text-center{
+  text-align: center;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
