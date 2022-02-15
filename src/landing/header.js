@@ -285,7 +285,7 @@ function Header(props) {
                     aria-controls={open ? "basic-menu" : undefined}
                     aria-haspopup="true"
                     aria-expanded={open ? "true" : undefined}
-                    onClick={handleClick}
+                    onMouseEnter={handleClick}
                     style={{ marginTop: '15px', color: '#525252', fontFamily:"QuicksandRegular" }}
                     className={citydd === true ? 'active_menu' : 'no_active_menu'}
                   >
@@ -310,7 +310,7 @@ function Header(props) {
                     aria-controls={openknowledge ? "basic-menu-knowledge" : undefined}
                     aria-haspopup="true"
                     aria-expanded={openknowledge ? "true" : undefined}
-                    onClick={handleClickKnowledge}
+                    onMouseEnter={handleClickKnowledge}
                     style={{ marginTop: '15px', color: '#525252', fontFamily:"QuicksandRegular" }}
                   // className={citydd === true ? 'active_menu' : 'no_active_menu'}
                   >
