@@ -1,7 +1,7 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Card, CardContent, Divider, Grid, Typography } from "@mui/material";
 import * as React from "react";
 import Header from "./header";
-
+import SampleCollectionImg from '../Icons/Sample_Collection.svg';
 function AboutUs() {
   return (
     <>
@@ -45,21 +45,43 @@ function AboutUs() {
         Meet the amazing team
         </Typography>
 
-        <Typography variant="h6" className="wbeDetailsContent">
-          Lorem ipsum dolor sit amet, consectetur adipiscing ept. Etiam
-          hendrerit pellentesque nisl, ut accumsan eros. Vivamus rhoncus, turpis
-          nec ultrices cursus, dolor risus vehicula eros, eget apquam tellus
-          est ultrices odio. Donec laoreet, lacus vitae consequat cursus, lorem
-          turpis semper est, ac tincidunt risus lorem id diam. Interdum et
-          malesuada fames ac ante ipsum primis in faucibus. Ut id tortor eros.
-          Duis vept purus, molps non ullamcorper id, varius et justo. Nam
-          molps consequat tellus eget suscipit. Proin ultrices in nisl sed
-          dapibus. Sed tortor est, vulputate eget sem in, lacinia ultrices quam.
-          Duis est dolor, apquet sed maximus a, pulvinar eu ante. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Curabitur posuere feps eu dolor solpcitudin mattis.
-          Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </Typography>
+        <Grid
+              container
+              rowSpacing={3}
+              columnSpacing={{ xs: 3, sm: 3, md: 3}}
+              justifyContent="center"
+              alignItems="center"
+              
+            >
+              <Grid item xs={12} sm={6} md={4} >
+                
+              <Card className={'aboutCard'}>
+              
+          <CardContent>
+            <img alt='Sample' src={SampleCollectionImg} width={40} />
+            <Typography variant="h6" className="mycardHeading" component="div" sx={{my:2}}>
+            Padam Vijay
+            </Typography>
+            <Typography className="mycardSubHeading">
+            Technical Advisor
+            </Typography>
+            <Typography className="mycardSubHeading">
+            Technical Advisor
+            </Typography>
+            <Typography className="mycardSubHeading">
+            Technical Advisor
+            </Typography>
+            
+          </CardContent>
+        
+        </Card>
+    
+              </Grid>
+    
+    
+    
+            </Grid>
+
       </Box>
     </>
   );
