@@ -154,7 +154,7 @@ font-size: 24px !important;
 margin-top: 60%;
 }
 
-.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+.MuiMenu-paper {
     box-shadow: none !important;
 }
 
