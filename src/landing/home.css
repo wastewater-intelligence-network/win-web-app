@@ -162,7 +162,34 @@ margin-top: 60%;
  margin: 100px;
  text-align: center;
 }
+.aboutCard{
+height: 300px;
+}
 
+.aboutCard:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    cursor: pointer;
+}
+.aboutCard .mycardSubHeading{
+    font-size: 18px !important;
+}
+.aboutCard .mycardHeading{
+    font-size: 20px !important;
+}
+
+.about .wbeDetailsHeading{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.OurTeamImage{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -15px;
+    box-shadow: 0 2px 3px #d1e9faa1;
+}
 .login-box{
 height:85vh;
 
@@ -177,6 +204,11 @@ height:85vh;
 
 .text-right{
     text-align: right;
+}
+
+.contactText{
+    font-size: 22px;
+    font-family: "larsseit" !important;
 }
 
 /* .mainContainer{

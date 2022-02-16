@@ -1,8 +1,140 @@
-import { Box, Divider, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Divider,
+  Grid,
+  Link,
+  Typography,
+} from "@mui/material";
 import * as React from "react";
 import Header from "./header";
-
+import Padam_Vijay from "../images/Padam_Vijay.png";
+import Uday from "../images/Uday.jpg";
+import Mahreen from "../images/Mahreen.jpeg";
+import Shilpa from "../images/Shilpa.png";
+import Abhisikha_Das from "../images/Abhisikha_Das.png";
+import Abhishek_Upperwal from "../images/Abhishek_Upperwal.png";
+import Manual from "../images/Manual.png";
+import Yogada from "../images/Yogada.png";
+import Footer from "./footer";
+import Default_user from "../images/default_user.png";
 function AboutUs() {
+  let about_us_data = {
+    niua: [
+      {
+        id: 1,
+        name: "Padam Vijay",
+        about_url: "https://niua.org/cdg/Our-people",
+        designation: "Technical Advisor",
+        institute: "",
+        profile_image_src: "Padam_Vijay",
+      },
+      {
+        id: 2,
+        name: "Umamaheshwaran Rajasekar",
+        about_url:
+          "https://niua.org/c-cube/content/dr-umamaheshwaran-rajasekar",
+        designation: "Head, C-Cube and Chair, Urban Resilience Unit",
+        institute: "",
+        profile_image_src: "default_user.png",
+      },
+      {
+        id: 3,
+        name: "Uday Bhonde",
+        about_url: "https://www.niua.org/people1?id=359",
+        designation: "Project Coordinator",
+        institute: "",
+        profile_image_src: "Uday",
+      },
+      {
+        id: 4,
+        name: "Mahreen Matto",
+        about_url: "https://www.niua.org/people1?id=789",
+        designation: "Program Manager",
+        institute: "",
+        profile_image_src: "Mahreen",
+      },
+      {
+        id: 5,
+        name: "Shilpa Shashidharan",
+        about_url: "https://www.linkedin.com/in/shilpa-shashidharan-b2537279/",
+        designation: "Engineer and Management Professional",
+        institute: "",
+        profile_image_src: "Shilpa",
+      },
+      {
+        id: 6,
+        name: "Abhiskha Das",
+        about_url: "https://www.linkedin.com/in/abhisikha-das-579327154/",
+        designation: "Social Development and Livelihoods Expert",
+        institute: "",
+        profile_image_src: "Abhisikha_Das",
+      },
+      {
+        id: 7,
+        name: "Abhishek Upperwal",
+        about_url: "https://www.linkedin.com/in/upperwal/",
+        designation: "Data Scientist",
+        institute: "IISc, Bangalore",
+        profile_image_src: "Abhishek_Upperwal",
+      },
+      {
+        id: 8,
+        name: "Manuel Diego",
+        about_url: "https://www.linkedin.com/in/mdfcp/",
+        designation: "Architect and Sustainability Expert",
+        institute: "University of Nottingham, England",
+        profile_image_src: "Manual",
+      },
+      {
+        id: 9,
+        name: "Yogada Sandeep Joshi",
+        about_url: "https://www.linkedin.com/in/yogada-joshi-428637157/",
+        designation: "Economist",
+        institute: "Christ University, Bangalore",
+        profile_image_src: "Yogada",
+      },
+    ],
+    nwg: [
+      {
+        id: 1,
+        name: "SRM Institute of Science and Technology",
+        about_url: "https://www.srmist.edu.in/",
+        address:
+          "SRM Nagar, Kattankulathur, Chengalpattu District, Tamil Nadu, 603203",
+      },
+      {
+        id: 2,
+        name: "Ephicacy Lifescience Analytics Private Limited",
+        about_url: "https://www.ephicacy.com/",
+        address:
+          "No. 6, 2nd Floor, Second Main Road Arekere, Off Bannerghatta Road Bengaluru, Karnataka, 560076",
+      },
+      {
+        id: 3,
+        name: "Dr. B. Lal Institute of Biotechnology",
+        about_url: "https://www.blalbiotech.com/",
+        address: "6-E, Malviya Industrial Area, Jaipur, Rajastan,  302017",
+      },
+    ],
+    swg: [
+      {
+        id: 1,
+        name: "Veer Narmad South Gujarat University (VNSGU)",
+        about_url: "https://www.vnsgu.ac.in/",
+        address: "Post Box No 49, Udhna Magdalla Road, Surat, 395007",
+      },
+      {
+        id: 2,
+        name: "Surat Smart City Development Limited (SSCDL",
+        about_url: "https://www.suratsmartcity.com/",
+        address:
+          "1st Floor, South Zone Office, Surat Municipal Corporation, Opp. Satyanagar, Udhna, Surat, Gujarat, 394210",
+      },
+    ],
+  };
+
   return (
     <>
       <Header />
@@ -12,7 +144,6 @@ function AboutUs() {
           className="customeMarginBottom heading"
           sx={{
             typography: { sm: "h3", xs: "h6" },
-            textApgn: "center",
             mt: 4,
           }}
         >
@@ -20,47 +151,168 @@ function AboutUs() {
         </Typography>
 
         <Typography variant="h6" className="wbeDetailsContent">
-        Wastewater Intelpgence Network is an initiative to bring together experts to manage the spread and impact of SARS-CoV-2 through Wastewater-based Epidemiology in Indian cities.
+          Wastewater Intelpgence Network is an initiative to bring together
+          experts to manage the spread and impact of SARS-CoV-2 through
+          Wastewater-based Epidemiology in Indian cities.
         </Typography>
 
         <Divider className="customeMarginBottom customeMarginTop"></Divider>
 
-        <Typography sx={{ mb: 2 }} variant="h5" className="wbeDetailsHeading">
-        How can we help you?
+        
+<Box sx={{textAlign:'left'}} className="p-0100">
+<Typography  variant="h5" className="wbeDetailsHeading">
+          How can we help you?
         </Typography>
+<Typography variant="body2" className="wbeDetailsContent">
+          <p> <span className="textBold">1-</span>  SOPs for end-to-end adoption of WBE in a city</p>
+          <p>
+            {" "}
+            <span className="textBold">2-</span> Enhancement of data-led decision making by geospatial data
+            dashboard
+          </p>
+          <p>
+            {" "}
+            <span className="textBold">3-</span> Real-time status of the on-ground situation for optimised
+            pandemics’ management{" "}
+          </p>
+          <p>
+            {" "}
+            <span className="textBold">4-</span> Knowledge sharing and proactive collaboration with domain experts
+            through the national and city-specific working groups
+          </p>
+        </Typography>
+</Box>
 
-        <Typography variant="body2" className="wbeDetailsContent">
-          
-            <p> 1- SOPs for end-to-end adoption of WBE in a city</p>
-            <p> 2- Enhancement of data-led decision making by geospatial data dashboard</p>
-            <p> 3- Real-time status of the on-ground situation for optimised pandemics’ management </p>
-            <p> 4- Knowledge sharing and proactive collaboration with domain experts through the national and city-specific working groups</p>
-         
-          
-        </Typography>
+       
 
         <Divider className="customeMarginBottom customeMarginTop"></Divider>
 
-        <Typography sx={{ mb: 2 }} variant="h5" className="wbeDetailsHeading">
-        Meet the amazing team
+        <Typography  variant="h5" className="wbeDetailsHeading">
+          Meet the amazing team
         </Typography>
 
-        <Typography variant="h6" className="wbeDetailsContent">
-          Lorem ipsum dolor sit amet, consectetur adipiscing ept. Etiam
-          hendrerit pellentesque nisl, ut accumsan eros. Vivamus rhoncus, turpis
-          nec ultrices cursus, dolor risus vehicula eros, eget apquam tellus
-          est ultrices odio. Donec laoreet, lacus vitae consequat cursus, lorem
-          turpis semper est, ac tincidunt risus lorem id diam. Interdum et
-          malesuada fames ac ante ipsum primis in faucibus. Ut id tortor eros.
-          Duis vept purus, molps non ullamcorper id, varius et justo. Nam
-          molps consequat tellus eget suscipit. Proin ultrices in nisl sed
-          dapibus. Sed tortor est, vulputate eget sem in, lacinia ultrices quam.
-          Duis est dolor, apquet sed maximus a, pulvinar eu ante. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Curabitur posuere feps eu dolor solpcitudin mattis.
-          Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </Typography>
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 3, sm: 3, md: 3 }}
+          justifyContent="center"
+          alignItems="center"
+        >
+          {about_us_data.niua.map((item) => {
+            return (
+              <Grid item xs={12} sm={6} md={4}>
+                <Card className={"aboutCard"}>
+                  <CardContent>
+                    <img
+                      alt="Sample"
+                      className="OurTeamImage"
+                      src={
+                        item.profile_image_src === "Padam_Vijay"
+                          ? Padam_Vijay
+                          : item.profile_image_src === "Uday"
+                          ? Uday //Default_user
+                          : item.profile_image_src === "Mahreen"
+                          ? Mahreen
+                          : item.profile_image_src === "Shilpa"
+                          ? Shilpa
+                          : item.profile_image_src === "Abhisikha_Das"
+                          ? Abhisikha_Das
+                          : item.profile_image_src === "Abhishek_Upperwal"
+                          ? Abhishek_Upperwal
+                          : item.profile_image_src === "Manual"
+                          ? Manual
+                          : item.profile_image_src === "Yogada"
+                          ? Yogada
+                          : Default_user
+                      }
+                      
+                    />
+                    <Typography
+                      variant="h6"
+                      className="mycardHeading"
+                      component="div"
+                      sx={{ my: 2 }}
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                    <Link href={item.about_url} target="_blank" underline="none">
+                    {item.about_url}</Link>
+                     
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.designation}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.institute}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            );
+          })}
+
+          <Grid item xs={12}>
+          <Typography  variant="h5" className="wbeDetailsHeading">
+            National Working Group
+          </Typography>
+          </Grid>
+          {about_us_data.nwg.map((item) => {
+            return (
+              <Grid item xs={12} sm={6} md={4}>
+                <Card className={"aboutCard"}>
+                  <CardContent>
+                    <Typography
+                      variant="h6"
+                      className="mycardHeading"
+                      component="div"
+                      sx={{ my: 2 }}
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.about_url}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.address}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            );
+          })}
+          <Grid item xs={12}>
+          <Typography  variant="h5" className="wbeDetailsHeading">
+            Surat’s Working Group
+          </Typography>
+          </Grid>
+          {about_us_data.swg.map((item) => {
+            return (
+              <Grid item xs={12} sm={6} md={4}>
+                <Card className={"aboutCard"}>
+                  <CardContent>
+                    <Typography
+                      variant="h6"
+                      className="mycardHeading"
+                      component="div"
+                      sx={{ my: 2 }}
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.about_url}
+                    </Typography>
+                    <Typography className="mycardSubHeading">
+                      {item.address}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            );
+          })}
+        </Grid>
       </Box>
+      <Footer />
     </>
   );
 }
