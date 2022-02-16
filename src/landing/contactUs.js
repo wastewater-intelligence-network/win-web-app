@@ -14,8 +14,8 @@ function ContactUs() {
   return (
     <>
       <Header />
-      <Box className="customeMarginBottom">
-        <Typography
+      <Box className="contactBox">
+        {/* <Typography
           className="customeMarginBottom heading"
           sx={{
             typography: { sm: "h3", xs: "h6" },
@@ -25,9 +25,10 @@ function ContactUs() {
           }}
         >
           CONTACT US
-        </Typography>
+        </Typography> */}
 
         <Grid
+        sx={{height:'100%'}}
           container
           spacing={2}
           justifyContent="space-around"
@@ -36,7 +37,7 @@ function ContactUs() {
           <Grid item xs={12} md={6}>
             <img
               alt="contact logo"
-              width={250}
+              width={350}
               src={Niua}
               style={{
                 marginLeft: "auto",
@@ -46,23 +47,10 @@ function ContactUs() {
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" sx={{ mb: 2 }}>
-              National Institute of Urban Affairs
-            </Typography>
-            {/* <Typography variant="h5" sx={{ mb: 2 }}>
-              {" "}
-              <HomeIcon /> 1ˢᵗ and 2ⁿᵈ Floor, Core 4B, <br /> India Habitat
-              Centre, Lodhi Road, <br /> New Delhi, Delhi 110003
-            </Typography>
-
-            <Typography variant="h5" className="">
-              {" "}
-              <EmailIcon /> win@niua.org
-            </Typography> */}
 
             <List>
               <ListItem>
-              <ListItemIcon sx={{color:'#000'}}>
+              <ListItemIcon sx={{color:'#000', fontSize: '2.5rem'}}>
                     <HomeIcon />
                   </ListItemIcon>
                 <ListItemText className="contactText" disableTypography >
@@ -72,7 +60,7 @@ function ContactUs() {
               </ListItem>
               <ListItem>
 
-              <ListItemIcon sx={{color:'#000'}}>
+              <ListItemIcon sx={{color:'#000', fontSize: '2.5rem'}}>
                    <EmailIcon />
                   </ListItemIcon>
                 <ListItemText className="contactText" disableTypography>
@@ -84,7 +72,11 @@ function ContactUs() {
           </Grid>
         </Grid>
       </Box>
+
+      <Box sx={{position:'fixed',  bottom:0, width:'100%'}}>
       <Footer />
+      </Box>
+      
     </>
   );
 }
