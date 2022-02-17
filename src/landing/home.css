@@ -221,6 +221,29 @@ height:85vh;
 }
 
 
+/* consortium css */
+
+.consortium-title{
+    font-size: 35px !important;
+  font-family: "LarsseitMedium" !important;
+  text-transform: uppercase;
+  margin-top: 50px !important;
+
+}
+.consortium-text{
+    font-family: "larsseitLight" !important;
+    font-size: 20px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: justify;
+}
+.image-responsive{
+    max-width: 100%;
+    height: fit-content;
+}
+
+/* consortium css end */
+
 /* .mainContainer{
 margin-top: 100px;
 } */

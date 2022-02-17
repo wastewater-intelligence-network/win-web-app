@@ -66,6 +66,10 @@ function Header(props) {
       // setSelectedid(e.target.id);
     }
 
+    else if (e.currentTarget.innerText === 'Consortium' || e.currentTarget.innerText === 'CONSORTIUM') {
+      navigate("/consortium");
+    }
+
     else if (location.pathname === '/') {
       setSelectedid('deskmenu0');
     }
