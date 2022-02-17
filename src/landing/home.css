@@ -162,6 +162,9 @@ margin-top: 60%;
  margin: 100px;
  text-align: center;
 }
+.about .heading{
+    font-size: 50px !important;
+}
 .aboutCard{
 height: 300px;
 }
@@ -187,10 +190,9 @@ height: 300px;
 }
 
 .OurTeamImage{
-    border-radius: 50%;
+    border-radius: 5%;
     height: 100px;
     width: 100px;
-    margin-top: -15px;
     box-shadow: 0 2px 3px #d1e9faa1;
 }
 .login-box{
