@@ -12,11 +12,17 @@ import Header from "./header";
 import Padam_Vijay from "../images/Padam_Vijay.png";
 import Uday from "../images/Uday.jpg";
 import Mahreen from "../images/Mahreen.jpeg";
-import Shilpa from "../images/Shilpa.png";
-import Abhisikha_Das from "../images/Abhisikha_Das.png";
-import Abhishek_Upperwal from "../images/Abhishek_Upperwal.png";
-import Manual from "../images/Manual.png";
-import Yogada from "../images/Yogada.png";
+import Shilpa from "../images/Shilpa_Shashidharan.jpeg";
+import Abhisikha_Das from "../images/Abhisikha_Das.jpg";
+import Abhishek_Upperwal from "../images/Abhishek_Upperwal.jpg";
+import Manual from "../images/Manuel_Diego.jpg";
+import Yogada from "../images/Yogada_Joshi.JPG";
+import Mahesh from "../images/Mahesh.png";
+import SRM from "../images/srm-logo.png";
+import ELAPL from "../images/Ephycacy.jpeg";
+import BLIB from "../images/drblal-logo.jpg";
+import VNSGU from "../images/vnsgu-logo.jpg";
+import SSCDL from "../images/sscdl-logo.png";
 import Footer from "./footer";
 import Default_user from "../images/default_user.png";
 function AboutUs() {
@@ -37,7 +43,7 @@ function AboutUs() {
           "https://niua.org/c-cube/content/dr-umamaheshwaran-rajasekar",
         designation: "Head, C-Cube and Chair, Urban Resilience Unit",
         institute: "",
-        profile_image_src: "default_user.png",
+        profile_image_src: "Mahesh",
       },
       {
         id: 3,
@@ -101,6 +107,7 @@ function AboutUs() {
         id: 1,
         name: "SRM Institute of Science and Technology",
         about_url: "https://www.srmist.edu.in/",
+        institute_logo_src: "SRM",
         address:
           "SRM Nagar, Kattankulathur, Chengalpattu District, Tamil Nadu, 603203",
       },
@@ -108,6 +115,8 @@ function AboutUs() {
         id: 2,
         name: "Ephicacy Lifescience Analytics Private Limited",
         about_url: "https://www.ephicacy.com/",
+        institute_logo_src: "ELAPL",
+
         address:
           "No. 6, 2nd Floor, Second Main Road Arekere, Off Bannerghatta Road Bengaluru, Karnataka, 560076",
       },
@@ -115,6 +124,8 @@ function AboutUs() {
         id: 3,
         name: "Dr. B. Lal Institute of Biotechnology",
         about_url: "https://www.blalbiotech.com/",
+        institute_logo_src: "BLIB",
+
         address: "6-E, Malviya Industrial Area, Jaipur, Rajastan,  302017",
       },
     ],
@@ -123,12 +134,14 @@ function AboutUs() {
         id: 1,
         name: "Veer Narmad South Gujarat University (VNSGU)",
         about_url: "https://www.vnsgu.ac.in/",
+        institute_logo_src:"VNSGU",
         address: "Post Box No 49, Udhna Magdalla Road, Surat, 395007",
       },
       {
         id: 2,
         name: "Surat Smart City Development Limited (SSCDL",
         about_url: "https://www.suratsmartcity.com/",
+        institute_logo_src:"SSCDL",
         address:
           "1st Floor, South Zone Office, Surat Municipal Corporation, Opp. Satyanagar, Udhna, Surat, Gujarat, 394210",
       },
@@ -140,7 +153,7 @@ function AboutUs() {
       <Header />
 
       <Box className="customeMarginBottom about">
-        <Typography
+        {/* <Typography
           className="customeMarginBottom heading"
           sx={{
             typography: { sm: "h3", xs: "h6" },
@@ -148,10 +161,10 @@ function AboutUs() {
           }}
         >
           ABOUT US
-        </Typography>
+        </Typography> */}
 
-        <Typography variant="h6" className="wbeDetailsContent">
-          Wastewater Intelpgence Network is an initiative to bring together
+        <Typography variant="h6" className="aboutContent">
+          Wastewater Intelligence Network is an initiative to bring together
           experts to manage the spread and impact of SARS-CoV-2 through
           Wastewater-based Epidemiology in Indian cities.
         </Typography>
@@ -203,6 +216,7 @@ function AboutUs() {
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={"aboutCard"}>
                   <CardContent>
+                  <Link href={item.about_url} target ="_blank">
                     <img
                       alt="Sample"
                       className="OurTeamImage"
@@ -210,7 +224,9 @@ function AboutUs() {
                         item.profile_image_src === "Padam_Vijay"
                           ? Padam_Vijay
                           : item.profile_image_src === "Uday"
-                          ? Uday //Default_user
+                          ? Uday 
+                          : item.profile_image_src === "Mahesh"
+                          ? Mahesh
                           : item.profile_image_src === "Mahreen"
                           ? Mahreen
                           : item.profile_image_src === "Shilpa"
@@ -227,17 +243,19 @@ function AboutUs() {
                       }
                       
                     />
+                    </Link>
                     <Typography
                       variant="h6"
                       className="mycardHeading"
                       component="div"
                       sx={{ my: 2 }}
                     >
-                      {item.name}
+                    <Link href={item.about_url} target="_blank" underline="none">
+                    {item.name}</Link>
+                      
                     </Typography>
                     <Typography className="mycardSubHeading">
-                    <Link href={item.about_url} target="_blank" underline="none">
-                    {item.about_url}</Link>
+                    
                      
                     </Typography>
                     <Typography className="mycardSubHeading">
@@ -262,17 +280,31 @@ function AboutUs() {
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={"aboutCard"}>
                   <CardContent>
+                  <Link href={item.about_url} target ="_blank">
+                    <img
+                      alt="Sample"
+                      className="OurTeamImage"
+                      src={
+                        item.institute_logo_src === "SRM"
+                          ? SRM
+                          : item.institute_logo_src === "ELAPL"
+                          ? ELAPL 
+                          : item.institute_logo_src === "BLIB"
+                          ? BLIB
+                          : null
+                      }
+                      
+                    />
+                    </Link>
                     <Typography
                       variant="h6"
                       className="mycardHeading"
                       component="div"
                       sx={{ my: 2 }}
                     >
-                      {item.name}
+                    <Link href={item.about_url} target ="_blank" underline="none">{item.name}</Link>
                     </Typography>
-                    <Typography className="mycardSubHeading">
-                      {item.about_url}
-                    </Typography>
+                   
                     <Typography className="mycardSubHeading">
                       {item.address}
                     </Typography>
@@ -291,17 +323,30 @@ function AboutUs() {
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={"aboutCard"}>
                   <CardContent>
+                  <Link href={item.about_url} target ="_blank">
+                    <img
+                      alt="Sample"
+                      className="OurTeamImage"
+                      src={
+                        item.institute_logo_src === "VNSGU"
+                          ? VNSGU
+                          : item.institute_logo_src === "SSCDL"
+                          ? SSCDL 
+                          :null
+                      }
+                      
+                    />
+                    </Link>
                     <Typography
                       variant="h6"
                       className="mycardHeading"
                       component="div"
                       sx={{ my: 2 }}
                     >
-                      {item.name}
+                    <Link href={item.about_url} target ="_blank" underline="none">{item.name}</Link>
+                      
                     </Typography>
-                    <Typography className="mycardSubHeading">
-                      {item.about_url}
-                    </Typography>
+              
                     <Typography className="mycardSubHeading">
                       {item.address}
                     </Typography>
