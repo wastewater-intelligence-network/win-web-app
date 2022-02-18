@@ -23,6 +23,7 @@ import Home from "./landing/home";
 import Challenge from "./landing/challenge";
 import AboutUs from "./landing/aboutUs";
 import ContactUs from "./landing/contactUs";
+import Consortium from "./landing/consortium";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/consortium" element={<Consortium />} />
 
         <Route path="/" element={<Home />} />
 
