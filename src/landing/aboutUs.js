@@ -153,7 +153,7 @@ function AboutUs() {
       <Header />
 
       <Box className="customeMarginBottom about">
-        {/* <Typography
+        <Typography
           className="customeMarginBottom heading"
           sx={{
             typography: { sm: "h3", xs: "h6" },
@@ -161,7 +161,7 @@ function AboutUs() {
           }}
         >
           ABOUT US
-        </Typography> */}
+        </Typography>
 
         <Typography variant="h6" className="aboutContent">
           Wastewater Intelligence Network is an initiative to bring together
