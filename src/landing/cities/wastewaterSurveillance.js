@@ -24,12 +24,12 @@ function WastewaterSurveillance(props){
 
     return(
         <Box className="customeMarginBottom" sx={{ mt: 3 }}>
-        <Grid container spacing={2} columnSpacing={6}>
-          <Grid item xs={8}>
-            <Typography variant="h4" className="cities_heading">
+        <Grid container spacing={2} columnSpacing={6} className="columnReverse">
+          <Grid item sm={12} xs={12} md={6} lg={8}>
+            <Typography variant="h4" className="cities_heading ">
               Wastewater Surveillance in Surat
             </Typography>
-            <Typography variant="body2">
+            <p className="ws-surat-content">
               Surat Municipal Corporation (SMC) in close coordination with
               National Institute of Urban Affairs (NIUA) has deployed
               Wastewater Intelligence Network (WIN) which is a wastewater
@@ -42,13 +42,13 @@ function WastewaterSurveillance(props){
               load in wastewater samples. These partners include other City
               departments (e.g. the Drainage Department, Health Department),
               Veer Narmad South Gujarat University (VNSGU).
-            </Typography>
+            </p>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item sm={12} xs={12} md={6} lg={4}>
             <CityBreadcrumbs />
             <Divider sx={{ color: "primary" }} />
-            <h5>On this page</h5>
-            <nav className="cities_navigation">
+            <p className="textBold">On this page</p>
+            <div className="cities_navigation">
               <List>
                 <ListItem disablePadding>
                   <ListItemButton id="WastewaterSurveillance" onClick={handleClickSuratTabIndex} component="a">
@@ -76,7 +76,7 @@ function WastewaterSurveillance(props){
                   </ListItemButton>
                 </ListItem>
               </List>
-            </nav>
+            </div>
             <Divider sx={{ color: "primary" }} />
           </Grid>
         </Grid>

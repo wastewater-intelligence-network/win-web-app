@@ -24,18 +24,19 @@ function SamplingLocation() {
   return (
     <Box className="customeMarginBottom ">
       <Grid container spacing={2}>
-        <Grid item xs={6}>
+        <Grid item sm={12} xs={12} md={6}>
           <Typography variant="h4" className="cities_heading">
             Sampling Locations
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" sx={{mb:3}}>
             Samples are being collected 2 times every week from 14 locations in
             the west zone. These include 9 SPSs and 5 manholes. A grab sample of
             500 ML is collected by dipping the bottle tied to a rope.
           </Typography>
           <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <h4 className="title-bg">SPS Collection Locations</h4>
+            <Grid item sm={6} xs={12} md={6}>
+
+              <Typography variant="h4" className="title-bg">SPS Collection Locations</Typography>
               {SPSCollectionLoacation.map((item) => {
                 return (  
                   <ul className="location_list">
@@ -45,8 +46,8 @@ function SamplingLocation() {
               })}
 
             </Grid>
-            <Grid item xs={6}>
-              <h4 className="title-bg title-bg-1">Manhole Collection Locations</h4>
+            <Grid item sm={6} xs={12} md={6}>
+              <Typography variant="h4" className="title-bg title-bg-1">Manhole Collection Locations</Typography>
               {manholeCollectionLocations.map((item) => {
                 return (  
                   <ul className="location_list">
@@ -57,7 +58,7 @@ function SamplingLocation() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item sm={8} xs={12} md={6} >
           <img
             alt="Scope sampling"
             className="image-responsive"

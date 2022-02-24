@@ -16,10 +16,12 @@
     font-size: 0.75rem;
     line-height: 1rem;
     margin: 0;
+    font-size: 12px !important;
 }
 
 .made-in-india-para a {
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 12px !important;
 }
 

@@ -36,7 +36,7 @@ function CoreComponents() {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Card className="CoreComponentCard">
               <CardContent>
                 <img alt="Sample" src={Consortium} width={80} />
@@ -59,7 +59,7 @@ function CoreComponents() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Card className=" CoreComponentCardTwo">
               <CardContent>
                 <img alt="Sample" src={Deployment} width={80} />

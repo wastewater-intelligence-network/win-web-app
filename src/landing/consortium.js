@@ -3,11 +3,12 @@ import * as React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import Structure from "../images/structure.jpg";
+import NewHeader from "./newHeader";
 
 const Consortium = () => {
   return (
     <>
-      <Header />
+      <Header  />
       <Container maxWidth="lg">
         <Box className="customeMarginBottom ">
           <Typography

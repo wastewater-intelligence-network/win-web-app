@@ -16,7 +16,7 @@ return(
 >
   <Grid item xs={12} sm={8}>
   <Box>
-<img alt="Logo" src={Logo} width="300" />
+<img alt="Logo" src={Logo} className="header-logo" />
 </Box>
   </Grid> 
   <Grid item xs={12} sm={3}>

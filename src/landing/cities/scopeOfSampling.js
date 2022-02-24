@@ -28,23 +28,32 @@ function ScopeOfSampling() {
     <>
       <Box className="customeMarginBottom ">
         <Grid container spacing={2}>
-          <Grid item xs={6}>
+          <Grid item sm={12} xs={12} md={6}>
             <Typography variant="h4" className="cities_heading">
               Scope of Sampling
             </Typography>
 
-            <Typography variant="body2">
+            <p className="ws-surat-content">
               For the pilot deployment from 1st Jan, 2022 to 31st March, 2022,
               samples are being collected from the West Zone. Table below shows
               some of the relevant facts about the West Zone.
-            </Typography>
-            <h4>Some facts about the West Zone</h4>
+            </p>
+
+            <Grid item sm={8} xs={12} className="mobile-sampling-map">
+            <img
+              alt="Scope sampling"
+              className="image-responsive"
+              src={ScopeSamplingImgae}
+            />
+            </Grid>
+
+            <p className="textBold">Some facts about the West Zone</p>
 
             {westzoneFact.data.map((item) => {
               return (
                 <Box sx={{ml:2}}>
-                  <Grid container spacing={2}>
-                    <Grid item xs={6}>
+                  <Grid container spacing={2} >
+                    <Grid item xs={6} sx={{paddingTop:0}}>
                       <p className="textBold">{item.name}</p>
                     </Grid>
                     <Grid item xs={6}>
@@ -55,12 +64,12 @@ function ScopeOfSampling() {
               );
             })}
 
-            <Typography variant="body2">
+            <p className="ws-surat-content">
               Total of 14 samples are being collected; 9 from SPSs and 5 from
               outlet manholes originating from residential complexes.
-            </Typography>
+            </p>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item sm={12} xs={12} md={6} className="desktop-sampling-map">
             <img
               alt="Scope sampling"
               className="image-responsive"
