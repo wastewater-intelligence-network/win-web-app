@@ -139,7 +139,7 @@ function AboutUs() {
       },
       {
         id: 2,
-        name: "Surat Smart City Development Limited (SSCDL",
+        name: "Surat Smart City Development Limited (SSCDL)",
         about_url: "https://www.suratsmartcity.com/",
         institute_logo_src:"SSCDL",
         address:

@@ -14,7 +14,7 @@ function ContactUs() {
   return (
     <>
       <Header />
-      <Box className="contactBox">
+      <Box className="contactBox customeMarginBottom">
         {/* <Typography
           className="customeMarginBottom heading"
           sx={{
@@ -34,19 +34,15 @@ function ContactUs() {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
             <img
               alt="contact logo"
               width={350}
               src={Niua}
-              style={{
-                marginLeft: "auto",
-                display: "block",
-                marginRight: "60px",
-              }}
+              className="contactLogo"
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6} md={6}>
 
             <List>
               <ListItem>
