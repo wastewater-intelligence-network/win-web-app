@@ -25,6 +25,7 @@ import VNSGU from "../images/vnsgu-logo.png";
 import SSCDL from "../images/sscdl-logo.png";
 import Footer from "./footer";
 import Default_user from "../images/default_user.png";
+import NewHeader from "./newHeader";
 function AboutUs() {
   let about_us_data = {
     niua: [
@@ -150,7 +151,7 @@ function AboutUs() {
 
   return (
     <>
-      <Header />
+      <NewHeader />
 
       <Box className="customeMarginBottom about">
         <Typography

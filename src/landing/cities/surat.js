@@ -7,6 +7,8 @@ import ScopeOfSampling from "./scopeOfSampling";
 import SamplingStrategy from "./samplingStrategy";
 import SamplingLocation from "./samplingLocations";
 import WastewaterSurveillance from "./wastewaterSurveillance";
+import NewHeader from "../newHeader";
+import ScrollButton from "../scrollToTopButton";
 function Surat() {
 
 
@@ -30,7 +32,7 @@ function Surat() {
 
   return (
     <>
-      <Header />
+      <NewHeader />
       <Container maxWidth="lg" className="city">
         {/* Wastewater Surveillance in Surat Section  */}
         <div id="WastewaterSurveillanceId">
@@ -54,6 +56,7 @@ function Surat() {
       </Container>
 
       <Footer />
+      <ScrollButton />
     </>
   );
 }

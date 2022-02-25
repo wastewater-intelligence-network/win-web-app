@@ -15,6 +15,7 @@ import Partners from "./partners";
 import { textAlign } from "@mui/system";
 import { useEffect, useMemo, useRef } from "react";
 import ScrollButton from "./scrollToTopButton";
+import NewHeader from "./newHeader";
 
 function Home() {
 
@@ -22,24 +23,25 @@ function Home() {
 
 
   const OnexecuteScrollWbe = (props) => {
+    console.log(props + " Testing Props")
     if (props === 'wasteWaterBased') {
-      let _elmScroll = document.getElementById("wasteWaterBased");
+      let _elmScroll = document.getElementById("wasteWaterBasedId");
       _elmScroll.scrollIntoView();
     }
     else if (props === 'howWbeWork') {
-      let _elmScroll = document.getElementById("howWbeWork");
+      let _elmScroll = document.getElementById("howWbeWorkId");
       _elmScroll.scrollIntoView();
     }
     else if (props === 'decisionMakers') {
-      let _elmScroll = document.getElementById("decisionMakers");
+      let _elmScroll = document.getElementById("decisionMakersId");
       _elmScroll.scrollIntoView();
     }
     else if (props === 'coreComponents') {
-      let _elmScroll = document.getElementById("coreComponents");
+      let _elmScroll = document.getElementById("coreComponentsId");
       _elmScroll.scrollIntoView();
     }
     else if (props === 'partners') {
-      let _elmScroll = document.getElementById("partners");
+      let _elmScroll = document.getElementById("partnersId");
       _elmScroll.scrollIntoView();
     }
 
@@ -47,7 +49,7 @@ function Home() {
 
   return (
     <>
-      <Header executeScrollWbe={OnexecuteScrollWbe} />
+      <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
       <Container className="mainContainer">
         <Box sx={{ textAlign: "center" }} className="mainBox">
           {/* <Typography
@@ -70,7 +72,7 @@ function Home() {
           <Partners />
           <Divider className="customeMarginTop customeMarginBottom"></Divider>
 
-          <div id="wasteWaterBased">
+          <div id="wasteWaterBasedId">
             <Box className="specingBottomSection">
               <Typography
                 className="specingBottomSection larsseitextrabold-font-family heading"
@@ -99,7 +101,7 @@ function Home() {
 
           <Divider className="customeMarginTop customeMarginBottom"></Divider>
 
-          <div id="howWbeWork">
+          <div id="howWbeWorkId">
             <WbeWork />
           </div>
 
@@ -109,15 +111,15 @@ function Home() {
         <WbeWorkDetails />
         
 
-        <div id="decisionMakers">
+        <div id="decisionMakersId">
         <DecisionMakers />
         </div>
 
-        <div id="coreComponents">
+        <div id="coreComponentsId">
         <CoreComponents />
         </div>
 
-        <div id="partners">
+        <div id="partnersId">
         <Box sx={{ textAlign: "center", my: 6, mx: 6 }}>
           <Typography
             className="specingBottomSection heading"
