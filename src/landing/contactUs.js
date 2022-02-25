@@ -9,11 +9,12 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import NewHeader from "./newHeader";
 function ContactUs() {
 
   return (
     <>
-      <Header />
+      <NewHeader />
       <Box className="contactBox customeMarginBottom">
         {/* <Typography
           className="customeMarginBottom heading"

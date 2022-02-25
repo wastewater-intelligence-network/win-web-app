@@ -8,7 +8,7 @@ import NewHeader from "./newHeader";
 const Consortium = () => {
   return (
     <>
-      <Header  />
+      <NewHeader  />
       <Container maxWidth="lg">
         <Box className="customeMarginBottom ">
           <Typography
