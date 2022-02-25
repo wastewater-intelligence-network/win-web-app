@@ -8,21 +8,24 @@ import SamplingStrategy from "./samplingStrategy";
 import SamplingLocation from "./samplingLocations";
 import WastewaterSurveillance from "./wastewaterSurveillance";
 function Surat() {
-  const OnexecuteScrollPage = (props) => {
-    console.log("testing");
-    if (props === "WastewaterSurveillance") {
-      let _elmScroll = document.getElementById("WastewaterSurveillance");
+
+
+  const onExecuteScrollPageSurat = (props) => {
+    
+    if (props === "Wastewater Surveillance in Surat") {
+      let _elmScroll = document.getElementById("WastewaterSurveillanceId");
       _elmScroll.scrollIntoView();
-    } else if (props === "ScopeOfSampling") {
-      let _elmScroll = document.getElementById("ScopeOfSampling");
+    } else if (props === "Scope of Sampling") {
+      let _elmScroll = document.getElementById("ScopeOfSamplingId");
       _elmScroll.scrollIntoView();
-    } else if (props === "SamplingStrategy") {
-      let _elmScroll = document.getElementById("SamplingStrategy");
+    } else if (props === "Sampling Strategy") {
+      let _elmScroll = document.getElementById("SamplingStrategyId");
       _elmScroll.scrollIntoView();
-    } else if (props === "SamplingLocation") {
-      let _elmScroll = document.getElementById("SamplingLocation");
+    } else if (props === "Sampling Location") {
+      let _elmScroll = document.getElementById("SamplingLocationId");
       _elmScroll.scrollIntoView();
     }
+
   };
 
   return (
@@ -30,21 +33,24 @@ function Surat() {
       <Header />
       <Container maxWidth="lg" className="city">
         {/* Wastewater Surveillance in Surat Section  */}
-        <div id="WastewaterSurveillance">
-          <WastewaterSurveillance executeScrollPage={OnexecuteScrollPage} />
+        <div id="WastewaterSurveillanceId">
+          <WastewaterSurveillance executeScrollPageSurat={onExecuteScrollPageSurat} />
         </div>
         {/* Scope of Sampling Section */}
-        <div id="ScopeOfSampling">
+        <div id="ScopeOfSamplingId">
           <ScopeOfSampling />
         </div>
         {/* Sampling Strategy Section*/}
-        <div id="SamplingStrategy">
+        <div id="SamplingStrategyId">
           <SamplingStrategy />
         </div>
         {/* Sampling Locations Section */}
-        <div id="SamplingLocation">
+        <div id="SamplingLocationId">
           <SamplingLocation />
         </div>
+
+
+
       </Container>
 
       <Footer />

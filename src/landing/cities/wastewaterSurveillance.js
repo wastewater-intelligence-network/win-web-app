@@ -12,12 +12,11 @@ function WastewaterSurveillance(props){
 
 
     const handleClickSuratTabIndex = (e) => {
-        console.log(targetScrollMenu + "bdjfbjdsbfsjbfj");
-        settargetScrollMenu(null);
-        document.getElementById(e.target.id);
+        // console.log(targetScrollMenu + "bdjfbjdsbfsjbfj");
+        // settargetScrollMenu(null);
+        // document.getElementById(e.target.id);
         setTimeout(() => {
-            console.log("executeScrollPage testing");
-          props.executeScrollPage(e.target.id);
+          props.executeScrollPageSurat(e.target.innerText);
         }, 1000);
       };
 
