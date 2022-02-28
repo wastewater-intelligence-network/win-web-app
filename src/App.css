@@ -116,3 +116,8 @@ color: #fff !important;
 .mb-40{
   margin-bottom: 40px;
 }
+
+.validation-error {
+  color: #FF3333;
+  font-size: 12px;
+}
