@@ -23,6 +23,11 @@
          
 }
 
+.home-activ {
+display: block;
+}
+ 
+
 .topnav .icon {
   display: none;
 }

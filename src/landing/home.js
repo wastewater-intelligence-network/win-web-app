@@ -16,6 +16,7 @@ import { textAlign } from "@mui/system";
 import { useEffect, useMemo, useRef } from "react";
 import ScrollButton from "./scrollToTopButton";
 import NewHeader from "./newHeader";
+import HomeHeader from "./home-header";
 
 function Home() {
 
@@ -49,7 +50,7 @@ function Home() {
 
   return (
     <>
-      <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
+      <HomeHeader executeScrollWbe={OnexecuteScrollWbe} />
       <Container className="mainContainer">
         <Box sx={{ textAlign: "center" }} className="mainBox">
           {/* <Typography
