@@ -1,90 +1,143 @@
-
 // import { Link } from "@mui/material";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import * as React from "react";
-import './newHeader.css'; 
+import "./newHeader.css";
 import TopHeader from "./top-header";
 import { Container } from "@mui/material";
 
-function NewHeader(props){
+function NewHeader(props) {
+  const handleClick = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  };
 
- const handleClick = (()=>{
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
- });
- 
- const handleClickknowledgeitem = (e) => {
- 
-  document.getElementById(e.target.id).setAttribute("selected", true);
-  setTimeout(() => {
-    props.executeScrollWbe(e.target.id);
-  }, 1000);
-};
+  const handleClickknowledgeitem = (e) => {
+    document.getElementById(e.target.id).setAttribute("selected", true);
+    setTimeout(() => {
+      props.executeScrollWbe(e.target.id);
+    }, 1000);
+  };
 
+  return (
+    <>
+      <TopHeader />
 
+      <div className="topnav" id="myTopnav">
+        <Container>
+          {/* <a href="#home" className="active">Home</a> */}
+          {/* <a href="#news">About us</a> */}
+          <NavLink
+            to="/"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/aboutus"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            About Us
+          </NavLink>
 
-    return(
-        <>
-<TopHeader />
+          <div className="dropdown">
+            <button className="dropbtn">
+              Cities
+              <i className="fa fa-caret-down"></i>
+            </button>
+            <div className="dropdown-content">
+            
+            <NavLink
+            to="/surat"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Surat
+          </NavLink>
+            </div>
+          </div>
 
-<div className="topnav" id="myTopnav">
-<Container>
-  {/* <a href="#home" className="active">Home</a> */}
-  {/* <a href="#news">About us</a> */}
-  <Link  to="/">Home</Link>
+          <div className="dropdown">
+            <button className="dropbtn">
+              Knowledge
+              <i className="fa fa-caret-down"></i>
+            </button>
+            <div className="dropdown-content">
+              <span
+                className="custome-link"
+                id="wasteWaterBased"
+                onClick={handleClickknowledgeitem}
+              >
+                {" "}
+                Wastewater-Based Epidemiology (WBE)
+              </span>
+              <span
+                className="custome-link"
+                id="howWbeWork"
+                onClick={handleClickknowledgeitem}
+              >
+                How does WBE Work?
+              </span>
+              <span
+                className="custome-link"
+                id="decisionMakers"
+                onClick={handleClickknowledgeitem}
+              >
+                Decision Makers
+              </span>
+              <span
+                className="custome-link"
+                id="coreComponents"
+                onClick={handleClickknowledgeitem}
+              >
+                Core Components
+              </span>
+              <span
+                className="custome-link"
+                id="partners"
+                onClick={handleClickknowledgeitem}
+              >
+                Partners
+              </span>
+            </div>
+          </div>
+          <NavLink
+            to="/consortium"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Consortium
+          </NavLink>
 
-  <Link  to="/aboutus">About Us</Link>
-  <div className="dropdown">
-    <button className="dropbtn">Cities 
-      <i className="fa fa-caret-down"></i>
-    </button>
-    <div className="dropdown-content">
-  <Link  to="/surat">Surat</Link>
-   
+          <NavLink
+            to="/contactus"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Login
+          </NavLink>
 
-    </div>
-  </div> 
+          {/* <Link className="icon" onClick={handleClick}>&#9776;</Link> */}
 
-  <div className="dropdown">
-    <button className="dropbtn">Knowledge 
-      <i className="fa fa-caret-down"></i>
-    </button>
-    <div className="dropdown-content">
-  <span className="custome-link" id="wasteWaterBased"
-                        onClick={handleClickknowledgeitem} > Wastewater-Based Epidemiology (WBE)</span>
-  <span className="custome-link" id="howWbeWork"
-                        onClick={handleClickknowledgeitem} >How does WBE Work?</span>
-  <span className="custome-link" id="decisionMakers"
-                        onClick={handleClickknowledgeitem} >Decision Makers</span>
-  <span className="custome-link" id="coreComponents"
-                        onClick={handleClickknowledgeitem} >Core Components</span>
-  <span className="custome-link" id="partners"
-                        onClick={handleClickknowledgeitem}  >Partners</span>
-      
-    </div>
-  </div>
-  <Link to="/consortium">Consortium</Link>
-  <Link  to="/contactus">Contact Us</Link>
-  <Link  to="/login">Login</Link>
-  {/* <Link className="icon" onClick={handleClick}>&#9776;</Link> */}
-
-
-  <a className="icon" onClick={handleClick}>&#9776;</a>
-  </Container>
-</div>
- 
-
-
- 
-
-
-
-        </>
-    );
+          <span className="icon" onClick={handleClick}>
+            &#9776;
+          </span>
+        </Container>
+      </div> 
+    </>
+  );
 }
 export default NewHeader;
