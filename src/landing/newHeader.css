@@ -15,8 +15,12 @@
 }
 
 .active {
-  background-color: #04AA6D;
-  color: #fff;
+        color: #fff;
+        background:transparent;
+         font-weight:bold;
+         text-decoration: underline !important;
+         text-decoration-thickness: 3px !important;
+         
 }
 
 .topnav .icon {
@@ -94,9 +98,13 @@
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-  .topnav a.icon {
+  .topnav span.icon {
     float: right;
     display: block;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 16px;
   }
 }
 
