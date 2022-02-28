@@ -53,11 +53,11 @@ function ScopeOfSampling() {
               return (
                 <Box sx={{ml:2}}>
                   <Grid container spacing={2} >
-                    <Grid item xs={6} sx={{paddingTop:0}}>
-                      <p className="textBold">{item.name}</p>
+                    <Grid item xs={6}>
+                      <p style={{marginTop:"10px", marginBottom:"10px"}} className="textBold">{item.name}</p>
                     </Grid>
                     <Grid item xs={6}>
-                      <p>{item.value}</p>
+                      <p style={{marginTop:"10px", marginBottom:"10px"}}>{item.value}</p>
                     </Grid>
                   </Grid>
                 </Box>
