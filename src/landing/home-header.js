@@ -6,7 +6,7 @@ import "./newHeader.css";
 import TopHeader from "./top-header";
 import { Container } from "@mui/material";
 
-function NewHeader(props) {
+function HomeHeader(props) {
   const handleClick = () => {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -16,12 +16,12 @@ function NewHeader(props) {
     }
   };
 
-  // const handleClickknowledgeitem = (e) => {
-  //   document.getElementById(e.target.id).setAttribute("selected", true);
-  //   setTimeout(() => {
-  //     props.executeScrollWbe(e.target.id);
-  //   }, 1000);
-  // };
+  const handleClickknowledgeitem = (e) => {
+    document.getElementById(e.target.id).setAttribute("selected", true);
+    setTimeout(() => {
+      props.executeScrollWbe(e.target.id);
+    }, 200);
+  };
 
   return (
     <>
@@ -63,7 +63,7 @@ function NewHeader(props) {
             </div>
           </div>
 
-          {/* <div className="dropdown only-on-home">
+          <div className="dropdown only-on-home">
             <button className="dropbtn">
               Knowledge
               <i className="fa fa-caret-down"></i>
@@ -106,7 +106,7 @@ function NewHeader(props) {
                 Partners
               </span>
             </div>
-          </div> */}
+          </div>
           <NavLink
             to="/consortium"
             className={({ isActive }) => 
@@ -140,4 +140,4 @@ function NewHeader(props) {
     </>
   );
 }
-export default NewHeader;
+export default HomeHeader;
