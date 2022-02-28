@@ -26,6 +26,7 @@ import ContactUs from "./landing/contactUs";
 import Consortium from "./landing/consortium";
 import Surat from "./landing/cities/surat";
 import NewHeader from "./landing/newHeader";
+import FileUpload from "./components/FileUpload";
 
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
         <Route path="/consortium" element={<Consortium />} />
         <Route path="/surat" element={<Surat />} />
         <Route path="/newheader" element={<NewHeader />} />
+        <Route path="/fileupload" element={<FileUpload />} />
+
+     
 
         <Route path="/" element={<Home />} />
 
