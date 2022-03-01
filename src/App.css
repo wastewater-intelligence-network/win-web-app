@@ -163,3 +163,8 @@ color: #fff !important;
 
 
 /* File upload css end */
+
+
+.tabs-box a {
+  font-size: 14px !important;
+}

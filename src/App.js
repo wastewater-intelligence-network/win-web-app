@@ -32,7 +32,9 @@ import FileUpload from "./components/FileUpload";
 function App() {
   return (
     <>
-      {/* <Layout /> */}
+    
+   { localStorage.getItem("login_token").length > 0 ?  <Layout /> : <span /> } 
+      
 
       <Routes>
         <Route path="/home" element={<Home />} />
