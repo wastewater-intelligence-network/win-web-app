@@ -17,7 +17,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import base64 from "base-64";
 
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export default function Login() {
     register,
     handleSubmit,
     watch,
-    formState: { errors }
+    formState: { errors },
   } = useForm();
 
   const handleSubmita = (event) => {
@@ -40,25 +40,32 @@ export default function Login() {
 
   async function userLogin(data) {
     let headersData = {
-      "Username": "admin",
-      "Password": "W!n@dm!n"
+      Username: "admin",
+      Password: "W!n@dm!n",
     };
 
-    let headers = { 'Authorization': 'Basic ' + base64.encode(headersData.Username + ':' + headersData.Password) }
+    let headers = {
+      Authorization:
+        "Basic " +
+        base64.encode(headersData.Username + ":" + headersData.Password),
+    };
 
     try {
       const response = await axios.get("https://win.niua.org:8081/login", {
-        headers: headers
+        headers: headers,
       });
       console.log(response);
       const { data } = response;
       if (data) {
         localStorage.setItem("login_token", data.token);
-        localStorage.setItem('login_token_expiry_timestamp', data.tokenExpiryTimestamp);
+        localStorage.setItem(
+          "login_token_expiry_timestamp",
+          data.tokenExpiryTimestamp
+        );
 
         navigate("/setting/user");
       }
-    } catch (error) { }
+    } catch (error) {}
   }
 
   const onSubmit = (data) => {
@@ -83,11 +90,7 @@ export default function Login() {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={12} md={4} className="rightBorder">
-            {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar> */}
-
+          <Grid item xs={12} md={5} lg={4} className="rightBorder">
             <Box
               component="form"
               // onSubmit={handleSubmita}
@@ -99,57 +102,63 @@ export default function Login() {
               <img
                 alt="login logo"
                 src={LoginLogo}
-                width={200}
-                className="mb-40"
+                className="login_logo"
               />
 
-              <Typography component="div" variant="h6">
+              <Typography component="div" variant="h6" sx={{mb:2}}>
                 Log in
               </Typography>
-              <TextField
-                // margin="normal"
-                // required
-                fullWidth
-                // id="email"
-                label="Email Address"
-                // name="email"
-                // autoComplete="email"
-                // autoFocus
-                {...register("email", {
-                  required: true,
-                  maxLength: 20,
-                  pattern: /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}/i
-                })}
-              />
 
-              {errors?.email?.type === "required" && <p className="validation-error">This field is required</p>}
-              {errors?.email?.type === "maxLength" && (
-                <p className="validation-error">email cannot exceed 20 characters</p>
-              )}
-              {errors?.email?.type === "pattern" && (
-                <p className="validation-error">Not Valid Email</p>
-              )}
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField
+                  variant="outlined"
+                    fullWidth
+                    size="small"
+                      label="Email Address"
+                    {...register("email", {
+                      required: true,
+                      maxLength: 20,
+                      pattern: /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}/i,
+                    })}
+                  />
 
-              <TextField
-                // margin="normal"
-                // required
-                fullWidth
-                // name="password"
-                label="Password"
-                type="password"
-                // id="password"
-                // autoComplete="current-password"
+                  {errors?.email?.type === "required" && (
+                    <p className="validation-error">This field is required</p>
+                  )}
+                  {errors?.email?.type === "maxLength" && (
+                    <p className="validation-error">
+                      email cannot exceed 20 characters
+                    </p>
+                  )}
+                  {errors?.email?.type === "pattern" && (
+                    <p className="validation-error">Not Valid Email</p>
+                  )}
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    variant="outlined"
+                    fullWidth
+                    size="small"
+                    label="Password"
+                    type="password"
+                    {...register("password", {
+                      required: true,
+                      pattern:
+                        /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,
+                    })}
+                  />
 
-                {...register("password", {
-                  required: true,
-                  pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/
-                })}
-              />
-
-              {errors?.password?.type === "required" && <p className="validation-error">This field is required</p>}
-              {errors?.password?.type === "pattern" && (
-                <p className="validation-error">Not Valid Password Pattern</p>
-              )}
+                  {errors?.password?.type === "required" && (
+                    <p className="validation-error">This field is required</p>
+                  )}
+                  {errors?.password?.type === "pattern" && (
+                    <p className="validation-error">
+                      Not Valid Password Pattern
+                    </p>
+                  )}
+                </Grid>
+              </Grid>
 
               <Button
                 type="submit"
@@ -159,7 +168,6 @@ export default function Login() {
               >
                 Sign In
               </Button>
-
 
               <Box className="text-center">
                 <FormControlLabel
@@ -172,7 +180,7 @@ export default function Login() {
               </Box>
             </Box>
           </Grid>
-          <Grid xs={12} md={8}>
+          <Grid item xs={12} md={7} lg={8}>
             <Box className="p-0100 text-center">
               <Typography variant="h6" className="wbeDetailsContent mb-40">
                 Let’s{" "}

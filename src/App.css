@@ -113,11 +113,53 @@ color: #fff !important;
   text-align: center;
 }
 
-.mb-40{
+.login_logo{
   margin-bottom: 40px;
+  width: 250px;
 }
 
 .validation-error {
   color: #FF3333;
-  font-size: 12px;
+  font-size: 10px !important;
+  font-family: 'Lora-bold';
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
 }
+
+/* File Uplad Css */
+
+
+.iciELI {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 300px !important;
+  max-width: 500px !important;
+  height: 100px !important;
+  border: dashed 2px #0658c2;
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin: 20px;
+}
+
+.fileUploadTextarea{
+  margin: 20px;
+  max-width: 500px;
+  display: flex;
+}
+
+
+/* File upload css end */
