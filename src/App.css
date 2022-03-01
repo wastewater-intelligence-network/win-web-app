@@ -164,7 +164,24 @@ color: #fff !important;
 
 /* File upload css end */
 
+/* Settings Tabs css start */
 
-.tabs-box a {
-  font-size: 14px !important;
-}
+.left-sidebar-tabs a{
+  
+    display: block;
+    color: rgb(0, 0, 0.5);
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px !important;
+  }
+  
+  .tab-active {
+    color: #5499de !important;
+    background: aliceblue;
+    border-left: 2px solid;
+           
+  }
+
+
+
+/* Settings Tabs css end */

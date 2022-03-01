@@ -117,9 +117,9 @@ html,body {
   -moz-osx-font-smoothing: grayscale;
 } 
 
-p, ul , li , a {
+p {
   font-family: "Lora-Regular";
-  font-size: 18px !important;
+  font-size: 16px !important;
   
 }
 

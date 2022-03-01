@@ -41,8 +41,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/setting" element={<Setting />} />
         <Route path="/setting/user" element={<User />} />
-        <Route path="/team" element={<Teams />} />
-        <Route path="/collectionpoint" element={<CollectionPoint />} />
+        <Route path="/setting/team" element={<Teams />} />
+        <Route path="/setting/collectionpoint" element={<CollectionPoint />} />
+        <Route path="/setting/fileupload" element={<FileUpload />} />
         <Route path="/schedules" element={<Schedules />} />
         <Route path="/print" element={<PrintSticker />} />
         <Route path="/print-list" element={<PrintStickerList />} />
@@ -54,7 +55,6 @@ function App() {
         <Route path="/consortium" element={<Consortium />} />
         <Route path="/surat" element={<Surat />} />
         <Route path="/newheader" element={<NewHeader />} />
-        <Route path="/fileupload" element={<FileUpload />} />
 
      
 
