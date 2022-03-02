@@ -112,6 +112,7 @@ html,body {
   font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 30px !important;
+  scroll-behavior: smooth;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -8,16 +8,14 @@ import ListItemText from "@mui/material/ListItemText";
 
 
 function WastewaterSurveillance(props){
-    const [targetScrollMenu, settargetScrollMenu] = React.useState(null);
-
 
     const handleClickSuratTabIndex = (e) => {
-        // console.log(targetScrollMenu + "bdjfbjdsbfsjbfj");
-        // settargetScrollMenu(null);
-        // document.getElementById(e.target.id);
+ 
         setTimeout(() => {
+          
           props.executeScrollPageSurat(e.target.innerText);
-        }, 1000);
+          
+        }, 100);
       };
 
 
