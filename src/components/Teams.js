@@ -4,6 +4,8 @@ import Leftsidebar from "./Leftsidebar";
 import Datatable from "./Datatable";
 import AddteamsForm from "./AddteamsForm";
 import axios from "axios";
+import Layout from "../components/app-layout/Layout";
+
 function Teams() {
 
   const [data, setData] = React.useState([]);
@@ -74,6 +76,8 @@ function Teams() {
   }, []);
 
   return (
+    <>
+    <Layout />
     <Box sx={{ mt: 2, ml: "80px", mr: "10px" }}>
       <Grid container spacing={2}>
         <Grid item xs={2}>
@@ -95,6 +99,7 @@ function Teams() {
       </Grid>
     
    </Box>
+   </>
   );
 }
 

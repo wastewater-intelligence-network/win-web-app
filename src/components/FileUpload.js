@@ -5,6 +5,7 @@ import axios from "axios";
 import { FileUploader } from "react-drag-drop-files";
 import { Box, Button, Grid } from "@mui/material";
 import Leftsidebar from "./Leftsidebar";
+import Layout from "../components/app-layout/Layout";
 
 function FileUpload() {
   const fileTypes = ["JPG", "PNG", "GIF"];
@@ -40,6 +41,8 @@ function FileUpload() {
 
   return (
     <>
+    <Layout />
+
       <Box sx={{ mt: 2, ml: "80px", mr: "10px" }}>
       <Grid container spacing={2}>
         <Grid item xs={2}>

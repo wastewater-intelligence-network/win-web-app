@@ -5,9 +5,13 @@ import * as React from 'react';
 import Leftsidebar from './Leftsidebar';
 import Datatable from './Datatable';
 import AddcollectionPoint from './AddcollectionPoint';
+import Layout from "../components/app-layout/Layout";
 
 function CollectionPoint(){
 return(
+  <>
+  <Layout />
+
   <Box sx={{mt:2, ml:'80px',mr:'10px'}}>
  
  <Grid container spacing={2}>
@@ -29,6 +33,7 @@ return(
 
 </Grid>
 </Box>
+</>
 
   
 

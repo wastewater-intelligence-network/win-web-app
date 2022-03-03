@@ -4,6 +4,7 @@ import * as React from "react";
 import Datatable from "./Datatable";
 import Leftsidebar from "./Leftsidebar";
 import AdduserForm from "./side-drawer/AdduserForm";
+import Layout from "../components/app-layout/Layout";
 
 function User() {
   const [data, setData] = React.useState([]);
@@ -74,6 +75,9 @@ function User() {
   }, []);
 
   return (
+    <>
+     <Layout />
+ 
     <Box sx={{ mt: 2, ml: "80px", mr: "10px" }}>
       <Grid container spacing={2}>
         <Grid item xs={2}>
@@ -92,6 +96,7 @@ function User() {
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 }
 

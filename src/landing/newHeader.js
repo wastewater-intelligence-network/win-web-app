@@ -5,8 +5,11 @@ import * as React from "react";
 import "./newHeader.css";
 import TopHeader from "./top-header";
 import { Container } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 function NewHeader(props) {
+  const navigate = useNavigate();
+  
   const handleClick = () => {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -14,6 +17,16 @@ function NewHeader(props) {
     } else {
       x.className = "topnav";
     }
+  };
+
+  const handleLogOut = () => {
+    var token = localStorage.getItem("login_token");
+    if(token) {
+      localStorage.setItem("login_token", "");
+      alert("you're Logged Out !");
+      navigate("/login");
+    }
+    
   };
 
   // const handleClickknowledgeitem = (e) => {
@@ -33,15 +46,15 @@ function NewHeader(props) {
           {/* <a href="#news">About us</a> */}
           <NavLink
             to="/"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
+            className={({ isActive }) =>
+              isActive ? "active" : "nonActive"}
           >
             Home
           </NavLink>
           <NavLink
             to="/aboutus"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
+            className={({ isActive }) =>
+              isActive ? "active" : "nonActive"}
           >
             About Us
           </NavLink>
@@ -52,14 +65,14 @@ function NewHeader(props) {
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
-            
-            <NavLink
-            to="/surat"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
-          >
-            Surat
-          </NavLink>
+
+              <NavLink
+                to="/surat"
+                className={({ isActive }) =>
+                  isActive ? "active" : "nonActive"}
+              >
+                Surat
+              </NavLink>
             </div>
           </div>
 
@@ -109,26 +122,42 @@ function NewHeader(props) {
           </div> */}
           <NavLink
             to="/consortium"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
+            className={({ isActive }) =>
+              isActive ? "active" : "nonActive"}
           >
             Consortium
           </NavLink>
 
           <NavLink
             to="/contactus"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
+            className={({ isActive }) =>
+              isActive ? "active" : "nonActive"}
           >
             Contact Us
           </NavLink>
-          <NavLink
-            to="/login"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
-          >
-            Login
-          </NavLink>
+
+          {
+            localStorage.getItem("login_token").length > 0 ?
+
+
+              <NavLink
+                to="/login"
+                className={({ isActive }) =>
+                  isActive ? "active" : "nonActive"}
+              >
+                Login
+              </NavLink>
+              :
+              <NavLink
+                //to="/login"
+                onClick={handleLogOut}
+                className={({ isActive }) =>
+                  isActive ? "active" : "nonActive"}
+              >
+                Logout
+              </NavLink>
+
+          }
 
           {/* <Link className="icon" onClick={handleClick}>&#9776;</Link> */}
 
@@ -136,7 +165,7 @@ function NewHeader(props) {
             &#9776;
           </span>
         </Container>
-      </div> 
+      </div>
     </>
   );
 }

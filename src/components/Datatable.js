@@ -118,7 +118,7 @@ export default function Datatable(props) {
     <Box sx={{ height: 500, width: 100 + "%" }}>
       <DataGrid
         components={{ Toolbar: QuickSearchToolbar }}
-        rows={rows}
+        rows={props.rows}
         columns={props.columns}
         componentsProps={{
           toolbar: {
