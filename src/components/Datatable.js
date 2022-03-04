@@ -115,7 +115,8 @@ export default function Datatable(props) {
     }
   };
   return (
-    <Box sx={{ height: 500, width: 100 + "%" }}>
+    <Box sx={{ display:"flex", height: 500, width: 100 + "%" }}>
+     <div style={{ flexGrow: 1 }}>
       <DataGrid
         components={{ Toolbar: QuickSearchToolbar }}
         rows={props.rows}
@@ -128,6 +129,7 @@ export default function Datatable(props) {
           },
         }}
       />
+      </div>
     </Box>
   );
 }

@@ -42,21 +42,24 @@ function User() {
     userName:"Tusar",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"tusar@gmail.com"
+    email:"tusar@gmail.com",
+    "id": "1"
   },
   {
     _id:124,
     userName:"Asishi",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"asish@gmail.com"
+    email:"asish@gmail.com",
+    "id": "2"
   },
   {
     _id: 125,
     userName:"Binso",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"Binso@gmail.com"
+    email:"Binso@gmail.com",
+    "id": "3"
   }
 ]
 

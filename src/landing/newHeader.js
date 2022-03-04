@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import * as React from "react";
 import "./newHeader.css";
 import TopHeader from "./top-header";
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
 function NewHeader(props) {
@@ -137,26 +137,21 @@ function NewHeader(props) {
           </NavLink>
 
           {
-            localStorage.getItem("login_token").length > 0 ?
+            localStorage.getItem("login_token") && localStorage.getItem("login_token").length > 0 ?
 
-
-              <NavLink
-                to="/login"
-                className={({ isActive }) =>
-                  isActive ? "active" : "nonActive"}
-              >
-                Login
-              </NavLink>
-              :
-              <NavLink
+              <Button className="logoutBtn"
                 //to="/login"
                 onClick={handleLogOut}
-                className={({ isActive }) =>
-                  isActive ? "active" : "nonActive"}
               >
                 Logout
-              </NavLink>
-
+              </Button>
+              :
+              <NavLink className="loginBtn"
+              to="/login"
+              
+            >
+              Login
+            </NavLink>
           }
 
           {/* <Link className="icon" onClick={handleClick}>&#9776;</Link> */}

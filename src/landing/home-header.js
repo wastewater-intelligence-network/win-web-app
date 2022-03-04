@@ -141,17 +141,16 @@ function HomeHeader(props) {
           {
             localStorage.getItem("login_token") && localStorage.getItem("login_token").length > 0 ?
 
-              <button
+              <button className="logoutBtn"
                 //to="/login"
                 onClick={handleLogOut}
               >
                 Logout
               </button>
               :
-              <NavLink
+              <NavLink className="loginBtn"
               to="/login"
-              className={({ isActive }) =>
-                isActive ? "active" : "nonActive"}
+              
             >
               Login
             </NavLink>

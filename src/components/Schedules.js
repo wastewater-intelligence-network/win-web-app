@@ -22,37 +22,37 @@ function Schedules() {
       "field": "scheduleId",
       "headerName": "Schedule Id",
       "id": "1",
-      "width": "100"
+     
     },
     {
       "field": "scheduleDate",
       "headerName": "Schedule Date",
       "id": "2",
-      "width": "200"
+      
     },
     {
       "field": "collectionPoint",
       "headerName": "Collection Point",
       "id": "3",
-      "width": "400"
+      
     },
     {
       "field": "status",
       "headerName": "Status",
       "id": "4",
-      "width": "200"
+      
     },
     {
       "field": "team",
       "headerName": "Team",
       "id": "5",
-      "width": "200"
+      
     },
     {
       "field": "lastUpdate",
       "headerName": "Last Update",
       "id": "6",
-      "width": "200"
+     
     },
   ];
 

@@ -47,16 +47,16 @@ var token = localStorage.getItem("login_token");
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/setting" element={<Setting />} />
+        <Route path="/setting" element={ token ? <Setting /> : <Login />} />
         <Route path="/setting/user" element={token ? <User /> : <Login /> } />
         <Route path="/setting/team" element={ token ? <Teams /> : <Login /> } />
         <Route path="/setting/collectionpoint" element={ token ? <CollectionPoint /> : <Login /> } />
         <Route path="/setting/fileupload" element={ token ? <FileUpload /> : <Login /> } />
-        <Route path="/schedules" element={token ? <Schedules />  : <Login /> } />
-        <Route path="/print" element={<PrintSticker />} />
+        <Route path="/schedule" element={token ? <Schedules />  : <Login /> } />
+        <Route path="/print" element={token ? <PrintSticker /> :<Login /> } />
         <Route path="/print-list" element={<PrintStickerList />} />
         <Route path="/steper" element={<FormSteper />} />
-        <Route path="/sample" element={<Sample />} />
+        <Route path="/sample" element={ token ? <Sample /> :<Login /> } />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/contactus" element={<ContactUs />} />
