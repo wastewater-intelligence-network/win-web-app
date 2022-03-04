@@ -11,7 +11,9 @@ import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { GridExpandMoreIcon } from "@mui/x-data-grid";
 import Date from "./Date";
 
-function ScheduleDetails() {
+function ScheduleDetails(props) {
+  console.log(props);
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -30,6 +32,10 @@ function ScheduleDetails() {
     setState({ ...state, [anchor]: open });
   };
 
+  if(props.scheduledetails){
+    toggleDrawer("right", true);
+  }
+
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -45,7 +51,7 @@ function ScheduleDetails() {
       role="presentation"
     >
       <Toolbar sx={{ backgroundColor: "primary.main", color: "#fff", mb: 2 }}>
-        Schedule Id -012
+         {props.scheduledetails === null ? '' : props.scheduledetails.row.scheduleId}
       </Toolbar>
 
       {/* Panle Code */}
@@ -72,11 +78,11 @@ function ScheduleDetails() {
               </Grid>
               <Grid item xs={4}>
                 <p>Collected By</p>
-                <h6> Team 5 </h6>
+                <h6> {props.scheduledetails === null ? '' : props.scheduledetails.row.team} </h6>
               </Grid>
               <Grid item xs={4}>
                 <p>Status</p>
-                <h6> In Progress</h6>
+                <h6> {props.scheduledetails === null ? '' : props.scheduledetails.row.status}</h6>
               </Grid>
             </Grid>
           </AccordionDetails>
@@ -103,7 +109,7 @@ function ScheduleDetails() {
               </Grid>
               <Grid item xs={4}>
                 <p>Collection Date & Time</p>
-                <h6> 9:50 AM,  14 jan 2022</h6>
+                <h6> </h6>
               </Grid>
               <Grid item xs={4}>
               <Button variant="outlined">Cancel Point</Button>

@@ -11,11 +11,15 @@ import Layout from "../components/app-layout/Layout";
 
 function Schedules() {
   const [team, setTeam] = React.useState('all team');
+  const [scheduledetails, setScheduledetails] = React.useState(null);
 
   const handleChangeTeam = (event) => {
     setTeam(event.target.value);
   };
 
+  const OnShowSchedule = (params, event) => {
+    setScheduledetails(params);
+  }
 
   var columns = [
     {
@@ -121,7 +125,7 @@ function Schedules() {
           </Grid>
           <Grid item xs={6} sx={{ pl: 0 }}>
             <AddScheduleForm />
-            <ScheduleDetails />
+            <ScheduleDetails scheduledetails={scheduledetails === null ? null : scheduledetails} />
           </Grid>
 
         </Grid>
@@ -137,7 +141,7 @@ function Schedules() {
 
         {/* <AdduserForm /> */}
         {/* <ViewUserForm /> */}
-        <Datatable columns ={columns} rows = {rows}  title= "Schedule" />
+        <Datatable columns ={columns} rows = {rows}  title= "Schedule" showSchedule={OnShowSchedule} />
       </Box>
     </>
   )

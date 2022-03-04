@@ -114,6 +114,11 @@ export default function Datatable(props) {
       setRows(rowsOnClear);
     }
   };
+
+const showSchedule = (params, event) => {
+  props.showSchedule(params, event);
+}
+
   return (
     <Box sx={{ display:"flex", height: 500, width: 100 + "%" }}>
      <div style={{ flexGrow: 1 }}>
@@ -127,6 +132,9 @@ export default function Datatable(props) {
             onChange: (event) => requestSearch(event.target.value),
             clearSearch: () => requestSearch(""),
           },
+        }}
+        onCellClick={(params, event) => { 
+          props.title === 'Schedule' ? showSchedule(params) : showSchedule(params)
         }}
       />
       </div>
