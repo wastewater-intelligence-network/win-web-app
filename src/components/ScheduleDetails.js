@@ -6,13 +6,13 @@ import Typography from "@mui/material/Typography";
 import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import DetailsOutlinedIcon from '@mui/icons-material/DetailsOutlined';
+import DetailsOutlinedIcon from "@mui/icons-material/DetailsOutlined";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { GridExpandMoreIcon } from "@mui/x-data-grid";
 import Date from "./Date";
 
 function ScheduleDetails(props) {
-  console.log(props);
+  // console.log(props);
 
   const [state, setState] = React.useState({
     top: false,
@@ -22,6 +22,8 @@ function ScheduleDetails(props) {
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
+    console.log("open --> ", open);
+
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -32,9 +34,11 @@ function ScheduleDetails(props) {
     setState({ ...state, [anchor]: open });
   };
 
-  if(props.scheduledetails){
-    toggleDrawer("right", true);
-  }
+  React.useEffect(() => {
+    if (props.scheduledetails) {
+      setState({ ...state, ["right"]: true });
+    }
+  }, [props.scheduledetails]);
 
   const [expanded, setExpanded] = React.useState("panel1");
 
@@ -51,7 +55,9 @@ function ScheduleDetails(props) {
       role="presentation"
     >
       <Toolbar sx={{ backgroundColor: "primary.main", color: "#fff", mb: 2 }}>
-         {props.scheduledetails === null ? '' : props.scheduledetails.row.scheduleId}
+        {props.scheduledetails === null
+          ? ""
+          : props.scheduledetails.row.scheduleId}
       </Toolbar>
 
       {/* Panle Code */}
@@ -78,11 +84,21 @@ function ScheduleDetails(props) {
               </Grid>
               <Grid item xs={4}>
                 <p>Collected By</p>
-                <h6> {props.scheduledetails === null ? '' : props.scheduledetails.row.team} </h6>
+                <h6>
+                  {" "}
+                  {props.scheduledetails === null
+                    ? ""
+                    : props.scheduledetails.row.team}{" "}
+                </h6>
               </Grid>
               <Grid item xs={4}>
                 <p>Status</p>
-                <h6> {props.scheduledetails === null ? '' : props.scheduledetails.row.status}</h6>
+                <h6>
+                  {" "}
+                  {props.scheduledetails === null
+                    ? ""
+                    : props.scheduledetails.row.status}
+                </h6>
               </Grid>
             </Grid>
           </AccordionDetails>
@@ -105,14 +121,18 @@ function ScheduleDetails(props) {
             <Grid container spacing={2} style={{ marginBottom: "16px" }}>
               <Grid item xs={4}>
                 <p>Address</p>
-                <h6> Ghod Dod Road, Swami Vivekanand Marg, Athwa, Surat, Gujrat 395001 </h6>
+                <h6>
+                  {" "}
+                  Ghod Dod Road, Swami Vivekanand Marg, Athwa, Surat, Gujrat
+                  395001{" "}
+                </h6>
               </Grid>
               <Grid item xs={4}>
                 <p>Collection Date & Time</p>
                 <h6> </h6>
               </Grid>
               <Grid item xs={4}>
-              <Button variant="outlined">Cancel Point</Button>
+                <Button variant="outlined">Cancel Point</Button>
               </Grid>
             </Grid>
           </AccordionDetails>
@@ -153,9 +173,9 @@ function ScheduleDetails(props) {
     <div
       style={{ display: "flex", justifyContent: "end", marginBottom: "5px" }}
     >
-      <Button variant="contained" onClick={toggleDrawer("right", true)}>
+      {/* <Button variant="contained" onClick={toggleDrawer("right", true)}>
         Schedule Details
-      </Button>
+      </Button> */}
       <Drawer
         anchor={"right"}
         open={state["right"]}

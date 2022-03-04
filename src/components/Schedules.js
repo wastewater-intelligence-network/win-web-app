@@ -9,7 +9,7 @@ import ScheduleDetails from './ScheduleDetails';
 import Layout from "../components/app-layout/Layout";
 
 
-function Schedules() {
+function Schedules(props) {
   const [team, setTeam] = React.useState('all team');
   const [scheduledetails, setScheduledetails] = React.useState(null);
 

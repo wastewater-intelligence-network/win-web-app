@@ -92,14 +92,14 @@ export default function Datatable(props) {
   
   useEffect(()=>{
     const data=  props.rows.map((row) => {return {...row, id: row._id}});
-    console.log("🚀 ~ file: Datatable.js ~ line 95 ~ useEffect ~ data", data)
+    // console.log("🚀 ~ file: Datatable.js ~ line 95 ~ useEffect ~ data", data)
     
     setRowsOnClear(data);
     setRows(data);
   },[props.rows])
    
   // setColumns(props.columns)
-  console.log(props.columns);
+  // console.log(props.columns);
   const requestSearch = (searchValue) => {
     setSearchText(searchValue);
     if (searchValue !== "") {
