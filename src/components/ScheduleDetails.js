@@ -166,6 +166,11 @@ function ScheduleDetails(props) {
           </AccordionDetails>
         </Accordion>
       </Box>
+      <Box sx={{ boxShadow: '1', width: "100%", bottom: 8, p: '10px', textAlign: "right" }}>
+        
+          <Button variant="outlined" style={{ marginRight: 5, height: '40' }} onClick={toggleDrawer("right", false)} >Close</Button>
+       
+      </Box>
     </Box>
   );
 
