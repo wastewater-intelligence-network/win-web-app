@@ -1,6 +1,7 @@
 .topnav {
   overflow: hidden;
-  background-color: #555555;
+  background-color: #0080C8;
+  height: 50px;
 }
 
 .topnav a , .custome-link {
@@ -8,10 +9,11 @@
   display: block;
   color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-family: "Lora-Regular";
+  font-size: 14px;
+  text-transform: uppercase;
+
 }
 
 .active {
@@ -38,14 +40,14 @@ display: block;
 }
 
 .dropdown .dropbtn {
-  font-size: 18px;
+  font-size: 14px;
   outline: none;
-  color: #f2f2f2;
+  color: #fff;
   padding: 14px 16px;
   background-color: transparent;
   margin: 0;
-  font-family: 'Lora-Regular';
   border-color: transparent;
+  text-transform: uppercase;
 }
 
 .dropdown .dropbtn i{

@@ -108,17 +108,16 @@
 
 
 html,body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 30px !important;
   scroll-behavior: smooth;
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } 
 
-p, ul , li , a {
+p {
   font-family: "Lora-Regular";
   font-size: 18px !important;
   
@@ -127,38 +126,6 @@ p, ul , li , a {
 
 
 
-/* QuicksandBold */
-
-/* .quicksandbold-font-family {
-  font-family: "QuicksandBold" !important;
-}
-
-.quicksandmedium-font-family {
-  font-family: "QuicksandMedium" !important;
-}
-
-.quicksandregular-font-family {
-  font-family: "QuicksandRegular" !important;
-}
-
-.quicksandlight-font-family {
-  font-family: "QuicksandLight" !important;
-} */
-
-
- /* .textFontsize  {
-  font-size: 24px !important;
-  letter-spacing: 0px !important;
-color: #262626;
-opacity: 1;
-}
-
-.headingFontSize{
-font-size: 36px !important;
-}
-.subHeadingFontSize{
-  font-size: 30px !important;
-  } */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

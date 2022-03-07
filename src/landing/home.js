@@ -50,7 +50,7 @@ function Home() {
 
   return (
     <>
-      <HomeHeader executeScrollWbe={OnexecuteScrollWbe} />
+      <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
       <Container className="mainContainer">
         <Box sx={{ textAlign: "center" }} className="mainBox">
           {/* <Typography
