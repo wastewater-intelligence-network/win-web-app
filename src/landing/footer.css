@@ -25,3 +25,18 @@
     font-size: 12px !important;
 }
 
+/* Footer upper section */
+.footer-upper-section ul {
+        list-style: none;
+}
+
+.footer-upper-section ul li:first-child {
+    font-weight: bold;
+}
+
+.social-icons li {
+    display: inline-block;
+    color: #1976d2;
+    padding-right: 10px;
+}
+
