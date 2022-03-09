@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import WbeTesting from "../Icons/wbe_testing.svg";
 import "./home.css";
 import HomeBanner from "../images/banner-image.png";
-import { Button, Container, Divider, Grid } from "@mui/material";
+import { Button, Card, Container, Divider, Grid } from "@mui/material";
 import WbeWork from "./wbeWorke";
 import WbeWorkDetails from "./wbeWorkDetails";
 import DecisionMakers from "./decisionMakers";
@@ -15,7 +15,9 @@ import { useEffect, useMemo, useRef } from "react";
 import ScrollButton from "./scrollToTopButton";
 import NewHeader from "./newHeader";
 import BannerLogos from "./bannerLogos";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import WbeSurveillance from "./wbeSurveillance";
+import WorkOnThecities from "./workOnThecities";
 function Home() {
   const wbeRef = useRef(null);
 
@@ -43,24 +45,27 @@ function Home() {
     <>
       <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
       <Box className="banner-section">
-      
         <img alt="Banner" src={HomeBanner} className="banner-image" />
         <div className="background-opacity"></div>
         <Box className="banner-content">
-        <Typography
-          className="banner-text"
-          sx={{ typography: { sm: "h4", xs: "h6" } }}
-        >
-          <span>Wastewater </span> &nbsp; is a reservoir of information about{" "}
-          <span>your health</span> &nbsp; and we mine it to &nbsp;{" "}
-          <span> build insights for the city governments</span>
-        </Typography>
+          <Typography
+            className="banner-text"
+            sx={{ typography: { sm: "h4", xs: "h6" } }}
+          >
+            <span>Wastewater </span> &nbsp; is a reservoir of information about{" "}
+            <span>your health</span> &nbsp; and we mine it to &nbsp;{" "}
+            <span> build insights for the city governments</span>
+          </Typography>
 
-
-<Button className="button_style" sx={{backgroundColor:"#0080C8"}} variant="contained" endIcon={<ArrowRightAltIcon />}>
-How Does it work
-      </Button>
-        <BannerLogos />
+          <Button
+            className="button_style"
+            sx={{ backgroundColor: "#0080C8" }}
+            variant="contained"
+            endIcon={<ArrowRightAltIcon />}
+          >
+            How Does it work
+          </Button>
+          <BannerLogos />
         </Box>
         {/* <Box className="banner-logos">
           
@@ -80,26 +85,33 @@ How Does it work
           </Typography>
 
           <Partners /> */}
-         
-
-
-
 
           <div id="wasteWaterBasedId">
             <Box className="specingBottomSection">
               <Typography
-                className="specingBottomSection larsseitextrabold-font-family heading"
+                className="specingBottomSection  heading"
                 sx={{ typography: { sm: "h3", xs: "h6" } }}
               >
                 How do we mine insights from wastewater?
               </Typography>
 
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/FvPakzqM3h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <Card sx={{ mb: 4 }}>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/FvPakzqM3h8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </Card>
 
+              {/* 
               <video width="320" height="240" controls>
   <source src="https://www.youtube.com/embed/FvPakzqM3h8" />
  
- </video>
+ </video> */}
 
               {/* <img
                 alt="WbeTesting"
@@ -123,35 +135,50 @@ How Does it work
             </Box>
           </div>
 
-          <Divider className="customeMarginTop customeMarginBottom"></Divider>
-
-          <div id="howWbeWorkId">
+          {/* <div id="howWbeWorkId">
             <WbeWork />
+          </div> */}
+        </Box>
+      </Container>
+
+      <Box sx={{ backgroundColor: "#f1f1f1", py: 6 }}>
+        <Container className="mainContainer">
+          <Box className="mainBox">
+            <WbeWorkDetails />
+          </Box>
+        </Container>
+      </Box>
+
+      <WbeSurveillance />
+
+      <WorkOnThecities />
+
+      <Container className="mainContainer">
+        <Box className="mainBox">
+          <div id="decisionMakersId">
+            <DecisionMakers />
           </div>
         </Box>
-
-        <WbeWorkDetails />
-
-        <div id="decisionMakersId">
-          <DecisionMakers />
-        </div>
-
-        <div id="coreComponentsId">
-          <CoreComponents />
-        </div>
-
-        <div id="partnersId">
-          <Box sx={{ textAlign: "center", my: 6, mx: 6 }}>
-            <Typography
-              className="specingBottomSection heading"
-              sx={{ typography: { sm: "h2", xs: "h4" } }}
-            >
-              Partners
-            </Typography>
-            <Partners />
-          </Box>
-        </div>
       </Container>
+
+      {/* <div id="coreComponentsId">
+        <CoreComponents />
+      </div> */}
+
+      <div id="partnersId">
+      <Box sx={{ backgroundColor: "#f1f1f1", py:2}}>
+        <Box sx={{ textAlign: "center", my: 6, mx: 6 }}>
+          <Typography
+            className="specingBottomSection heading"
+            sx={{ typography: { sm: "h3", xs: "h6" } }}
+          >
+            Partners
+          </Typography>
+          <Partners />
+        </Box>
+        </Box>
+      </div>
+
       <Footer />
       <ScrollButton />
     </>

@@ -134,7 +134,6 @@ function DecisionMakers() {
 
       </Box>
 
-      <Divider className='customeMarginBottom'></Divider>
     </>
   );
 }

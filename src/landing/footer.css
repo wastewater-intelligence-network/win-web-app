@@ -28,6 +28,8 @@
 /* Footer upper section */
 .footer-upper-section ul {
         list-style: none;
+        padding-left: 10px !important;
+        font-family: "Lora-Regular";
 }
 
 .footer-upper-section ul li:first-child {

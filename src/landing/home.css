@@ -89,12 +89,16 @@ text-align: center;
 margin-bottom: 3.5rem !important;
 }
 .decisionMakerCard{
-    background-color: #FFF2C7 !important;
+    /* background-color: #FFF2C7 !important; */
     box-shadow: none !important;
     text-align: center;
     height: 250px;
-    border-left: 50px solid #F9C100;
+    border-left: 40px solid #0080C8;
     overflow: visible !important;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #0080C8;
 }
 
 .textBold{
@@ -110,9 +114,10 @@ font-weight: bolder;
 .sideContent {
     position: relative;
     transform: rotate(270deg);
-    left: -58%;
+    left: -56%;
     top: 42%;
     font-weight: bold;
+    color: #fff;
 }
 
 .CoreComponentCard{
@@ -141,10 +146,11 @@ margin-bottom: 3.5rem !important;
 }
 
 .subheading{
-    font-size: 30px !important; 
-    line-height: 3rem !important;
+    font-size: 24px !important; 
+    line-height: 2.5rem !important;
     padding: 10px 80px !important;
     font-family: "Lora-Regular" !important;
+    margin-top: 30px;
 }
 
 .subheading span{
@@ -162,7 +168,7 @@ font-size: 24px !important;
 }
 
 .decissionMaker-box-content{
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-family: "Lora-Regular" !important;
 }
 
