@@ -1,0 +1,4 @@
+/* Slick Carousel arrows custom */
+.slick-next:before, .slick-prev:before {
+    color: #000;
+}
