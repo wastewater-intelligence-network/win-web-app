@@ -86,24 +86,24 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  /* top: 0; */
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 4%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: none;
-  border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
-  background-color: #000;
-  border-radius: 3px;
-  padding: 5px;
+  position: relative;
+  /* top: 0;  */
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 0;
+      color: #000 !important;
+      text-align: center;
+      background: none;
+      border: 0;
+      opacity: 0.5;
+      transition: opacity 0.15s ease;
+      background-color: transparent;
+      border-radius: 3px;
+      padding: 5px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -125,7 +125,7 @@
 }
 
 .carousel-control-next {
-  left: 47px;
+  left: 0px;
 }
 
 .carousel-control-prev-icon,
@@ -165,9 +165,9 @@ color: #000;
   display: flex;
   justify-content: flex-start;
   padding: 0;
-  margin-right: 15%;
+  /* margin-right: 15%; */
   margin-bottom: 1rem;
-  margin-left: 15%;
+  /* margin-left: 15%; */
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
@@ -229,17 +229,42 @@ color: #000;
 .carousel .active {
  color: #000 !important;
  text-decoration: none !important;
+ 
 }
+
+
+
 .carousel-indicators{
   margin-bottom: -100px !important;
 }
 
 .carousel-indicators [data-bs-target]{
-  background-color:#1976d2 !important;
-  width: 130px;
+  /* background-color:#1976d2 !important; */
+  background-color: #818080 !important;
+  width: 215px;
   height: 5px;
-  font-size: 14px;
+  font-size: 17px;
   color:#000 !important;
-  opacity: 1;
+  opacity: 0.6;
   line-height: 35px;
+}
+
+.carousel-indicators .active {
+
+  background-color: #1976d2 !important;
+}
+.next_prevous_btn{
+  position: absolute;
+      bottom: -50px;
+      width: 60px;
+      display: inline-flex;
+      border-radius: 15px;
+      background-color: #818080 !important;
+  
+  }
+
+.WbeWorkDetails-heading{
+font-size: 48px !important;
+color: #3E494A !important;
+line-height: 72px !important;
 }

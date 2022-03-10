@@ -52,9 +52,9 @@ function Home() {
             className="banner-text"
             sx={{ typography: { sm: "h4", xs: "h6" } }}
           >
-            <span>Wastewater </span> &nbsp; is a reservoir of information about{" "}
-            <span>your health</span> &nbsp; and we mine it to &nbsp;{" "}
-            <span> build insights for the city governments</span>
+            <span>Wastewater is a reservoir of information about
+            your </span> health  and we mine it to 
+             build insights for the city <span> governments</span>
           </Typography>
 
           <Button
@@ -95,17 +95,17 @@ function Home() {
                 How do we mine insights from wastewater?
               </Typography>
 
-              <Card sx={{ mb: 4 }}>
+             
                 <iframe
                   width="100%"
-                  height="400"
+                  height="506"
                   src="https://www.youtube.com/embed/FvPakzqM3h8"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </Card>
+              
 
               {/* 
               <video width="320" height="240" controls>
@@ -123,14 +123,7 @@ function Home() {
                 className="subheading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                A method of{" "}
-                <span>
-                  collecting samples of wastewater from sewers, STPs, lakes etc.
-                  and testing these samples for the presence and load of
-                  pathogens{" "}
-                </span>{" "}
-                like viruses and bacteria. Erstwhile, this method was
-                successfully used in India to track Polio and Hepatitis A.
+               We use wastewater-based epidemiology (WBE) which analyses wastewater to determine exposure to pathogens in a population. This is done by collecting samples of wastewater from sewers, STPs, lakes etc. and testing these samples for the presence of pathogens.
               </Typography>
             </Box>
           </div>
@@ -142,11 +135,11 @@ function Home() {
       </Container>
 
       <Box sx={{ backgroundColor: "#f1f1f1", py: 6 }}>
-        <Container className="mainContainer">
+        
           <Box className="mainBox">
             <WbeWorkDetails />
           </Box>
-        </Container>
+        
       </Box>
 
       <WbeSurveillance />

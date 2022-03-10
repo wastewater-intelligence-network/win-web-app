@@ -4,7 +4,7 @@ import { Button, Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import DSC_small from "../images/city-images/DSC_small.png";
+import WorkInThecities from "../images/WorkInThecities.png";
 
 function WorkOnThecities(){
 
@@ -12,7 +12,7 @@ function WorkOnThecities(){
 <>
 
 <Box sx={{ backgroundColor: "#f1f1f1",py: 2 }}>
-        <Container className="mainContainer">
+        
           <Box className="mainBox">
 
           <Grid
@@ -28,33 +28,32 @@ function WorkOnThecities(){
             
               
           <Typography
-          className=" heading"
-          sx={{ typography: { sm: "h3", xs: "h6" } }}
-        >
-          Work in the cities
-        </Typography>
+              className="side_heading"
+              sx={{ typography: { sm: "h3", xs: "h6" } }}
+            >
+              Work in the cities
+            </Typography>
                 <Typography className="wbeDetailsContent" variant="h6" sx={{mb:2}}>
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in sagittis. Sed maximus vehicula sem, et ultricies orci consequat rutrum.
-                 In hac habitasse platea dictumst. Proin viverra nunc risus. 
+                CoViD-19 is caused by the SARS-CoV-2 virus that spreads through aerosol droplets discharged by an infected person. The incubation period of SARS-CoV-2 has been proven to be of a duration of 2 to 14 days.
+
                 </Typography>
 
                 <Typography className="wbeDetailsContent" variant="h6">
                 
-                  Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. 
-                  Maecenas in felis a nibh hendrerit malesuada eu eu velit.
+                Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu velit. 
                 </Typography>
 
-                <h4>See Our cities & process ?</h4>
+                <h4 style={{fontSize:"20px"}}>See Our cities & process ?</h4>
 
-              <NavLink to="/surat" style={{ textDecoration: 'none' }}>  <Button variant="outlined" sx={{borderRadius: 1, m:2}}>Surat Deployment</Button> </NavLink>
-                <Button variant="outlined" sx={{borderRadius: 1, m:2}}>Surat Deployment</Button>
-                <Button variant="outlined" sx={{borderRadius: 1, m:2}}>Surat Deployment</Button>
+              <NavLink to="/surat" style={{ textDecoration: 'none' }}>  <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> </NavLink>
+                <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
+                <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
                 
               
           </Grid>
           <Grid item xs={12} sm={12} md={6}>
             
-            <img alt="Sample" src={DSC_small} className="image-responsive" />
+            <img alt="Sample" src={WorkInThecities} className="image-responsive" />
                
             </Grid>
 
@@ -63,7 +62,7 @@ function WorkOnThecities(){
 
 
           </Box>
-        </Container>
+        
         </Box>
       
 </>
