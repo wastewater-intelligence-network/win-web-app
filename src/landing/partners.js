@@ -1,10 +1,10 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Niua from "../Icons/niua.svg";
-import Iscf from "../Icons/iscf.svg";
-import Mohua from "../Icons/mohua.svg";
-import Smc from "../Icons/smc.svg";
-import Sscdl from "../Icons/sscdl.svg";
+import Niua from "../Icons/niua-white.png";
+import Iscf from "../Icons/iscf-white.png";
+import Mohua from "../Icons/mohua-white.png";
+import Smc from "../Icons/smc-white.png";
+import Sscdl from "../Icons/sscdl.png";
 import { Divider, Grid, Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -88,7 +88,7 @@ function Partners() {
 
       <Slider {...settings}>
         <div>
-          <img style={{ maxWidth: "100%", width: '85px' }} alt="Iscf" src={Iscf} />
+          <img style={{ maxWidth: "100%", color: '85px' }} alt="Iscf" src={Iscf} />
         </div>
         <div>
           <img style={{ maxWidth: "100%", width: '192px' }} alt="Nius" src={Niua} />
