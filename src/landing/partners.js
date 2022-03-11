@@ -1,10 +1,10 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Niua from "../Icons/niua-white.png";
-import Iscf from "../Icons/iscf-white.png";
-import Mohua from "../Icons/mohua-white.png";
-import Smc from "../Icons/smc-white.png";
-import Sscdl from "../Icons/sscdl.png";
+import Niua from "../Icons/niua-white.svg";
+import Iscf from "../Icons/iscf-white.svg";
+import Mohua from "../Icons/mohua-white.svg";
+import Smc from "../Icons/smc-white.svg";
+import Sscdl from "../Icons/sscdl.svg";
 import { Divider, Grid, Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -88,19 +88,19 @@ function Partners() {
 
       <Slider {...settings}>
         <div>
-          <img style={{ maxWidth: "100%", color: '85px' }} alt="Iscf" src={Iscf} />
+          <img style={{ maxWidth: "100%" }} alt="Iscf" src={Iscf} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%", width: '192px' }} alt="Nius" src={Niua} />
+          <img style={{ maxWidth: "100%" }} alt="Nius" src={Niua} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%", width: '194px' }} alt="Mohua" src={Mohua} />
+          <img style={{ maxWidth: "100%" }} alt="Mohua" src={Mohua} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%", width: ' 95px' }} alt="Smc" src={Smc} />
+          <img style={{ maxWidth: "100%" }} alt="Smc" src={Smc} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%", width: '221px' }} alt="Sscdl" src={Sscdl} />
+          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Sscdl} />
         </div>
       </Slider>
     </>
