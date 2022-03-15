@@ -148,13 +148,13 @@ function Home() {
 
       <WorkOnThecities />
 
-      <Container className="mainContainer">
+      
         <Box className="mainBox">
           <div id="decisionMakersId">
             <DecisionMakers />
           </div>
         </Box>
-      </Container>
+ 
 
       {/* <div id="coreComponentsId">
         <CoreComponents />
@@ -162,10 +162,10 @@ function Home() {
 
       <div id="partnersId">
       <Box sx={{ backgroundColor: "#f9f9f9", py:2, mb:2}}>
-        <Box sx={{ textAlign: "center", my: 6, mx: 6 }}>
+        <Box sx={{ my: 6 }}>
           <Typography
             className="specingBottomSection heading"
-            sx={{ typography: { sm: "h3", xs: "h6" } }}
+            sx={{ typography: { sm: "h3", xs: "h6" },  mx: 6 }}
           >
             Partners
           </Typography>

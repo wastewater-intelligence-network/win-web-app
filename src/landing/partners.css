@@ -2,3 +2,22 @@
 .slick-next:before, .slick-prev:before {
     color: #000;
 }
+
+.slick-list{
+    margin: 40px !important;
+}
+
+.slick-track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide img {
+    display: block;
+    margin: auto !important;
+}
+
+.slick-slide :hover{
+    background-color: #A9A9A9;
+}

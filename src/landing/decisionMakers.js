@@ -39,18 +39,16 @@ function DecisionMakers() {
 
   return (
     <>
-      <Box className="customeMarginBottom">
+      <Box className="">
         <Typography
-          className="customeMarginBottom heading decision-makers"
+          className=" heading decision-makers"
           sx={{
-            typography: { sm: "h3", xs: "h6", mx: 3 },
-            textAlign: "center",
-            mx: 9,
+            typography: { sm: "h3", xs: "h6" },
           }}
         >
           Support decision makers
         </Typography>
-        <Grid
+        {/* <Grid
           hoverEffectcontainer
           justifyContent="center"
           alignItems="center"
@@ -101,11 +99,11 @@ function DecisionMakers() {
             <img alt="Sample" src={TimelyUpdates}  className="image-responsive" />
             <span>Alerts to authorities and citizens</span>
           </div>
-        </Grid>
-      </Box>
+        </Grid> */}
+      
 
 
-
+{/* 
       <div className="hoverEffectcontainer">
   <h3 className="title">Text fadeIn bottom</h3>
   <div className="content">
@@ -216,7 +214,7 @@ function DecisionMakers() {
       </div>
     </a>
   </div>
-</div>
+</div> */}
 
 
 {/* ----------------------------- */}
@@ -253,7 +251,7 @@ function DecisionMakers() {
     </div>
   </div>
 </div>
-
+</Box>
     </>
   );
 }

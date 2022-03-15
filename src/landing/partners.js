@@ -10,7 +10,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./partners.css";
-
+import Logo01 from "../images/partners/logo-01.svg"
+import Logo02 from "../images/partners/logo-02.svg"
+import Logo03 from "../images/partners/logo-03.svg"
+import Logo04 from "../images/partners/logo-04.svg"
 
 function Partners() {
 
@@ -88,19 +91,27 @@ function Partners() {
 
       <Slider {...settings}>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Iscf" src={Iscf} />
+          <img style={{ maxWidth: "100%" }} alt="Iscf" src={Logo01} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Nius" src={Niua} />
+          <img style={{ maxWidth: "100%" }} alt="Nius" src={Logo02} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Mohua" src={Mohua} />
+          <img style={{ maxWidth: "100%" }} alt="Mohua" src={Logo03} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Smc" src={Smc} />
+          <img style={{ maxWidth: "100%" }} alt="Smc" src={Logo01} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Sscdl} />
+          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo04} />
+        </div>
+
+        <div>
+          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo02} />
+        </div>
+
+        <div>
+          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo01} />
         </div>
       </Slider>
     </>

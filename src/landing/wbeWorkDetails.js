@@ -110,7 +110,7 @@ function WbeWorkDetails() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>Infection</h4>
 
               <Typography
@@ -123,14 +123,14 @@ function WbeWorkDetails() {
               CoViD-19 is caused by the SARS-CoV-2 virus that spreads through aerosol droplets discharged by an infected person. The incubation period of SARS-CoV-2 has been proven to be of a duration of 2 to 14 days. Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
         <div className="carousel-item">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>Shedding</h4>
               <Typography
                 className="WbeWorkDetails-heading"
@@ -149,14 +149,14 @@ function WbeWorkDetails() {
                 velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
         <div className="carousel-item">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>Sample Collection</h4>
               <Typography
                 className="WbeWorkDetails-heading"
@@ -175,14 +175,14 @@ function WbeWorkDetails() {
                 velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
         <div className="carousel-item">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>Sample Collection</h4>
               <Typography
                 className="WbeWorkDetails-heading"
@@ -201,14 +201,14 @@ function WbeWorkDetails() {
                 velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
         <div className="carousel-item">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>Sample Concentration</h4>
               <Typography
                 className="WbeWorkDetails-heading"
@@ -227,7 +227,7 @@ function WbeWorkDetails() {
                 velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
@@ -235,7 +235,7 @@ function WbeWorkDetails() {
 
         <div className="carousel-item">
           <Grid container spacing={2}>
-            <Grid item xs={6} md={7}>
+            <Grid item xs={12} md={7}>
               <h4>RNA Extraction</h4>
               <Typography
                 className="WbeWorkDetails-heading"
@@ -254,7 +254,7 @@ function WbeWorkDetails() {
                 velit.
               </Typography>
             </Grid>
-            <Grid item xs={6} md={5}>
+            <Grid item xs={12} md={5}>
               <img src={Infection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
