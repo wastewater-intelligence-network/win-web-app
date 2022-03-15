@@ -246,7 +246,7 @@ color: #000;
   font-size: 17px;
   color:#000 !important;
   opacity: 0.6;
-  line-height: 35px;
+  line-height: 70px;
 }
 
 .carousel-indicators .active {
@@ -267,4 +267,10 @@ color: #000;
 font-size: 48px !important;
 color: #3E494A !important;
 line-height: 72px !important;
+font-weight: 700 !important;
+}
+
+.wbe-details-box{
+padding-top: 40px;
+padding-bottom: 80px;
 }

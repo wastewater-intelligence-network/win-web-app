@@ -45,7 +45,9 @@ function Home() {
     <>
       <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
       <Box className="banner-section">
+     
         <img alt="Banner" src={HomeBanner} className="banner-image" />
+        <div className="background-overlay"></div>
         <div className="background-opacity"></div>
         <Box className="banner-content">
           <Typography
@@ -134,7 +136,7 @@ function Home() {
         </Box>
       </Container>
 
-      <Box sx={{ backgroundColor: "#f1f1f1", py: 6 }}>
+      <Box className="wbe-details-box" sx={{ backgroundColor: "#f1f1f1" }}>
         
           <Box className="mainBox">
             <WbeWorkDetails />
