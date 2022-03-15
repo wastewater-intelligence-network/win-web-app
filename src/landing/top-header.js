@@ -8,7 +8,7 @@ import Logo from "../Icons/hero_logo.svg";
 function TopHeader(){
 return(
     <>
-<Container sx={{mt:1}}>
+<Container sx={{my:1}}>
 <Grid container spacing={2} 
   direction="row"
   justifyContent="space-between"

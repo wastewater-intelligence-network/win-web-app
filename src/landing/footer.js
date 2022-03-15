@@ -14,7 +14,7 @@ function Footer() {
                 <Grid
                     container
                     spacing={2}
-                    columnSpacing={{ xs: 3, sm: 2, md: 3 }}
+                    columnSpacing={{ xs:0, sm: 2, md: 3 }}
                 >
                     <Grid item xs={12} sm={6} md={4}>
                         <img alt="Logo" src={Logo} className="header-logo" />

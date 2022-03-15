@@ -62,7 +62,7 @@ function WbeWorkDetails() {
           aria-label="Slide 1"
         >
           {" "}
-          Infection
+         <span>Infection</span> 
         </button>
         <button
           type="button"
@@ -70,7 +70,7 @@ function WbeWorkDetails() {
           data-bs-slide-to="1"
           aria-label="Slide 2"
         >
-          Shedding
+          <span>Shedding</span>
         </button>
         <button
           type="button"
@@ -78,7 +78,7 @@ function WbeWorkDetails() {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         >
-          Sample Collection
+          <span>Sample Collection</span>
         </button>
         <button
           type="button"
@@ -86,7 +86,7 @@ function WbeWorkDetails() {
           data-bs-slide-to="3"
           aria-label="Slide 4"
         >
-          Sample Concentration
+          <span>Sample Concentration</span>
         </button>
 
         <button
@@ -95,7 +95,7 @@ function WbeWorkDetails() {
           data-bs-slide-to="4"
           aria-label="Slide 5"
         >
-          RNA Extraction
+          <span>RNA Extraction</span>
         </button>
 
         <button
@@ -104,7 +104,7 @@ function WbeWorkDetails() {
           data-bs-slide-to="5"
           aria-label="Slide 6"
         >
-          RNA Measurement
+          <span>RNA Measurement</span>
         </button>
       </div>
       <div className="carousel-inner">

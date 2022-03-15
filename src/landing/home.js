@@ -163,10 +163,10 @@ function Home() {
       <div id="partnersId">
       <Box sx={{ backgroundColor: "#f9f9f9", py:2, mb:2}}>
         <Box sx={{ my: 6 }}>
-          <Typography
-            className="specingBottomSection heading"
-            sx={{ typography: { sm: "h3", xs: "h6" },  mx: 6 }}
-          >
+        <Typography
+                className="heading"
+                sx={{ typography: { sm: "h4", xs: "h6" } }}
+              >
             Partners
           </Typography>
           <Partners />

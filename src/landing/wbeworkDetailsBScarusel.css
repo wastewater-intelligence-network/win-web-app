@@ -274,3 +274,26 @@ font-weight: 700 !important;
 padding-top: 40px;
 padding-bottom: 80px;
 }
+
+
+@media only screen and (max-width: 600px){
+.WbeWorkDetails-heading {
+    font-size: 23px !important;
+    color: #3E494A !important;
+    line-height: 40px !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+
+.carousel-indicators [data-bs-target]{
+  width: 215px;
+  height: 5px;
+  font-size: 14px;
+  line-height: 30px !important;
+}
+
+.carousel-indicators button span{
+  display: none !important;
+}
+}

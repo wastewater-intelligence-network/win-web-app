@@ -92,3 +92,18 @@
 
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+    .footer-upper-section ul {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        font-size: 16px !important;
+    }
+
+    .footer-upper-section ul li {
+        padding: 6px;
+    }
+}

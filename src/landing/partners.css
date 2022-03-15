@@ -21,3 +21,7 @@
 .slick-slide :hover{
     background-color: #A9A9A9;
 }
+
+.slick-next {
+    right: 16px !important;
+}
