@@ -8,26 +8,29 @@ import Leftsidebar from "./Leftsidebar";
 import Layout from "../components/app-layout/Layout";
 
 function FileUpload() {
-  const fileTypes = ["JPG", "PNG", "GIF"];
+  const fileTypes = ["JPG", "PNG", "GIF", "DOC", "PDF"];
   const [file, setFile] = useState(null);
   const [comment, setComment] = useState("");
   const handleChange = (file) => {
+    console.log(file);
     setFile(file);
   };
 
-  const handleComent = (value) => {
-    setComment(value);
-  };
-
   async function uploadFile() {
+    console.log(comment);
+    console.log(file);
+    const formData = new FormData();
+    formData.append("file", file);
+    console.log(formData,'formdataaaaaaaaaaaaaaaaaaaaa')
     try {
       const response = await axios.post(
-        "https://win.niua.org:8081/fileupload",
+        //"https://win.niua.org:8081/fileupload",
+        "https://v2.convertapi.com/upload",
         {
           body: {
             token: localStorage.getItem("login_token"),
             comment: comment,
-            document: file,
+            document: formData,
           },
         }
       );
@@ -59,14 +62,20 @@ function FileUpload() {
               handleChange={handleChange}
               name="file"
               types={fileTypes}
+              multiple={false}
             />
 
             <TextareaAutosize
               className="fileUploadTextarea"
               minRows={3}
               placeholder="Type Comments"
-              handleChange={handleComent}
+             // handleChange={handleComent}
               style={{width:'300px'}}
+              onChange={event => {
+                const { value } = event.target;
+                console.log(value);
+                setComment(value);
+              }}
             />
     <Button sx={{ml:2}} variant="contained" onClick={sendUploadedData}>Upload</Button>
             {/* <input type="submit" onClick={sendUploadedData} /> */}
