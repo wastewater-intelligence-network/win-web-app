@@ -14,7 +14,8 @@ import "./wbeworkDetailsBScarusel.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
 import Infection from "../images/infection.png";
-
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // function WbeWorkDetails(props) {
 //   const items = [
 //     {
@@ -109,9 +110,9 @@ function WbeWorkDetails() {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <Grid container spacing={2}>
+          <Grid container spacing={2} columnSpacing={{ xs: 0, sm: 0, md: 4, lg: 6, xl: 6 }}>
             <Grid item xs={12} md={7}>
-              <h4>Infection</h4>
+              <h4 className="WBEWork-title">Infection</h4>
 
               <Typography
                 className="WbeWorkDetails-heading"
@@ -131,7 +132,7 @@ function WbeWorkDetails() {
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
-              <h4>Shedding</h4>
+              <h4 className="WBEWork-title">Shedding</h4>
               <Typography
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -157,7 +158,7 @@ function WbeWorkDetails() {
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
-              <h4>Sample Collection</h4>
+              <h4 className="WBEWork-title">Sample Collection</h4>
               <Typography
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -183,7 +184,7 @@ function WbeWorkDetails() {
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
-              <h4>Sample Collection</h4>
+              <h4 className="WBEWork-title">Sample Collection</h4>
               <Typography
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -209,7 +210,7 @@ function WbeWorkDetails() {
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
-              <h4>Sample Concentration</h4>
+              <h4 className="WBEWork-title">Sample Concentration</h4>
               <Typography
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -236,7 +237,7 @@ function WbeWorkDetails() {
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
-              <h4>RNA Extraction</h4>
+              <h4 className="WBEWork-title">RNA Extraction</h4>
               <Typography
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -267,10 +268,10 @@ function WbeWorkDetails() {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
+          <span style={{color:"#677171;"}}
+            // className="carousel-control-prev-icon"
             aria-hidden="true"
-          ></span>
+          > <ArrowBackIosNewIcon fontSize="small" /></span>
           {/* <span className="visually-hidden">Previous</span> */}
         </button>
         <button
@@ -279,10 +280,12 @@ function WbeWorkDetails() {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
+        
+        
+          <span style={{color:"#677171;"}}
+            // className="carousel-control-next-icon"
             aria-hidden="true"
-          ></span>
+          > <ArrowForwardIosIcon fontSize="small" /></span>
           {/* <span className="visually-hidden">Next</span> */}
         </button>
       </div>

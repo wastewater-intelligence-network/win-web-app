@@ -219,7 +219,7 @@ function DecisionMakers() {
 
 {/* ----------------------------- */}
 
-<div className="my_Container">
+<div className="my_Container hover_container">
   <div className="item">
     <div className="content">
       <h3>Early warning </h3>

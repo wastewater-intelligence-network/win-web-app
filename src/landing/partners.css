@@ -3,9 +3,9 @@
     color: #000;
 }
 
-.slick-list{
+/* .slick-list{
     margin: 40px !important;
-}
+} */
 
 .slick-track{
     display: flex;
@@ -24,4 +24,8 @@
 
 .slick-next {
     right: 16px !important;
+}
+
+.slick-prev {
+    left: 16px !important;
 }

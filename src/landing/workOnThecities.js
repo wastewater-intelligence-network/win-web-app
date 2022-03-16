@@ -18,7 +18,7 @@ function WorkOnThecities(){
           <Grid
           container
           rowSpacing={3}
-          columnSpacing={{ xs: 0, sm: 0, md: 2, lg: 4 }}
+          columnSpacing={{ xs: 0, sm: 0, md: 6, lg: 4 }}
           justifyContent="center"
           alignItems="center"
         >
@@ -43,7 +43,7 @@ function WorkOnThecities(){
                 Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu velit. 
                 </Typography>
 
-                <h4 style={{fontSize:"20px"}}>See Our cities & process ?</h4>
+                <h4 className="workinthecities-title">See Our cities & process ?</h4>
 
               <NavLink to="/surat" style={{ textDecoration: 'none' }}>  <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> </NavLink>
                 <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
@@ -51,9 +51,9 @@ function WorkOnThecities(){
                 
               
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={6} style={{paddingRight:'16px'}}>
             
-            <img alt="Sample" src={WorkInThecities} className="image-responsive" />
+            <img alt="Sample" style={{display:'block', marginLeft:'auto'}} src={WorkInThecities} className="image-responsive" />
                
             </Grid>
 

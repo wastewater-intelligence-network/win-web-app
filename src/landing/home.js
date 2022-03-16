@@ -136,7 +136,7 @@ function Home() {
         </Box>
       </Container>
 
-      <Box className="wbe-details-box" sx={{ backgroundColor: "#f1f1f1" }}>
+      <Box className="wbe-details-box" sx={{ backgroundColor: "#F9F9F9" }}>
         
           <Box className="mainBox">
             <WbeWorkDetails />
@@ -160,9 +160,9 @@ function Home() {
         <CoreComponents />
       </div> */}
 
-      <div id="partnersId">
+
       <Box sx={{ backgroundColor: "#f9f9f9", py:2, mb:2}}>
-        <Box sx={{ my: 6 }}>
+        <Box className="mainBox">
         <Typography
                 className="heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -172,7 +172,7 @@ function Home() {
           <Partners />
         </Box>
         </Box>
-      </div>
+     
 
       <Footer />
       <ScrollButton />

@@ -13,7 +13,7 @@ function BannerLogos() {
     <>
 
 
-      <Box>
+      <Box className="mainBox">
         <Grid
           container
           rowSpacing={3}

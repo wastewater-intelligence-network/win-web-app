@@ -95,7 +95,7 @@
       justify-content: center;
       width: 50%;
       padding: 0;
-      color: #000 !important;
+      color: #677171 !important;
       text-align: center;
       background: none;
       border: 0;
@@ -146,15 +146,15 @@
     "replace" : "next"
   } ]
 } */
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+/* .carousel-control-prev-icon {
+  background-image: url("../Icons/right_arrow.svg");
 color: #000;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-color: #000;
-}
+  background-image: url("../Icons/right_arrow.svg");
+
+} */
 
 .carousel-indicators {
   position: absolute;
@@ -240,10 +240,10 @@ color: #000;
 
 .carousel-indicators [data-bs-target]{
   /* background-color:#1976d2 !important; */
-  background-color: #818080 !important;
+  background-color: #EDEDED !important;
   width: 215px;
   height: 5px;
-  font-size: 17px;
+  font-size: 1.1805555555555556vw;
   color:#000 !important;
   opacity: 0.6;
   line-height: 70px;
@@ -259,20 +259,28 @@ color: #000;
       width: 60px;
       display: inline-flex;
       border-radius: 15px;
-      background-color: #818080 !important;
+      background-color: #F3F3F3 !important;
   
   }
 
 .WbeWorkDetails-heading{
-font-size: 48px !important;
+font-size: 3.3333333333333335vw !important;
 color: #3E494A !important;
 line-height: 72px !important;
-font-weight: 700 !important;
+/* font-weight: 700 !important; */
 }
 
 .wbe-details-box{
 padding-top: 40px;
 padding-bottom: 80px;
+}
+
+.WBEWork-title{
+  font-weight: 500;
+  font-size: 1.6666666666666667vw;
+  line-height: 28px;
+  color: #3E494A;
+  margin-bottom: 10px !important
 }
 
 
