@@ -22,6 +22,7 @@ import Sample from "./components/Sample";
 import Home from "./landing/home";
 import Challenge from "./landing/challenge";
 import AboutUs from "./landing/aboutUs";
+import NewAboutUs from "./landing/newAboutUs";
 import ContactUs from "./landing/contactUs";
 import Consortium from "./landing/consortium";
 import Surat from "./landing/cities/surat";
@@ -45,7 +46,7 @@ function App() {
         <Route path="/print-list" element={<PrintStickerList />} />
         <Route path="/steper" element={<FormSteper />} />
         <Route path="/sample" element={<Sample />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/aboutus" element={<NewAboutUs />} />
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/consortium" element={<Consortium />} />
