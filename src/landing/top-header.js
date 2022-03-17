@@ -6,60 +6,61 @@ import SearchIcon from '@mui/icons-material/Search';
 import Logo from "../Icons/hero_logo.svg";
 import { NavLink } from "react-router-dom";
 
-function TopHeader(){
-return(
+function TopHeader() {
+  return (
     <>
-<Container sx={{my:1}}>
-<Grid container spacing={2} 
-  direction="row"
-  justifyContent="space-between"
-  alignItems="center"
->
-  <Grid item xs={12} sm={8}>
-  <Box>
-<img alt="Logo" src={Logo} className="header-logo" />
-</Box>
-  </Grid> 
-  <Grid item xs={12} sm={3}>
-  <TextField
-           fullWidth 
-          id="filled-search"
-          type="search"
-          placeholder="Search"
-          variant="outlined"
-          size="small"
-          
-          InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <SearchIcon />
-            </InputAdornment>
-          ),
-        }}
+      <Container sx={{ my: 1 }} className="top-header">
+        <Grid container spacing={2}
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          className="top-header-inner"
+        >
+          <Grid item xs={12} sm={8}>
+            <Box>
+              <img alt="Logo" src={Logo} className="header-logo" />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <TextField
+              fullWidth
+              id="filled-search"
+              type="search"
+              placeholder="Search"
+              variant="outlined"
+              size="small"
 
-        />
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
 
-
-  </Grid>
-
-  <Grid item xs={12} sm={1}>
-  <NavLink id="login_button"
-            to="/login"
-            className={({ isActive }) => 
-            isActive ? "active" : "nonActive" }
-          >
-            Login
-          </NavLink>
-  </Grid>
-  
-</Grid>   
+            />
 
 
+          </Grid>
+
+          <Grid item xs={12} sm={1}>
+            <NavLink id="login_button"
+              to="/login"
+              className={({ isActive }) =>
+                isActive ? "active" : "nonActive"}
+            >
+              Login
+            </NavLink>
+          </Grid>
+
+        </Grid>
 
 
-    </Container>
+
+
+      </Container>
     </>
-);
+  );
 }
 
 export default TopHeader;

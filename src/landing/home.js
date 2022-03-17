@@ -14,10 +14,13 @@ import Partners from "./partners";
 import { useEffect, useMemo, useRef } from "react";
 import ScrollButton from "./scrollToTopButton";
 import NewHeader from "./newHeader";
+import NewHeaderSticky from "./newHeaderSticky";
 import BannerLogos from "./bannerLogos";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import WbeSurveillance from "./wbeSurveillance";
 import WorkOnThecities from "./workOnThecities";
+import { $ }  from 'react-jquery-plugin'
+
 function Home() {
   const wbeRef = useRef(null);
 
@@ -41,9 +44,30 @@ function Home() {
     }
   };
 
+  useEffect(() => {
+    $(window).scroll(() => {
+      if ($(window).scrollTop() >= 150) {
+          $('.header-main-sticky').addClass('fixed-header');
+          $('.header-main').hide(500);
+          $('.header-main-sticky').show(500);
+      }
+      else {
+          $('.header-main-sticky').removeClass('fixed-header');
+          $('.header-main').show(500);
+          $('.header-main-sticky').hide(500);
+      }
+  });
+  
+  });
+
   return (
     <>
+    <div className="header-main">
       <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
+      </div>  
+      <div className="header-main-sticky">
+      <NewHeaderSticky executeScrollWbe={OnexecuteScrollWbe} />
+      </div>  
       <Box className="banner-section">
      
         <img alt="Banner" src={HomeBanner} className="banner-image" />

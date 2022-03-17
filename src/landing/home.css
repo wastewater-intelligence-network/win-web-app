@@ -458,6 +458,20 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
     margin-bottom: 10px !important;
     text-transform: capitalize !important;
 }
+
+/* Header Sticky */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 999;
+}
+
+.header-main-sticky {
+    display: none;
+}
+
 /* .ws-surat-content{
 font-size: 20px;
 line-height: 36px;
