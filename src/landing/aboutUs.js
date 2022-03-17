@@ -112,17 +112,17 @@ function AboutUs() {
         address:
           "SRM Nagar, Kattankulathur, Chengalpattu District, Tamil Nadu, 603203",
       },
+      // {
+      //   id: 2,
+      //   name: "Ephicacy Lifescience Analytics Private Limited",
+      //   about_url: "https://www.ephicacy.com/",
+      //   institute_logo_src: "ELAPL",
+
+      //   address:
+      //     "No. 6, 2nd Floor, Second Main Road Arekere, Off Bannerghatta Road Bengaluru, Karnataka, 560076",
+      // },
       {
         id: 2,
-        name: "Ephicacy Lifescience Analytics Private Limited",
-        about_url: "https://www.ephicacy.com/",
-        institute_logo_src: "ELAPL",
-
-        address:
-          "No. 6, 2nd Floor, Second Main Road Arekere, Off Bannerghatta Road Bengaluru, Karnataka, 560076",
-      },
-      {
-        id: 3,
         name: "Dr. B. Lal Institute of Biotechnology",
         about_url: "https://www.blalbiotech.com/",
         institute_logo_src: "BLIB",
