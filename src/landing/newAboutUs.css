@@ -34,26 +34,99 @@
 
 .who-we-are-block {
     font-style: normal;
-    font-weight: 500;
-    font-size: 3.288vw;
-    line-height: 150%;
+    font-weight: 500 !important;
+    font-size: 3.288vw !important;
+    line-height: 150% !important;
     color: #3B3B3B;
 }
 
 .who-we-are-right-block {
-    font-family: 'Lora';
+    font-family: 'Lora' !important;
     font-style: normal;
-    font-weight: 400;
-    font-size: 1.644vw;
-    line-height: 150%;
+    font-weight: 400 !important;
+    font-size: 1.644vw !important;
+    line-height: 150% !important;
     color: #3B3B3B;
+    margin-top: 16px !important;
 }
 
-.our-approch-block img {
+.our-approch-block .approch-banner {
     background: rgba(238, 242, 244, 0.3);
     border: 1px solid #979797;
     /* width: 100vw; */
     height: 24.726vw;
 }
 
+.our-approach-title{
+    font-size: 3.3333333333333335vw !important;
+    color: #3B3B3B !important;
+    line-height: 72px;
+    font-weight: 500 !important;
+}
 
+.divider-approch{
+    left: 59%;
+    display: block;
+    height: 86%;
+    position: absolute;
+    width: 0;
+    top: 18%;
+    border-right: 3px dashed #A3D1EB;
+    opacity: 0.6;
+}
+
+.our-approach-right-side-text{
+font-size: 1.6666666666666667vw;
+line-height: 30.72px;
+color:#677171;
+font-family: 'Lora-Regular' !important;
+font-weight: 400 !important;
+}
+
+
+/* ------------------ */
+
+/** = =====
+ flexbox ==== */
+
+ .our-approch-body {
+    flex: 1;
+  }
+  
+  .our-approch,
+  .our-approch--reverse {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .our-approch--reverse > .our-approch-object{
+    order: 1
+  }
+  /**==== visuals 
+  ==*/
+ 
+  
+
+  
+  .our-approch-body > p {
+      font-size: 1.6666666666666667vw;
+      color: #677171;
+      line-height: 31px;
+  }
+  
+  .our-approch-body {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .our-approch,
+  .our-approch--reverse {
+    /* max-width: 30em; */
+    display: flex;
+    align-items: flex-start;
+    /* border: 1px solid #f2f2f2; */
+    padding: 10px;
+    margin: 10px;
+    /* flex-basis: 30em; */
+  }
+  
+  
