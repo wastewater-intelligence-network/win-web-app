@@ -26,6 +26,7 @@ import ContactUs from "./landing/contactUs";
 import Consortium from "./landing/consortium";
 import Surat from "./landing/cities/surat";
 import NewHeader from "./landing/newHeader";
+import Privacy from "./landing/privacy";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/consortium" element={<Consortium />} />
         <Route path="/surat" element={<Surat />} />
         <Route path="/newheader" element={<NewHeader />} />
+        <Route path="/privacy" element={<Privacy />} />
 
         <Route path="/" element={<Home />} />
 
