@@ -10,7 +10,7 @@ function WbeSurveillance() {
         <Grid
           container
           rowSpacing={3}
-          columnSpacing={{ xs: 0, sm: 0, md: 3 }}
+          columnSpacing={{ xs: 0, sm: 0, md: 6 }}
           
         >
           <Grid item xs={12} sm={12} md={6} style={{paddingLeft:'16px'}}>

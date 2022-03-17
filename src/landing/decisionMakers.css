@@ -192,15 +192,15 @@
   }
   .my_Container .item {
     display: grid;
-    margin: auto;
+    margin: 0 3px;
     position: relative;
     flex: 1;
-    text-align: center;
+    /* text-align: center; */
     color: white;
-    transition: 0.3s;
+    /* transition: 0.3s; */
     max-width: 20%;
     height: 500px;
-    min-width: 1%;
+    /* min-width: 1%; */
     background-color: #a9a9a94b;
   }
   .my_Container .item:before {
@@ -233,13 +233,31 @@
     background-image: url("../images/decision-makers/timely-updates.png");
   }
   .my_Container .item:hover {
-    transition: 0.5s;
+    /* transition: 0.5s; */
     max-width: 100% !important;
     flex-grow: 2000;
     cursor: pointer;
     color: #fff;
     background-color: transparent;
   }
+
+  /* .my_Container .item:not(:hover) + .content{
+   display: none;
+  } */
+
+  /* .my_Container .item:hover + .item {
+    display: none;
+} */
+
+.my_Container .item:hover .item .content {
+  display: none;
+}
+
+.my_Container .item:hover ~ .item .content {
+  display: none;
+}
+
+
   .my_Container .item:hover p {
     /* transform: none; */
     display: block;
@@ -254,6 +272,7 @@
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 16px;
 
   }
   .my_Container .item:hover .content{

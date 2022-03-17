@@ -1,0 +1,59 @@
+.about-us-main {
+    padding: 145px;
+    background: #F9F9F9;
+}
+
+.about-us-main .about-us-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.395vw !important;
+    line-height: 28px;
+    color: #3E494A;
+    padding-bottom: 1.027vw;
+}
+
+.aboutus-desc {
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 3.871vw !important;
+    line-height: 150% !important;
+    color: #3B3B3B;
+    padding-bottom: 5.959vw;
+}
+
+.aboutus-video-block img {
+    width: 78.699vw;
+    height: 41.096vw;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.who-we-are-block-main {
+    padding-top: 3.082vw;
+    padding-bottom: 7.603vw;
+}
+
+.who-we-are-block {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.288vw;
+    line-height: 150%;
+    color: #3B3B3B;
+}
+
+.who-we-are-right-block {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.644vw;
+    line-height: 150%;
+    color: #3B3B3B;
+}
+
+.our-approch-block img {
+    background: rgba(238, 242, 244, 0.3);
+    border: 1px solid #979797;
+    /* width: 100vw; */
+    height: 24.726vw;
+}
+
+
