@@ -1,9 +1,42 @@
 .logo-block {
     width: 30%;
     display: inline-block;
+    
+
 }
 
+.logo-block .header-logo{
+    width: 259px;
+    height: 42px;
+    /* padding: 25px auto 25px 54px; */
+}
 .topnav-sticky {
     width: 70%;
     display: inline-block;
+    background-color: #fff;
+    
 }
+
+
+
+.topnav-sticky a, .topnav-sticky .custome-link {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.topnav-sticky .dropdown .dropbtn {
+    font-size: 14px;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: transparent;
+    margin: 0;
+    border-color: transparent;
+    text-transform: uppercase;
+  }

@@ -4,7 +4,7 @@ import { Grid, InputAdornment, TextField, Box } from "@mui/material";
 import Container from "@mui/material/Container";
 import SearchIcon from '@mui/icons-material/Search';
 import Logo from "../Icons/hero_logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function TopHeader() {
   return (
@@ -18,7 +18,7 @@ function TopHeader() {
         >
           <Grid item xs={12} sm={8}>
             <Box>
-              <img alt="Logo" src={Logo} className="header-logo" />
+            <Link to={'/'}>  <img alt="Logo" src={Logo} className="header-logo" /></Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={3}>

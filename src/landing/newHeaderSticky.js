@@ -22,7 +22,7 @@ function NewHeaderSticky(props) {
   return (
     <>
       <div className="logo-block">
-        <img alt="Logo" src={Logo} className="header-logo" />
+      <Link to={'/'}>  <img alt="Logo" src={Logo} className="header-logo" /></Link>
       </div>
 
       <div className="topnav topnav-sticky" id="myTopnav">

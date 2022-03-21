@@ -48,13 +48,13 @@ function Home() {
     $(window).scroll(() => {
       if ($(window).scrollTop() >= 150) {
           $('.header-main-sticky').addClass('fixed-header');
-          $('.header-main').hide(500);
-          $('.header-main-sticky').show(500);
+          $('.header-main').slideUp(500);
+          $('.header-main-sticky').slideDown(500);
       }
       else {
           $('.header-main-sticky').removeClass('fixed-header');
-          $('.header-main').show(500);
-          $('.header-main-sticky').hide(500);
+          $('.header-main').slideDown(500);
+          $('.header-main-sticky').slideUp(500);
       }
   });
   
@@ -187,7 +187,7 @@ function Home() {
       </div> */}
 
 
-      <Box sx={{ backgroundColor: "#f9f9f9", py:2, mb:2}}>
+      <Box sx={{ backgroundColor: "#fff", py:2, mb:2}}>
         <Box className="mainBox">
         <Typography
                 className="heading"
