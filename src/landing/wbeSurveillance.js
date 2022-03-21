@@ -6,7 +6,9 @@ import WBESurveillance from "../images/WBE_surveillance.png";
 function WbeSurveillance() {
   return (
     <>
-      <Box className="mainBox">
+ <Box sx={{backgroundColor:"#fff"}}>
+
+      <Box className="mainBox ptpb-80">
         <Grid
           container
           rowSpacing={3}
@@ -41,6 +43,7 @@ function WbeSurveillance() {
             </Typography>
           </Grid>
         </Grid>
+      </Box>
       </Box>
     </>
   );

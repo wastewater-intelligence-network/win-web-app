@@ -99,25 +99,14 @@ function Home() {
           
         </Box> */}
       </Box>
-
+      <Box  sx={{ backgroundColor: "#fff" }}>
       <Container className="mainContainer">
-        <Box sx={{ textAlign: "center" }} className="mainBox">
-          {/* <Typography
-            className="customeMarginBottom firstTitle"
-            sx={{ typography: { sm: "h4", xs: "h6" } }}
-          >
-            <span>Wastewater Intelligence Network</span>
-            is an initiative to bring together experts to manage the spread and
-            impact of SARS-CoV-2 through
-            <span> Wastewater-based Epidemiology</span> in Indian cities.
-          </Typography>
-
-          <Partners /> */}
+        <Box sx={{ textAlign: "center" }}>
 
           <div id="wasteWaterBasedId">
             <Box className="specingBottomSection">
               <Typography
-                className="specingBottomSection  heading"
+                className="first-heading"
                 sx={{ typography: { sm: "h3", xs: "h6" } }}
               >
                 How do we mine insights from wastewater?
@@ -135,18 +124,7 @@ function Home() {
                 ></iframe>
               
 
-              {/* 
-              <video width="320" height="240" controls>
-  <source src="https://www.youtube.com/embed/FvPakzqM3h8" />
- 
- </video> */}
 
-              {/* <img
-                alt="WbeTesting"
-                src={WbeTesting}
-                width="200px"
-                height="166px"
-              /> */}
               <Typography
                 className="subheading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
@@ -156,13 +134,12 @@ function Home() {
             </Box>
           </div>
 
-          {/* <div id="howWbeWorkId">
-            <WbeWork />
-          </div> */}
         </Box>
       </Container>
+</Box>
 
-      <Box className="wbe-details-box" sx={{ backgroundColor: "#F9F9F9" }}>
+
+      <Box className="wbe-details-box">
         
           <Box className="mainBox">
             <WbeWorkDetails />
@@ -174,20 +151,17 @@ function Home() {
 
       <WorkOnThecities />
 
-      
-        <Box className="mainBox">
-          <div id="decisionMakersId">
+      <Box sx={{backgroundColor:"#fff"}}>
+        <Box className="mainBox pb-80">
             <DecisionMakers />
-          </div>
         </Box>
- 
+ </Box>
 
       {/* <div id="coreComponentsId">
         <CoreComponents />
       </div> */}
 
 
-      <Box sx={{ backgroundColor: "#fff", py:2, mb:2}}>
         <Box className="mainBox">
         <Typography
                 className="heading"
@@ -196,7 +170,6 @@ function Home() {
             Partners
           </Typography>
           <Partners />
-        </Box>
         </Box>
      
 

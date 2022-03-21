@@ -69,6 +69,11 @@
     color: #3B3B3B !important;
     line-height: 72px;
     font-weight: 500 !important;
+    position: absolute;
+    /* width: fit-content; */
+    top: -3.5%;
+    left: 0%;
+    background-color: #fff;
 }
 
 .our-approach img{
@@ -98,6 +103,14 @@ font-weight: 400 !important;
     margin-top: 30px;
 }
 
+.our-approuch-box{
+    background-image: url(../images/about-us/our-approach-bg.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 100% 0px;
+    
+}
 
 /* ------------------ */
 
@@ -141,7 +154,7 @@ font-weight: 400 !important;
     display: flex;
     align-items: flex-start;
     /* border: 1px solid #f2f2f2; */
-    padding: 10px;
+    padding:60px 30px 10px 30px;
     margin: 10px;
     /* flex-basis: 30em; */
   }

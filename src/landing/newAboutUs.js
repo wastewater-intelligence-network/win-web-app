@@ -60,7 +60,7 @@ const Newaboutus = () => {
           alignItems="center"
         >
           <Grid item xs={12} sm={12} md={6} lg={7}>
-          <Box>
+          <Box className="our-approuch-box">
           <Typography
           className="our-approach-title"
         >

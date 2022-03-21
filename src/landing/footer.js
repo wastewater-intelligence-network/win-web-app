@@ -12,7 +12,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {     
     return (
         <>
-            <Container className="footer-upper-section">
+            <Box className="footer-upper-section">
                 <Grid
                     container
                     spacing={2}
@@ -60,7 +60,7 @@ function Footer() {
                         </ul>
                     </Grid>
                 </Grid>
-            </Container>
+            </Box>
 
 
             <footer className="footer-main">
