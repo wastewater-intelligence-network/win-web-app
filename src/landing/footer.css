@@ -6,22 +6,15 @@
 }
 
 .footer-wrap {
-    padding: 11px 0 23px 0;
+    padding: 5px 0 5px 0;
 }
 
 
 .made-in-india-para, .ministry-of-housing-para {
-    padding: 0.125rem 0;
-    font: normal;
-    letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 1;
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 14px !important;
     margin: 0;
-    font-style: normal;
     font-weight: 400;
-    font-size: 1.3888888888888888vw !important;
     line-height: 23px;
     text-align: center;
 }
@@ -65,14 +58,14 @@
         /* font-family: "Lora-Regular"; */
         font-style: normal;
         font-weight: 400;
-        font-size: 1.3888888888888888vw;
+        /* font-size: 1.3888888888888888vw; */
         line-height: 23px;
         color: #677171;
         padding-top: 60px;
 }
 
 .footer-upper-section ul li {
-    padding: 14px;
+    padding: 5px 14px;
 }
 
 .footer-upper-section ul li:first-child {
@@ -85,13 +78,21 @@
     margin-top: 0;
 }
 
-.social-icons li, .social-icons li:first-child {
+.social-icons li a {
     display: inline-block;
-    color: #1976d2 !important;
-    padding-right: 10px;
-
+    color: #fff!important;
+    border: 1px solid #1976d2;
+    background-color: #1976d2;
+    height: 30px;
+    line-height: 40px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
 }
 
+.social-icons li a svg{
+    font-size: 20px !important;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -100,7 +101,7 @@
         padding-top: 0 !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-        font-size: 16px !important;
+        font-size: 14px !important;
     }
 
     .footer-upper-section ul li {
