@@ -60,13 +60,15 @@ function Home() {
   
   });
 
+  
+
   return (
     <>
     <div className="header-main">
-      <NewHeader executeScrollWbe={OnexecuteScrollWbe} />
+      <NewHeader  />
       </div>  
       <div className="header-main-sticky">
-      <NewHeaderSticky executeScrollWbe={OnexecuteScrollWbe} />
+      <NewHeaderSticky  />
       </div>  
       <Box className="banner-section">
      

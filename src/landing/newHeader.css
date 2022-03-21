@@ -4,6 +4,13 @@
   height: 50px;
 }
 
+
+.fixed-heaer .topnav {
+  overflow: hidden;
+  background-color: #fff !important;
+  height: 50px;
+  box-shadow: 0px 4px 30px rgb(194 194 194 / 25%);
+}
 .topnav a , .custome-link {
   float: left;
   display: block;

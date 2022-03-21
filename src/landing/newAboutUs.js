@@ -8,10 +8,15 @@ import Video_placeholder from "../images/about-us/about-us-video.png";
 import Our_approch from "../images/about-us/our-approch.png";
 import "./newAboutUs.css";
 import Explore from "../images/about-us/explore.svg"
+import Experiment from "../images/about-us/experiment.svg"
+import Scale from "../images/about-us/scale.svg"
+import OurTeams from "./ourTeams";
 const Newaboutus = () => {
   return (
     <>
-      <NewHeader />
+    <div className="header-main">
+      <NewHeader  />
+      </div> 
       <Box className="about-us-main">
         <Typography
           className="about-us-title"
@@ -46,7 +51,7 @@ const Newaboutus = () => {
 
       <Box className="our-approch-block">
         <img alt="our-approch" className="image-responsive approch-banner" src={Our_approch} />
-<Box className="mainBox" sx={{position:'relative'}}>
+<Box className="our-approch-mainBox" sx={{position:'relative'}}>
         <Grid
           container
           rowSpacing={3}
@@ -72,7 +77,7 @@ const Newaboutus = () => {
 </div>
 
 <div class="our-approch">
-  <img src={Explore} class="our-approch-object" alt="" />
+  <img src={Experiment} class="our-approch-object" alt="" />
   <div class="our-approch-body">
     <h3 class="our-approch-heading"> Experiment</h3>
     <p> Through the entire process, even scale-up learning and evaluating are key as the project is multisectoral involving a growing and agile science. Consulting with all stakeholders including the implementers, researchers and decision makers is ongoing.</p>
@@ -80,7 +85,7 @@ const Newaboutus = () => {
 </div>
 
 <div class="our-approch">
-  <img src={Explore} class="our-approch-object" alt="" />
+  <img src={Scale} class="our-approch-object" alt="" />
   <div class="our-approch-body">
     <h3 class="our-approch-heading"> Scale-up/retry/discard</h3>
     <p> Basis the key performance indicators and hypotheses of the experiment/pilot the future course of the solution is decided. Here, scale-up could entail exploring more use cases for WBE as well as taking it to other cities of India.</p>
@@ -100,6 +105,8 @@ const Newaboutus = () => {
           </Grid>
       </Box>
       </Box>
+
+      <OurTeams />
 
       <Footer />
     </>

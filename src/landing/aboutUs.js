@@ -26,6 +26,7 @@ import SSCDL from "../images/sscdl-logo.png";
 import Footer from "./footer";
 import Default_user from "../images/default_user.png";
 import NewHeader from "./newHeader";
+import OurTeams from "./ourTeams";
 function AboutUs() {
   let about_us_data = {
     niua: [
@@ -358,6 +359,8 @@ function AboutUs() {
           })}
         </Grid>
       </Box>
+
+      
       <Footer />
     </>
   );
