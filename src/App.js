@@ -29,6 +29,8 @@ import Surat from "./landing/cities/surat";
 import NewHeader from "./landing/newHeader";
 import FileUpload from "./components/FileUpload";
 import { useNavigate } from 'react-router-dom';
+import Privacy from "./landing/privacy";
+
 
 function App() {
   const navigate = useNavigate();
@@ -63,6 +65,7 @@ var token = localStorage.getItem("login_token");
         <Route path="/consortium" element={<Consortium />} />
         <Route path="/surat" element={<Surat />} />
         <Route path="/newheader" element={<NewHeader />} />
+        <Route path="/privacy" element={<Privacy />} />
 
 
 

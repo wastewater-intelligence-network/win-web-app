@@ -42,8 +42,6 @@ function NewHeader(props) {
 
       <div className="topnav" id="myTopnav">
         <Container>
-          {/* <a href="#home" className="active">Home</a> */}
-          {/* <a href="#news">About us</a> */}
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -121,6 +119,14 @@ function NewHeader(props) {
             </div>
           </div> */}
           <NavLink
+            to="/knowledge"
+            className={({ isActive }) => 
+            isActive ? "active" : "nonActive" }
+          >
+            Knowledge
+          </NavLink>
+
+          <NavLink
             to="/consortium"
             className={({ isActive }) =>
               isActive ? "active" : "nonActive"}
@@ -153,8 +159,6 @@ function NewHeader(props) {
               Login
             </NavLink>
           }
-
-          {/* <Link className="icon" onClick={handleClick}>&#9776;</Link> */}
 
           <span className="icon" onClick={handleClick}>
             &#9776;

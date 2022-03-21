@@ -83,8 +83,6 @@ function CoreComponents() {
           </Grid>
         </Grid>
       </Box>
-
-      <Divider className="customeMarginBottom customeMarginTop"></Divider>
     </>
   );
 }

@@ -15,7 +15,7 @@ function ContactUs() {
   return (
     <>
       <NewHeader />
-      <Box className="contactBox customeMarginBottom">
+      <Box className=" contactBox">
         {/* <Typography
           className="customeMarginBottom heading"
           sx={{
@@ -29,7 +29,6 @@ function ContactUs() {
         </Typography> */}
 
         <Grid
-        sx={{height:'100%'}}
           container
           spacing={2}
           justifyContent="space-around"
@@ -70,9 +69,9 @@ function ContactUs() {
         </Grid>
       </Box>
 
-      <Box sx={{position:'fixed',  bottom:0, width:'100%'}}>
+     
       <Footer />
-      </Box>
+    
       
     </>
   );
