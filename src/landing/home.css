@@ -381,28 +381,12 @@ height:85vh;
     width: 300px;
 }
 
-/* consortium css */
-
-.consortium-title{
-    font-size: 2.083333333333333vw !important;
-  font-family: "Lora-Medium" !important;
-  text-transform: uppercase;
-  margin-top: 50px !important;
-
-}
-.consortium-text{
-    font-family: "Lora-Regular" !important;
-    font-size: 1.3888888888888888vw !important;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-    text-align: justify;
-}
 .image-responsive{
     max-width: 100%;
     height: fit-content;
 }
 
-/* consortium css end */
+
 
 /* City Css */
 

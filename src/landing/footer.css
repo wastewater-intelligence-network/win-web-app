@@ -24,16 +24,16 @@
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3888888888888888vw !important;
+    /* font-size: 1.3888888888888888vw !important; */
     line-height: 23px;
     text-align: center;
 }
 
 /* Footer upper section */
 .footer-upper-section {
-    margin: 70px auto 0 auto;
+    /* margin: 70px auto 0 auto; */
     background-color: #fff;
-padding: 36px;
+padding: 70px 36px;
 }
 
 .footer-upper-section p {

@@ -1,0 +1,53 @@
+.consortium-main {
+    padding:8.069444444444445vw;
+}
+
+.consortium-title {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    padding-bottom: 20px;
+}
+
+.consortium-heading{
+font-size: 3.3333333333333335vw !important;
+font-weight: 700 !important;
+line-height: 72px !important;
+padding-bottom: 20px;
+}
+
+.consortium-text{
+    font-family: "Lora-Regular" !important;
+    font-size: 1.3888888888888888vw !important;
+    /* margin-bottom: 20px !important; */
+    line-height: 36px;
+    color: #3B3B3B;
+    padding-bottom: 4.861111111111112vw;
+    
+}
+
+.consortium-member{
+    background-color: #00466D;
+    color: #fff !important;
+    padding:64px 54px 0;
+}
+
+.consortium-member .consortium-heading{
+    font-size: 3.3333333333333335vw !important;
+font-weight: 500 !important;
+line-height: 72px !important;
+}
+.consortium-member .consortium-title{
+    font-size: 2vw !important;
+font-weight: 700 !important;
+line-height: 72px !important;
+}
+
+.consortium-member .consortium-text{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lora-Regular';
+    font-style: normal;
+    line-height: 36px;
+    padding-top: 57px;
+}
