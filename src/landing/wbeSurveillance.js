@@ -31,15 +31,13 @@ function WbeSurveillance() {
               WBE for Surveillance
             </Typography>
             <Typography sx={{mb:3}} className="wbeDetailsContent" variant="h6">
-              CoViD-19 is caused by the SARS-CoV-2 virus that spreads through
-              aerosol droplets discharged by an infected person. The incubation
-              period of SARS-CoV-2 has been proven to be of a duration of 2 to
-              14 days.
+              WBE has been used for decades to track diseases as well as the efficacy of vaccination among other use cases. Due to its cost-effectiveness in terms of both time and money vis-à-vis door-to-door testing on a regular basis, WBE with a collective sample of a given catchment population can provide a bird’s eye view of trends from sampling over time in a city, zone, ward, area, lane or even a housing colony or a school – thereby making the catchment population number and boundary a key variable in successful WBE analysis. 
+            </Typography>
+            <Typography sx={{mb:3}} className="wbeDetailsContent" variant="h6">
+              WBE can track common disease outbreaks in India such as gastroenteritis, diarrhoea, cholera, pulmonary tuberculosis, hepatitis, malaria and acute respiratory infections among several others. WBE found its limelight in the recent past with the tracing of poliovirus cases post the polio vaccination programme across the world. However, the latest use case of WBE that has had researchers and countries across the world pushing for nation-wide surveillance programmes has been that of SARS-CoV-2.
             </Typography>
             <Typography className="wbeDetailsContent" variant="h6">
-              Morbi odio tellus, malesuada vel luctus ut, tempor et turpis.
-              Suspendisse euismod feugiat augue, quis pulvinar felis gravida in.
-              Maecenas in felis a nibh hendrerit malesuada eu eu velit.
+              WBE has been acting as an early warning system for the coronavirus pandemic given the incubation period of the earlier variants was between 4-14 days and most cases were asymptomatic leading to the need for a solution that would not rely on citizens getting themselves tested after a half-month gap and multiplying the infections in that period by a manifold.
             </Typography>
           </Grid>
         </Grid>
