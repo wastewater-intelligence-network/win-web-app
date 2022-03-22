@@ -192,15 +192,13 @@
   }
   .my_Container .item {
     display: grid;
-    margin: auto;
+    margin: 0 2px;
     position: relative;
     flex: 1;
-    text-align: center;
     color: white;
-    transition: 0.3s;
     max-width: 20%;
     height: 500px;
-    min-width: 1%;
+    /* min-width: 1%; */
     background-color: #a9a9a94b;
   }
   .my_Container .item:before {
@@ -212,7 +210,7 @@
     height: 100%;
     background-position: center bottom;
     background-size: cover;
-    z-index: -1;
+    z-index: 9;
   }
   .my_Container .item:nth-child(1):before {
     background-image: url("../images/decision-makers/ealry-warning.png");
@@ -233,13 +231,40 @@
     background-image: url("../images/decision-makers/timely-updates.png");
   }
   .my_Container .item:hover {
-    transition: 0.5s;
+    /* transition: 0.5s; */
     max-width: 100% !important;
-    flex-grow: 2000;
+    flex-grow: 9000;
     cursor: pointer;
     color: #fff;
     background-color: transparent;
+    margin: 0;
   }
+
+  /* .my_Container .item:not(:hover) + .content{
+   display: none;
+  } */
+
+  /* .my_Container .item:hover + .item {
+    display: none;
+} */
+
+/* .my_Container .item:hover .item .content {
+  display: none;
+}
+
+.my_Container .item:hover ~ .item .content {
+  display: none;
+}
+
+.my_Container .item:hover .my_Container .item  {
+  margin: 0;
+} */
+
+/* .my_Container .item:hover ~ .item  {
+  margin: 0;
+} */
+
+
   .my_Container .item:hover p {
     /* transform: none; */
     display: block;
@@ -254,6 +279,8 @@
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 16px;
+    z-index: 9;
 
   }
   .my_Container .item:hover .content{

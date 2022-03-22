@@ -1,0 +1,162 @@
+.about-us-main {
+    padding: 145px;
+    background: #F9F9F9;
+}
+
+.about-us-main .about-us-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.395vw !important;
+    line-height: 28px;
+    color: #3E494A;
+    padding-bottom: 1.027vw;
+}
+
+.aboutus-desc {
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 3.871vw !important;
+    line-height: 150% !important;
+    color: #3B3B3B;
+    padding-bottom: 5.959vw;
+}
+
+.aboutus-video-block img {
+    width: 78.699vw;
+    height: 41.096vw;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.who-we-are-block-main {
+    padding-top: 3.082vw;
+    padding-bottom: 7.603vw;
+}
+
+.who-we-are-block {
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 3.288vw !important;
+    line-height: 150% !important;
+    color: #3B3B3B;
+}
+
+.who-we-are-right-block {
+    font-family: 'Lora' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 1.644vw !important;
+    line-height: 150% !important;
+    color: #3B3B3B;
+    margin-top: 16px !important;
+}
+.our-approch-mainBox{
+    margin: 0 48px;
+     padding: 40px 0;    
+}
+
+.our-approch-block{
+    background-color: #fff !important;
+}
+.our-approch-block .approch-banner {
+    background: rgba(238, 242, 244, 0.3);
+    border: 1px solid #979797;
+    /* width: 100vw; */
+    height: 24.726vw;
+}
+
+.our-approach-title{
+    font-size: 3.3333333333333335vw !important;
+    color: #3B3B3B !important;
+    line-height: 72px;
+    font-weight: 500 !important;
+    position: absolute;
+    /* width: fit-content; */
+    top: -3.5%;
+    left: 0%;
+    background-color: #fff;
+}
+
+.our-approach img{
+width: 76px;;
+}
+.divider-approch{
+    left: 59%;
+    display: block;
+    height: 75%;
+    position: absolute;
+    width: 0;
+    top: 18%;
+    border-right: 3px dashed #A3D1EB;
+    opacity: 0.6;
+}
+
+.our-approach-right-side-text{
+font-size: 1.6666666666666667vw;
+line-height: 30.72px;
+color:#677171;
+font-family: 'Lora-Regular' !important;
+font-weight: 400 !important;
+}
+
+.our-approch-heading{
+    margin-bottom: 10px !important;
+    margin-top: 30px;
+}
+
+.our-approuch-box{
+    background-image: url(../images/about-us/our-approach-bg.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 100% 0px;
+    
+}
+
+/* ------------------ */
+
+/** = =====
+ flexbox ==== */
+
+ .our-approch-body {
+    flex: 1;
+  }
+  
+  .our-approch,
+  .our-approch--reverse {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .our-approch--reverse > .our-approch-object{
+    order: 1
+  }
+  /**==== visuals 
+  ==*/
+ 
+  
+
+  
+  .our-approch-body > p {
+      font-size: 1.6666666666666667vw;
+      color: #677171;
+      line-height: 31px;
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+  }
+  
+  .our-approch-body {
+    flex: 1;
+    padding: 0 10px;
+  }
+  .our-approch,
+  .our-approch--reverse {
+    /* max-width: 30em; */
+    display: flex;
+    align-items: flex-start;
+    /* border: 1px solid #f2f2f2; */
+    padding:60px 30px 10px 30px;
+    margin: 10px;
+    /* flex-basis: 30em; */
+  }
+  
+  

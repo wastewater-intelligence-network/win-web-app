@@ -11,7 +11,7 @@ function WorkOnThecities(){
     return(
 <>
 
-<Box sx={{ backgroundColor: "#f1f1f1",py: 2 }}>
+{/* <Box sx={{ backgroundColor: "#f1f1f1",py: 2 }}> */}
         
           <Box className="mainBox">
 
@@ -63,7 +63,7 @@ function WorkOnThecities(){
 
           </Box>
         
-        </Box>
+        {/* </Box> */}
       
 </>
     );

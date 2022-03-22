@@ -6,11 +6,13 @@ import Logo from "../Icons/hero_logo.svg";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link } from "react-router-dom";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-function Footer() {
+function Footer() {     
     return (
         <>
-            <Container className="footer-upper-section">
+            <Box className="footer-upper-section">
                 <Grid
                     container
                     spacing={2}
@@ -51,15 +53,14 @@ function Footer() {
                     </Grid>
                     <Grid item xs={12} sm={6} md={2}>
                         <ul  className="social-icons">
-                            <li><InstagramIcon /> </li>
+                            <li> <a target="_blank" href="https://www.instagram.com/iscfp_mohua/" rel="noopener noreferrer" > <InstagramIcon /> </a> </li>
+                            <li> <a target="_blank" href="https://twitter.com/NIUA_India" rel="noopener noreferrer" > <TwitterIcon /> </a> </li>
+                            <li> <a target="_blank" href="https://www.linkedin.com/school/national-institute-of-urban-affairsa" rel="noopener noreferrer" > <LinkedInIcon /> </a> </li>
 
-                            <li><TwitterIcon /></li>
-
-                            <li><FacebookIcon /></li>
                         </ul>
                     </Grid>
                 </Grid>
-            </Container>
+            </Box>
 
 
             <footer className="footer-main">
