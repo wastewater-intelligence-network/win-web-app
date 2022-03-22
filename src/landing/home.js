@@ -77,8 +77,8 @@ function Home() {
      
         <img alt="Banner" src={HomeBanner} className="banner-image" />
         <div className="background-overlay">
-          <video autoPlay muted loop id="win">
-            <source src="/videos/fast_gist_win.mp4" type="video/mp4"/>
+          <video autoPlay muted loop id="win" style={{width: '100%'}}>
+            <source src="/videos/fast_gist_win_3.mp4" type="video/mp4"/>
           </video>
         </div>
         {/* <div className="background-opacity"></div> */}
