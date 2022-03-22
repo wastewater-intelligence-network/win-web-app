@@ -116,7 +116,7 @@ function Home() {
                 className="first-heading"
                 sx={{ typography: { sm: "h3", xs: "h6" } }}
               >
-                How do we mine insights from wastewater?
+                How can one harvest intelligence using wastewater?
               </Typography>
 
              
@@ -136,7 +136,13 @@ function Home() {
                 className="subheading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-               We use wastewater-based epidemiology (WBE) which analyses wastewater to determine exposure to pathogens in a population. This is done by collecting samples of wastewater from sewers, STPs, lakes etc. and testing these samples for the presence of pathogens.
+               Using something known as Wastewater based-Epidemiology (WBE). WBE is a science that analyses wastewater or sewage water to determine the exposure to pathogens in a population. This is done by collecting samples of wastewater from sewers, treatment plants, lakes, rivers, manholes etc., and testing these samples for the presence of pathogens.
+              </Typography>
+              <Typography
+                className="subheading"
+                sx={{ typography: { sm: "h4", xs: "h6" } }}
+              >
+               Simple lab tests on these samples can lead to amazing insights on a community sample for countless diseases, making it cost effective for governments to monitor public health!
               </Typography>
             </Box>
           </div>

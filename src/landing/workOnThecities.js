@@ -34,20 +34,24 @@ function WorkOnThecities(){
               Work in the cities
             </Typography>
                 <Typography className="wbeDetailsContent" variant="h6" sx={{mb:2}}>
-                CoViD-19 is caused by the SARS-CoV-2 virus that spreads through aerosol droplets discharged by an infected person. The incubation period of SARS-CoV-2 has been proven to be of a duration of 2 to 14 days.
+                  A few cities in India have pioneered the use of WBE outside of the research setting to use the insights from the lab science to on-ground public health governance and decision-making. Bengaluru, Chandigarh, Nagpur, Pune and the WIN Programme’s deployment in Surat are pioneering efforts in India to track the coronavirus. 
 
+                </Typography>
+
+                <Typography className="wbeDetailsContent" variant="h6" sx={{mb:2}}>
+                  WBE’s use and the various steps involved from choosing sample collection (sampling) points to the process of collection itself, testing, innovating and sustaining at a city-scale by the government versus performing this in a research set-up is starkly different.
                 </Typography>
 
                 <Typography className="wbeDetailsContent" variant="h6">
-                
-                Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu velit. 
+                  Indian cities have only taken baby steps in this vast pool of public health data that has been untouched for better governance. At every step there is a need to learn, improvise and customise the processes to choose an Indian city’s scenario. Therefore, WIN Programme aims to holistically approach the integration of the local authorities’ stronghold on local health operations, the larger vision of the centre and state towards better public health and the scientific and medical fraternity’s arduous efforts in bringing this research to suit India to systematise WBE as a method of tracking and staying informed and ahead of known but also newer pathogens and health hazards. 
                 </Typography>
+                
 
                 <h4 className="workinthecities-title">See Our cities & process ?</h4>
 
               <NavLink to="/surat" style={{ textDecoration: 'none' }}>  <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> </NavLink>
-                <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
-                <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
+                {/* <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
+                <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> */}
                 
               
           </Grid>

@@ -103,6 +103,15 @@ function WbeWorkDetails() {
         >
           <span>RNA Measurement</span>
         </button>
+
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        >
+          <span>Data Analysis</span>
+        </button>
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -191,17 +200,10 @@ function WbeWorkDetails() {
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                Let us take you through every step in WBE
+                Let's extract the RNA
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in
-                sagittis. Sed maximus vehicula sem, et ultricies orci consequat
-                rutrum. In hac habitasse platea dictumst. Proin viverra nunc
-                risus. Morbi sagittis augue elit. Etiam sodales aliquet ex id
-                pulvinar. Morbi odio tellus, malesuada vel luctus ut, tempor et
-                turpis. Suspendisse euismod feugiat augue, quis pulvinar felis
-                gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu
-                velit.
+                To count the SARS-CoV-2 RNA we first need to extract, isolate and purify the RNA from a complex sample mixture. It is performed by utilising a commercial kit for environmental sample extraction.
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
@@ -221,7 +223,27 @@ function WbeWorkDetails() {
                 Testing the waters
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-              The measured RNA data along with additional datasets are analysed to infer the count of infected population, identify trends and patterns of infection in the catchment area. This will enable informed decision making by the governments and other stakeholders.
+                Count of RNA in the sample is important to quantify the load of the virus in the wastewater. This quantification is done with RNA Measurement using RT-qPCR and RT-ddPCR.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <img src={RNAMeasurement} className="d-block w-100" alt="..." />
+            </Grid>
+          </Grid>
+        </div>
+
+        <div className="carousel-item">
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={7}>
+              <h4 className="WBEWork-title">Data Analysis</h4>
+              <Typography
+                className="WbeWorkDetails-heading"
+                sx={{ typography: { sm: "h4", xs: "h6" } }}
+              >
+                Do the samples hold water?
+              </Typography>
+              <Typography className="wbeDetailsContent" variant="h6">
+                The measured RNA data along with additional datasets are analysed to infer the count of infected population, identify trends and patterns of infection in the catchment area. This will enable informed decision making by the governments and other stakeholders.
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
