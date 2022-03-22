@@ -6,12 +6,14 @@ import Typography from "@mui/material/Typography";
 import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import DetailsOutlinedIcon from '@mui/icons-material/DetailsOutlined';
+import DetailsOutlinedIcon from "@mui/icons-material/DetailsOutlined";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { GridExpandMoreIcon } from "@mui/x-data-grid";
 import Date from "./Date";
 
-function ScheduleDetails() {
+function ScheduleDetails(props) {
+  // console.log(props);
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -20,6 +22,8 @@ function ScheduleDetails() {
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
+    console.log("open --> ", open);
+
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -29,6 +33,12 @@ function ScheduleDetails() {
 
     setState({ ...state, [anchor]: open });
   };
+
+  React.useEffect(() => {
+    if (props.scheduledetails) {
+      setState({ ...state, ["right"]: true });
+    }
+  }, [props.scheduledetails]);
 
   const [expanded, setExpanded] = React.useState("panel1");
 
@@ -45,7 +55,9 @@ function ScheduleDetails() {
       role="presentation"
     >
       <Toolbar sx={{ backgroundColor: "primary.main", color: "#fff", mb: 2 }}>
-        Schedule Id -012
+        {props.scheduledetails === null
+          ? ""
+          : props.scheduledetails.row.scheduleId}
       </Toolbar>
 
       {/* Panle Code */}
@@ -72,11 +84,21 @@ function ScheduleDetails() {
               </Grid>
               <Grid item xs={4}>
                 <p>Collected By</p>
-                <h6> Team 5 </h6>
+                <h6>
+                  {" "}
+                  {props.scheduledetails === null
+                    ? ""
+                    : props.scheduledetails.row.team}{" "}
+                </h6>
               </Grid>
               <Grid item xs={4}>
                 <p>Status</p>
-                <h6> In Progress</h6>
+                <h6>
+                  {" "}
+                  {props.scheduledetails === null
+                    ? ""
+                    : props.scheduledetails.row.status}
+                </h6>
               </Grid>
             </Grid>
           </AccordionDetails>
@@ -99,14 +121,18 @@ function ScheduleDetails() {
             <Grid container spacing={2} style={{ marginBottom: "16px" }}>
               <Grid item xs={4}>
                 <p>Address</p>
-                <h6> Ghod Dod Road, Swami Vivekanand Marg, Athwa, Surat, Gujrat 395001 </h6>
+                <h6>
+                  {" "}
+                  Ghod Dod Road, Swami Vivekanand Marg, Athwa, Surat, Gujrat
+                  395001{" "}
+                </h6>
               </Grid>
               <Grid item xs={4}>
                 <p>Collection Date & Time</p>
-                <h6> 9:50 AM,  14 jan 2022</h6>
+                <h6> </h6>
               </Grid>
               <Grid item xs={4}>
-              <Button variant="outlined">Cancel Point</Button>
+                <Button variant="outlined">Cancel Point</Button>
               </Grid>
             </Grid>
           </AccordionDetails>
@@ -140,6 +166,11 @@ function ScheduleDetails() {
           </AccordionDetails>
         </Accordion>
       </Box>
+      <Box sx={{ boxShadow: '1', width: "100%", bottom: 8, p: '10px', textAlign: "right" }}>
+        
+          <Button variant="outlined" style={{ marginRight: 5, height: '40' }} onClick={toggleDrawer("right", false)} >Close</Button>
+       
+      </Box>
     </Box>
   );
 
@@ -147,9 +178,9 @@ function ScheduleDetails() {
     <div
       style={{ display: "flex", justifyContent: "end", marginBottom: "5px" }}
     >
-      <Button variant="contained" onClick={toggleDrawer("right", true)}>
+      {/* <Button variant="contained" onClick={toggleDrawer("right", true)}>
         Schedule Details
-      </Button>
+      </Button> */}
       <Drawer
         anchor={"right"}
         open={state["right"]}

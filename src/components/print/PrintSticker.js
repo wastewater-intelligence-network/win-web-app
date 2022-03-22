@@ -9,6 +9,7 @@ import QRCode from "react-qr-code";
 import { randomStringGenerator } from "../utils";
 import { useNavigate } from "react-router-dom";
 import {  useDispatch } from "react-redux";
+import Layout from "../app-layout/Layout";
 import {
   addQrCodeTexts,
   clearQrCodeTexts,
@@ -33,8 +34,10 @@ function PrintSticker() {
   };
   // console.log("_______________", qrCodeTexts);
   return (
-    <Box sx={{ p: 5, ml: 8 }}>
-      <h6>Print Stickers</h6>
+    <>
+    <Layout />
+    <Box sx={{ p: 3, ml: 8 }}>
+      <p className="textBold">Print Stickers</p>
       <p>Bar code stickers to be placed on the collected sample bottles</p>
 
       <Grid container spacing={2}>
@@ -82,6 +85,7 @@ function PrintSticker() {
       {/* <QRCode id="qrCodeEl" size={150} value={qrCodeText} />
       <h5>{qrCodeText}</h5> */}
     </Box>
+    </>
   );
 }
 

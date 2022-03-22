@@ -4,6 +4,7 @@ import * as React from "react";
 import Datatable from "./Datatable";
 import Leftsidebar from "./Leftsidebar";
 import AdduserForm from "./side-drawer/AdduserForm";
+import Layout from "../components/app-layout/Layout";
 
 function User() {
   const [data, setData] = React.useState([]);
@@ -41,21 +42,24 @@ function User() {
     userName:"Tusar",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"tusar@gmail.com"
+    email:"tusar@gmail.com",
+    "id": "1"
   },
   {
     _id:124,
     userName:"Asishi",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"asish@gmail.com"
+    email:"asish@gmail.com",
+    "id": "2"
   },
   {
     _id: 125,
     userName:"Binso",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"Binso@gmail.com"
+    email:"Binso@gmail.com",
+    "id": "3"
   }
 ]
 
@@ -74,6 +78,9 @@ function User() {
   }, []);
 
   return (
+    <>
+     <Layout />
+ 
     <Box sx={{ mt: 2, ml: "80px", mr: "10px" }}>
       <Grid container spacing={2}>
         <Grid item xs={2}>
@@ -92,6 +99,7 @@ function User() {
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 }
 

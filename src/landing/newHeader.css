@@ -108,6 +108,23 @@ display: block;
   display: block;
 }
 
+.loginBtn{
+  padding: 2px 20px !important;
+    margin: 11px 0;
+    background-color: #0d6efd;
+}
+
+.logoutBtn{
+  padding: 6px 20px !important;
+    margin: 11px 0;
+    background-color: #ed4d6b;
+    border: none;
+    color: #fff;
+    font-family: 'Lora-Regular';
+    font-size: 17px;
+}
+
+
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;

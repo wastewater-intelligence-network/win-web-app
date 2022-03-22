@@ -63,7 +63,7 @@ function CreateScheduleStepOne(props) {
   };
 
   const handleFrequencyChange = (freq) => {
-    setFrequencyValue(freq);
+    setFrequencyValue(freq.target.value);
   };
 
   return (

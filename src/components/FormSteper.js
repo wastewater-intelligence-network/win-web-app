@@ -126,7 +126,7 @@ try{
   };
 
   const handleFrequencyChange = (freq) => {
-    setFrequencyValue(freq);
+    setFrequencyValue(freq.target.value);
   };
 
   return (

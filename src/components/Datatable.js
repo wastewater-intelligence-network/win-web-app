@@ -92,14 +92,14 @@ export default function Datatable(props) {
   
   useEffect(()=>{
     const data=  props.rows.map((row) => {return {...row, id: row._id}});
-    console.log("🚀 ~ file: Datatable.js ~ line 95 ~ useEffect ~ data", data)
+    // console.log("🚀 ~ file: Datatable.js ~ line 95 ~ useEffect ~ data", data)
     
     setRowsOnClear(data);
     setRows(data);
   },[props.rows])
    
   // setColumns(props.columns)
-  console.log(props.columns);
+  // console.log(props.columns);
   const requestSearch = (searchValue) => {
     setSearchText(searchValue);
     if (searchValue !== "") {
@@ -114,11 +114,17 @@ export default function Datatable(props) {
       setRows(rowsOnClear);
     }
   };
+
+const showSchedule = (params, event) => {
+  props.showSchedule(params, event);
+}
+
   return (
-    <Box sx={{ height: 500, width: 100 + "%" }}>
+    <Box sx={{ display:"flex", height: 500, width: 100 + "%" }}>
+     <div style={{ flexGrow: 1 }}>
       <DataGrid
         components={{ Toolbar: QuickSearchToolbar }}
-        rows={rows}
+        rows={props.rows}
         columns={props.columns}
         componentsProps={{
           toolbar: {
@@ -127,7 +133,11 @@ export default function Datatable(props) {
             clearSearch: () => requestSearch(""),
           },
         }}
+        onCellClick={(params, event) => { 
+          props.title === 'Schedule' ? showSchedule(params) : showSchedule(params)
+        }}
       />
+      </div>
     </Box>
   );
 }
