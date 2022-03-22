@@ -19,7 +19,7 @@
 
 
 
-.topnav-sticky a, .topnav-sticky .custome-link {
+.topnav-sticky a {
     float: left;
     display: block;
     color: #000;
@@ -40,3 +40,16 @@
     border-color: transparent;
     text-transform: uppercase;
   }
+
+  .topnav-sticky a:hover, .dropdown:hover .dropbtn {
+    background-color: #1976d2;
+    color: #fff;
+  }
+  .topnav-sticky .active {
+    color: #fff;
+    background-color: #1976d2;
+     font-weight:bold;
+     text-decoration: underline !important;
+     text-decoration-thickness: 3px !important;
+     
+}
