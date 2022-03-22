@@ -76,8 +76,12 @@ function Home() {
       <Box className="banner-section">
      
         <img alt="Banner" src={HomeBanner} className="banner-image" />
-        <div className="background-overlay"></div>
-        <div className="background-opacity"></div>
+        <div className="background-overlay">
+          <video autoPlay muted loop id="win">
+            <source src="/videos/fast_gist_win.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        {/* <div className="background-opacity"></div> */}
         <Box className="banner-content">
           <Typography
             className="banner-text"
