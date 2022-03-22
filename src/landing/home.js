@@ -48,13 +48,16 @@ function Home() {
     $(window).scroll(() => {
       if ($(window).scrollTop() >= 150) {
           $('.header-main-sticky').addClass('fixed-header');
-          $('.header-main').slideUp(500);
-          $('.header-main-sticky').slideDown(500);
+          // $('.header-main').slideUp(500);
+          $('.header-main-sticky').slideDown(300);
       }
       else {
-          $('.header-main-sticky').removeClass('fixed-header');
-          $('.header-main').slideDown(500);
-          $('.header-main-sticky').slideUp(500);
+          // $('.header-main').slideDown(500);
+          $('.header-main-sticky').slideUp(300);
+
+          setTimeout(() => {
+            $('.header-main-sticky').removeClass('fixed-header');
+          }, 300)
       }
   });
   
@@ -73,8 +76,12 @@ function Home() {
       <Box className="banner-section">
      
         <img alt="Banner" src={HomeBanner} className="banner-image" />
-        <div className="background-overlay"></div>
-        <div className="background-opacity"></div>
+        <div className="background-overlay">
+          <video autoPlay muted loop id="win">
+            <source src="/videos/fast_gist_win.mp4" type="video/mp4"/>
+          </video>
+        </div>
+        {/* <div className="background-opacity"></div> */}
         <Box className="banner-content">
           <Typography
             className="banner-text"

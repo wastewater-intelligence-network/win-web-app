@@ -142,7 +142,7 @@ function NewHeader(props) {
             Contact Us
           </NavLink>
 
-          {
+          {/* {
             localStorage.getItem("login_token") && localStorage.getItem("login_token").length > 0 ?
 
               <Button className="logoutBtn"
@@ -158,7 +158,7 @@ function NewHeader(props) {
             >
               Login
             </NavLink>
-          }
+          } */}
 
           <span className="icon" onClick={handleClick}>
             &#9776;
