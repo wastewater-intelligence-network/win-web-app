@@ -1,19 +1,15 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import { Divider, Grid, Typography } from "@mui/material";
-import Sneezing from "../Icons/sneezing.svg";
-import Shedding from "../Icons/Shedding.svg";
-import SampleCollectionImg from "../Icons/Sample_Collection.svg";
-import SampleConcentrationImg from "../Icons/Sample_Concentration.svg";
-import RNAExtraction from "../Icons/RNA_Extraction.svg";
-import RNAMeasurement from "../Icons/RNA_Measurement.svg";
-import DataAnalytics from "../Icons/Data_Analytics.svg";
+
+import {Grid, Typography } from "@mui/material";
+
 import "./wbeworkDetailsBScarusel.css";
-import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
-import Infection from "../images/infection.png";
+import Infection from "../images/wbeWorkDetails/infection.png";
+import Shedding from "../images/wbeWorkDetails/Shedding.png";
+import SampleCollection from "../images/wbeWorkDetails/Sample-collection.png";
+import SampleConcentration from "../images/wbeWorkDetails/Sample-concentration.png";
+import RNAExtraction from "../images/wbeWorkDetails/RNA-extraction.png";
+import RNAMeasurement from "../images/wbeWorkDetails/RNA-measurement.png";
+
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // function WbeWorkDetails(props) {
@@ -118,10 +114,10 @@ function WbeWorkDetails() {
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                Let us take you through every step in WBE
+               The beginning of the end
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-              CoViD-19 is caused by the SARS-CoV-2 virus that spreads through aerosol droplets discharged by an infected person. The incubation period of SARS-CoV-2 has been proven to be of a duration of 2 to 14 days. Morbi odio tellus, malesuada vel luctus ut, tempor et turpis. Suspendisse euismod feugiat augue, quis pulvinar felis gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu velit.
+              CoViD-19 is caused by the SARS-CoV-2 virus that spreads through aerosol droplets discharged by an infected person. The incubation period of SARS-CoV-2 has been proven to be of a duration of 2 to 14 days.
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
@@ -137,21 +133,14 @@ function WbeWorkDetails() {
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                Let us take you through every step in WBE
+                Spilling the beans
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in
-                sagittis. Sed maximus vehicula sem, et ultricies orci consequat
-                rutrum. In hac habitasse platea dictumst. Proin viverra nunc
-                risus. Morbi sagittis augue elit. Etiam sodales aliquet ex id
-                pulvinar. Morbi odio tellus, malesuada vel luctus ut, tempor et
-                turpis. Suspendisse euismod feugiat augue, quis pulvinar felis
-                gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu
-                velit.
+              Humans start excreting the virus in the stools as soon as they are infected by it regardless of whether they are showing symptoms. Therefore, testing wastewater for SARS-CoV-2 can aid in the early detection of the virus in a given area, even before the infected individual(s) develop symptoms or before they are aware they are infected
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
-              <img src={Infection} className="d-block w-100" alt="..." />
+              <img src={Shedding} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
@@ -163,47 +152,15 @@ function WbeWorkDetails() {
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                Let us take you through every step in WBE
+               Exploring uncharted waters
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in
-                sagittis. Sed maximus vehicula sem, et ultricies orci consequat
-                rutrum. In hac habitasse platea dictumst. Proin viverra nunc
-                risus. Morbi sagittis augue elit. Etiam sodales aliquet ex id
-                pulvinar. Morbi odio tellus, malesuada vel luctus ut, tempor et
-                turpis. Suspendisse euismod feugiat augue, quis pulvinar felis
-                gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu
-                velit.
+              Samples from sewers, pumping stations, sewerage treatment plants or chambers in buildings are collected for testing. WIN uses grab and composite sampling at a set interval. In grab, a single sample is collected manually from the source. In composite, samples are collected by pooling multiple grab samples.
+
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
-              <img src={Infection} className="d-block w-100" alt="..." />
-            </Grid>
-          </Grid>
-        </div>
-        <div className="carousel-item">
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={7}>
-              <h4 className="WBEWork-title">Sample Collection</h4>
-              <Typography
-                className="WbeWorkDetails-heading"
-                sx={{ typography: { sm: "h4", xs: "h6" } }}
-              >
-                Let us take you through every step in WBE
-              </Typography>
-              <Typography className="wbeDetailsContent" variant="h6">
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in
-                sagittis. Sed maximus vehicula sem, et ultricies orci consequat
-                rutrum. In hac habitasse platea dictumst. Proin viverra nunc
-                risus. Morbi sagittis augue elit. Etiam sodales aliquet ex id
-                pulvinar. Morbi odio tellus, malesuada vel luctus ut, tempor et
-                turpis. Suspendisse euismod feugiat augue, quis pulvinar felis
-                gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu
-                velit.
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={5}>
-              <img src={Infection} className="d-block w-100" alt="..." />
+              <img src={SampleCollection} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
@@ -215,25 +172,17 @@ function WbeWorkDetails() {
                 className="WbeWorkDetails-heading"
                 sx={{ typography: { sm: "h4", xs: "h6" } }}
               >
-                Let us take you through every step in WBE
+                Un-muddying the waters
               </Typography>
               <Typography className="wbeDetailsContent" variant="h6">
-                Nullam eget efficitur lorem. Phasellus viverra maximus sem in
-                sagittis. Sed maximus vehicula sem, et ultricies orci consequat
-                rutrum. In hac habitasse platea dictumst. Proin viverra nunc
-                risus. Morbi sagittis augue elit. Etiam sodales aliquet ex id
-                pulvinar. Morbi odio tellus, malesuada vel luctus ut, tempor et
-                turpis. Suspendisse euismod feugiat augue, quis pulvinar felis
-                gravida in. Maecenas in felis a nibh hendrerit malesuada eu eu
-                velit.
+              By reducing the amount of water or any non-relevant materials in a diluted sample, the resulting concentrated sample contains higher amounts of SARS-CoV-2 RNA. This concentrated sample will yield better results.
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
-              <img src={Infection} className="d-block w-100" alt="..." />
+              <img src={SampleConcentration} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
-
         <div className="carousel-item">
           <Grid container spacing={2}>
             <Grid item xs={12} md={7}>
@@ -256,7 +205,27 @@ function WbeWorkDetails() {
               </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
-              <img src={Infection} className="d-block w-100" alt="..." />
+              <img src={RNAExtraction} className="d-block w-100" alt="..." />
+            </Grid>
+          </Grid>
+        </div>
+
+        <div className="carousel-item">
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={7}>
+              <h4 className="WBEWork-title">RNA Measurement</h4>
+              <Typography
+                className="WbeWorkDetails-heading"
+                sx={{ typography: { sm: "h4", xs: "h6" } }}
+              >
+                Testing the waters
+              </Typography>
+              <Typography className="wbeDetailsContent" variant="h6">
+              The measured RNA data along with additional datasets are analysed to infer the count of infected population, identify trends and patterns of infection in the catchment area. This will enable informed decision making by the governments and other stakeholders.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <img src={RNAMeasurement} className="d-block w-100" alt="..." />
             </Grid>
           </Grid>
         </div>
