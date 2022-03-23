@@ -97,6 +97,7 @@ const Newaboutus = () => {
 
           </Grid>
           <span className="divider-approch"></span>
+          <div className="right-rotate-text"> Learning, Consulting & Evaluating</div>
           <Grid item xs={12} sm={12} md={6} lg={5}>
           <Typography variant="body2" className="our-approach-right-side-text">
           Through the entire process, even scale-up learning and evaluating are key as the project is multisectoral involving a growing and agile science. Consulting with all stakeholders including the implementers, researchers and decision makers is ongoing.
