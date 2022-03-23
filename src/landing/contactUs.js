@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Divider, Grid, Typography, TextareaAutosize, Button } from "@mui/material";
 import * as React from "react";
 import Header from "./header";
 import Niua from "../Icons/niua.svg";
@@ -10,69 +10,127 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import NewHeader from "./newHeader";
+import TextField from '@mui/material/TextField';
+import "./contactUs.css";
+
 function ContactUs() {
 
   return (
     <>
       <NewHeader />
-      <Box className=" contactBox">
-        {/* <Typography
-          className="customeMarginBottom heading"
-          sx={{
-            typography: { sm: "h3", xs: "h6" },
-            textAlign: "center",
-            mt: 4,
-            letterSpacing: "10px",
-          }}
+      <Box className="contact-us-main">
+        <Typography
+          className="contact-us-title"
         >
-          CONTACT US
-        </Typography> */}
+          Contact us
+        </Typography>
+        <Typography variant="body2" className="contact-us-desc">
+          Lets have a talk
+        </Typography>
+      </Box>
 
+      <Box className="address-block-main">
         <Grid
           container
-          spacing={2}
-          justifyContent="space-around"
-          alignItems="center"
-        >
-          <Grid item xs={12} sm={6} md={6}>
-            <img
-              alt="contact logo"
-              width={350}
-              src={Niua}
-              className="contactLogo"
-            />
+          rowSpacing={3} className="address-block-main-container">
+          <Grid item xs={12} sm={3} md={3} className="address-block">
+            <div className="logo-block">
+
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
+
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={6}>
+          <Grid item xs={12} sm={3} md={3} className="address-block">
+            <div className="logo-block">
 
-            <List>
-              <ListItem>
-              <ListItemIcon sx={{color:'#000', fontSize: '2.5rem'}}>
-                    <HomeIcon />
-                  </ListItemIcon>
-                <ListItemText className="contactText" disableTypography >
-                1ˢᵗ and 2ⁿᵈ Floor, Core 4B, <br /> India Habitat
-              Centre, Lodhi Road, <br /> New Delhi, Delhi 110003
-                </ListItemText>
-              </ListItem>
-              <ListItem>
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
 
-              <ListItemIcon sx={{color:'#000', fontSize: '2.5rem'}}>
-                   <EmailIcon />
-                  </ListItemIcon>
-                <ListItemText className="contactText" disableTypography>
-                win@niua.org
-                </ListItemText>
-              </ListItem>
-              
-            </List>
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} className="address-block">
+            <div className="logo-block">
+
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
+
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} className="address-block">
+            <div className="logo-block">
+
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
+
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
           </Grid>
         </Grid>
       </Box>
 
-     
+      <Box className="contact-us-form-block">
+        <Grid
+          container
+          rowSpacing={3} className="contact-us-form-block-container">
+          <Grid item xs={12} sm={6} md={6} className="contact-us-form-left-block">
+          </Grid>
+          <Grid item xs={12} sm={6} md={6} className="contact-us-form-right-block">
+            <Typography variant="body2" className="write-to-us-txt">
+              Write to us
+            </Typography>
+
+          
+            <div class="form-group-main">
+                  <label>Name </label>
+                  <TextField fullWidth placeholder="Filled text" size="small"/>
+
+                  <label>Email ID</label>
+                  <TextField fullWidth placeholder="Filled text" size="small"/>
+
+                  <label>Message </label>
+                  <TextareaAutosize
+                    aria-label="minimum height"
+                    minRows={3}
+                    placeholder="Filled text"
+                    style={{ width: 100 + '%', height: 142 +'px' }}
+                  />
+
+                  <Button variant="contained">Submit</Button>
+            </div>
+
+          </Grid>
+        </Grid>
+      </Box>
+
       <Footer />
-    
-      
     </>
   );
 }
