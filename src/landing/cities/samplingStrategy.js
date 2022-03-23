@@ -11,11 +11,11 @@ return(
   justifyContent="center"
   alignItems="flex-end">
             <Grid item sm={12} xs={12} md={5} >
-              <Typography variant="h4" className="cities_heading">
+              <Typography variant="h4" className="cities_2ndheading">
                 Sampling Strategy
               </Typography>
 
-              <p className="ws-surat-content">
+              <p className="surat-content">
                 Samples are being collected 2 times every week from 14 locations
                 in the west zone. These include 9 SPSs and 5 manholes. A grab
                 sample of 500 ML is collected by dipping the bottle tied to a

@@ -43,9 +43,9 @@ function Surat() {
           <ScopeOfSampling />
         </div>
         {/* Sampling Strategy Section*/}
-        <div id="SamplingStrategyId">
+        {/* <div id="SamplingStrategyId">
           <SamplingStrategy />
-        </div>
+        </div> */}
         {/* Sampling Locations Section */}
         <div id="SamplingLocationId">
           <SamplingLocation />

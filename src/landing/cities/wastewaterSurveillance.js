@@ -5,7 +5,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-
+import SurveillanceSuratBanner from "../../images/city-images/surveillance-surat-banner.png"
 
 function WastewaterSurveillance(props){
 
@@ -20,13 +20,17 @@ function WastewaterSurveillance(props){
 
 
     return(
-        <Box className="customeMarginBottom" sx={{ mt: 3 }}>
+      <>
+        <Box className="" sx={{ mt: 3, mb:3 }}>
         <Grid container spacing={2} columnSpacing={6} className="columnReverse">
           <Grid item sm={12} xs={12} md={6} lg={8}>
+          <Typography  className="cities_title">
+             Surat
+            </Typography>
             <Typography variant="h4" className="cities_heading ">
               Wastewater Surveillance in Surat
             </Typography>
-            <p className="ws-surat-content">
+            <p className="surat-content">
               Surat Municipal Corporation (SMC) in close coordination with
               National Institute of Urban Affairs (NIUA) has deployed
               Wastewater Intelligence Network (WIN) which is a wastewater
@@ -42,9 +46,13 @@ function WastewaterSurveillance(props){
             </p>
           </Grid>
           <Grid item sm={12} xs={12} md={6} lg={4}>
-            <CityBreadcrumbs />
+          <Box className="onthispage_box">
+
+          
+            {/* <CityBreadcrumbs /> */}
+        
+            <p className="onthipage-title">On this page</p>
             <Divider sx={{ color: "primary" }} />
-            <p className="textBold">On this page</p>
             <div className="cities_navigation">
               <List>
                 <ListItem disablePadding>
@@ -74,10 +82,16 @@ function WastewaterSurveillance(props){
                 </ListItem>
               </List>
             </div>
-            <Divider sx={{ color: "primary" }} />
+            {/* <Divider sx={{ color: "primary" }} /> */}
+            </Box>
           </Grid>
         </Grid>
+        <img alt="surat banner" src={SurveillanceSuratBanner} className="image-responsive" />
       </Box>
+      <Box>
+        
+      </Box>
+      </>
     );
 }
 export default WastewaterSurveillance;

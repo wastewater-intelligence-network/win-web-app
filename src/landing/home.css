@@ -398,15 +398,95 @@ height:85vh;
   .city table {
     border-collapse: collapse;
   }
+
+  .cities_title{
+      font-size: 24px !important;
+      font-weight: 500 !important;
+      color: #3E494A !important;
+      padding-top: 85px;
+      padding-bottom: 20px;
+  }
   .cities_heading{
-    color: #004DA8;
-    font-weight: bold !important;
+    font-weight: 700 !important;
+    font-size: 3.3333333333333vw !important;
+   line-height: 72px !important;
+   color: #3B3B3B !important;
+
+  }
+  .cities_2ndheading{
+    font-weight: 400 !important;
+    font-size: 3.3333333333333vw !important;
+   line-height: 56px !important;
+   color: #3B3B3B !important;
+  }
+  .cities_sub_heading{
     font-size: 2.083333333333333vw !important;
-    margin-bottom: 16px !important;
+    line-height: 2.083333333333333vw !important;
+    font-weight: 500 !important;
+    color: #3B3B3B;
+    padding: 14px 0;
   }
 
-  .cities_navigation{
+  .surat-content{
+      color: #677171 !important;
+    font-size: 1.6666666666666667vw !important;
+    line-height: 36px;
+    font-weight: 400 !important;
+  }
+
+  .onthispage_box{
+    margin-top: 220px;
+    box-shadow: 0px 0px 13px rgb(0 0 0 / 10%);
+    border-radius: 9px;
+    padding: 16px;
+  }
+.onthispage_box p{
+font-family: 'Roboto' !important;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+margin-top: 0 !important;
+color: #3E494A;
+}
+.cities_navigation {
+    color: #3E494A;
+}
+  .cities_navigation li :hover{
     color: #004DA8;
+  }
+
+
+  .samplingLocationBox{
+      padding-top: 60px;
+  }
+
+  .p_top{
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+  }
+.zone_fact_name{
+color: #000000;
+font-size: 1.6666666666666667vw !important;
+font-weight: 400 !important;
+line-height: 36px;
+}
+  .zone_selection_box .bigimage{
+      padding-top: 30px;
+  }
+
+  .location_button{
+      color: #0080C8 !important;
+      border-radius: 20px !important;
+      min-width: 280px !important;
+      margin-top: 10px !important;
+  }
+  .active_btn{
+background-color: #0080C8  !important;
+color: #fff !important;
+  }
+  
+  #secnd{
+      display: none;
   }
 .location_list{
     padding-left: 16px !important;
@@ -437,6 +517,10 @@ height:85vh;
 
 .mobile-sampling-map{
     display: none;
+}
+
+.nopadding{
+    padding-top: 0px !important;
 }
 
 .side_heading{
@@ -475,14 +559,6 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
     display: none;
 }
 
-/* .ws-surat-content{
-font-size: 20px;
-line-height: 36px;
-} */
-
-/* .mainContainer{
-margin-top: 100px;
-} */
 
   /*  Mobile View Css */
 
