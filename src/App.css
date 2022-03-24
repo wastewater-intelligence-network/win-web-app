@@ -109,6 +109,10 @@ color: #fff !important;
   border-right: 5px solid;
   border-image: linear-gradient(to top, #F29A36 32%, #FFFFFF 30%, #2A8B2C 80%) 3;
 }
+
+/* .login-box{
+  background-image: url(./images/);
+} */
 .text-center{
   text-align: center;
 }
