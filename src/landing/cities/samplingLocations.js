@@ -141,7 +141,7 @@ function SamplingLocation() {
         >
           <Grid item sm={12} xs={12} md={4}>
             <Typography variant="h4" className="cities_sub_heading">
-              Zone selection
+            Sample testing
             </Typography>
             <p className="surat-content">
               Veer Narmad South Gujarat University (VNSGU) is the testing
