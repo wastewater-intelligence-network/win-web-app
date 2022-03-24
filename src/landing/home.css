@@ -348,10 +348,7 @@ height: 310px;
     width: 100px;
     box-shadow: 0 2px 3px #d1e9faa1;
 }
-.login-box{
-height:calc(90vh - 140px);
-padding: 60px 40px;
-}
+
 
 .scrollTopButton{
     position: fixed !important;

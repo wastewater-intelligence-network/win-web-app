@@ -106,9 +106,18 @@ color: #fff !important;
   visibility: visible;
 }
 .rightBorder{
-  border-right: 5px solid;
-  border-image: linear-gradient(to top, #F29A36 32%, #FFFFFF 30%, #2A8B2C 80%) 3;
+  /* border-right: 5px solid;
+  border-image: linear-gradient(to top, #F29A36 32%, #FFFFFF 30%, #2A8B2C 80%) 3; */
+  background-image: url(./images/login-side-image.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 }
+.login-box{
+  height:calc(90vh - 60px);
+  padding: 60px 40px;
+  }
 
 /* .login-box{
   background-image: url(./images/);
