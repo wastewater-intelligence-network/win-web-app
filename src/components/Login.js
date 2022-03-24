@@ -18,6 +18,7 @@ import axios from "axios";
 import base64 from "base-64";
 
 import { useNavigate, useLocation } from "react-router-dom";
+import NewHeader from "../landing/newHeader";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -74,6 +75,8 @@ export default function Login() {
   };
 
   return (
+    <>
+    <NewHeader />
     <Container component="main">
       <Box
       // sx={{
@@ -90,20 +93,20 @@ export default function Login() {
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={12} md={5} lg={4} className="rightBorder">
+          <Grid item xs={12} md={5} lg={4} className="">
             <Box
               component="form"
               // onSubmit={handleSubmita}
               //noValidate
               onSubmit={handleSubmit(onSubmit)}
-              sx={{ mt: 1, p: 5 }}
-              className="login-box"
+              
+              className="login-box rightBorder"
             >
-              <img
+              {/* <img
                 alt="login logo"
                 src={LoginLogo}
                 className="login_logo"
-              />
+              /> */}
 
               <Typography component="div" variant="h6" sx={{mb:2}}>
                 Log in
@@ -217,5 +220,6 @@ export default function Login() {
         </Grid>
       </Box>
     </Container>
+    </>
   );
 }
