@@ -200,6 +200,8 @@
     height: 500px;
     /* min-width: 1%; */
     background-color: #a9a9a94b;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
   }
   .my_Container .item:before {
     content: "";
@@ -231,7 +233,10 @@
     background-image: url("../images/decision-makers/timely-updates.png");
   }
   .my_Container .item:hover {
-    /* transition: 0.5s; */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /* -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out; */
     max-width: 100% !important;
     flex-grow: 9000;
     cursor: pointer;
