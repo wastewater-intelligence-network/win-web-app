@@ -43,8 +43,8 @@
     text-transform: uppercase;
   }
 
-  .topnav-sticky a:hover, .dropdown:hover .dropbtn {
-    background-color: #1976d2;
+  .topnav-sticky a:hover, .topnav-sticky .dropdown:hover .dropbtn {
+    background-color: #1976d2 !important;
     color: #fff;
   }
   .topnav-sticky .active {
