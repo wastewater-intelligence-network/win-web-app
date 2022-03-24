@@ -2,13 +2,14 @@ import { Box, Container, Typography, Grid, Divider } from "@mui/material";
 import * as React from "react";
 import Header from "../header";
 import Footer from "../footer";
-
+import { $ }  from 'react-jquery-plugin'
 import ScopeOfSampling from "./scopeOfSampling";
 import SamplingStrategy from "./samplingStrategy";
 import SamplingLocation from "./samplingLocations";
 import WastewaterSurveillance from "./wastewaterSurveillance";
 import NewHeader from "../newHeader";
 import ScrollButton from "../scrollToTopButton";
+import NewHeaderSticky from "../newHeaderSticky";
 function Surat() {
 
 
@@ -30,9 +31,36 @@ function Surat() {
 
   };
 
+  // sticky header animation
+  React.useEffect(() => {
+    $(window).scroll(() => {
+      if ($(window).scrollTop() >= 150) {
+          $('.header-main-sticky').addClass('fixed-header');
+          // $('.header-main').slideUp(500);
+          $('.header-main-sticky').slideDown(300);
+      }
+      else {
+          // $('.header-main').slideDown(500);
+          $('.header-main-sticky').slideUp(300);
+
+          setTimeout(() => {
+            $('.header-main-sticky').removeClass('fixed-header');
+          }, 300)
+      }
+  });
+  
+  });
+// End//
+
   return (
     <>
-      <NewHeader />
+      <div className="header-main">
+      <NewHeader  />
+      </div>  
+      <div className="header-main-sticky">
+      <NewHeaderSticky  />
+      </div> 
+
       <Container maxWidth="lg" className="city">
         {/* Wastewater Surveillance in Surat Section  */}
         <div id="WastewaterSurveillanceId">
