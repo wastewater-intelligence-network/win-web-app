@@ -1,11 +1,11 @@
-.logo-block {
+.header-logo-block {
     width: 30%;
     display: inline-block;
     vertical-align: top;
 
 }
 
-.logo-block .header-logo{
+.header-logo-block .header-logo{
     width: 259px;
     height: 42px;
     vertical-align: top;
