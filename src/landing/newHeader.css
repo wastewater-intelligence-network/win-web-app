@@ -25,7 +25,7 @@
 
 .topnav .active {
         color: #fff;
-        background-color: rgb(0 0 0 / 26%);
+        background-color: #fff3;
         font-weight:bold;
         /* text-decoration: underline !important;
         text-decoration-thickness: 3px !important; */
@@ -90,7 +90,7 @@ display: block;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(0 0 0 / 26%);
+  background-color: #fff3 !important;
   color: white;
 }
 
