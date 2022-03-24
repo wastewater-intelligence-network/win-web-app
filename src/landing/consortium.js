@@ -5,12 +5,42 @@ import Footer from "./footer";
 import Structure from "../images/structure.jpg";
 import NewHeader from "./newHeader";
 import "./consortium.css";
+import { $ }  from 'react-jquery-plugin'
+
 import MemberLogo from "../images/consoritum/member-logo.png"
 import ConsortiumBanner from "../images/consoritum/consortium-banner.png"
+import NewHeaderSticky from "./newHeaderSticky";
 const Consortium = () => {
+ // sticky header animation
+ React.useEffect(() => {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() >= 150) {
+        $('.header-main-sticky').addClass('fixed-header');
+        // $('.header-main').slideUp(500);
+        $('.header-main-sticky').slideDown(300);
+    }
+    else {
+        // $('.header-main').slideDown(500);
+        $('.header-main-sticky').slideUp(300);
+
+        setTimeout(() => {
+          $('.header-main-sticky').removeClass('fixed-header');
+        }, 300)
+    }
+});
+
+});
+// End//
+
+
   return (
     <>
-      <NewHeader />
+     <div className="header-main">
+      <NewHeader  />
+      </div>  
+      <div className="header-main-sticky">
+      <NewHeaderSticky  />
+      </div>
 
       <Box className="consortium-main">
         <Typography className="consortium-title">Consortium</Typography>
