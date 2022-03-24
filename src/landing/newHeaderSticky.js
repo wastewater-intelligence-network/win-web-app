@@ -21,7 +21,7 @@ function NewHeaderSticky(props) {
 
   return (
     <>
-      <div className="logo-block">
+      <div className="header-logo-block">
       <Link to={'/'}>  <img alt="Logo" src={Logo} className="header-logo" /></Link>
       </div>
 
