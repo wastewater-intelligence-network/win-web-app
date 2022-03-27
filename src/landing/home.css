@@ -437,7 +437,7 @@ height: 310px;
     border-radius: 9px;
     padding: 16px;
   }
-.onthispage_box p{
+.onthispage_box p, .knowledge_onthispage_box p{
 font-family: 'Roboto' !important;
 font-weight: 700;
 font-size: 18px;

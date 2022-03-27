@@ -30,6 +30,7 @@ import NewHeader from "./landing/newHeader";
 import FileUpload from "./components/FileUpload";
 import { useNavigate } from 'react-router-dom';
 import Privacy from "./landing/privacy";
+import Knowledge from "./landing/knowledge";
 
 
 function App() {
@@ -64,6 +65,7 @@ var token = localStorage.getItem("login_token");
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/consortium" element={<Consortium />} />
         <Route path="/surat" element={<Surat />} />
+        <Route path="/knowledge" element={<Knowledge />} />
         <Route path="/newheader" element={<NewHeader />} />
         <Route path="/privacy" element={<Privacy />} />
 
