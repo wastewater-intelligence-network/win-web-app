@@ -78,6 +78,13 @@ function Leftsidebar() {
           >
             Sample Upload
           </NavLink>
+          <NavLink
+            to="/setting/samplestatus"
+            className={({ isActive }) => 
+            isActive ? "tab-active" : "nonActive" }
+          >
+            Sample Status
+          </NavLink>
 
           
           </div>
