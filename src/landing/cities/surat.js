@@ -62,11 +62,12 @@ function Surat() {
       </div> 
 
       <Container maxWidth="lg" className="city">
-        {/* Wastewater Surveillance in Surat Section  */}
+      
         <div id="WastewaterSurveillanceId">
           <WastewaterSurveillance executeScrollPageSurat={onExecuteScrollPageSurat} />
         </div>
-        {/* Scope of Sampling Section */}
+        </Container>
+        
         <div id="ScopeOfSamplingId">
           <ScopeOfSampling />
         </div>
@@ -74,7 +75,7 @@ function Surat() {
         {/* <div id="SamplingStrategyId">
           <SamplingStrategy />
         </div> */}
-        {/* Sampling Locations Section */}
+        <Container maxWidth="lg" className="city">
         <div id="SamplingLocationId">
           <SamplingLocation />
         </div>

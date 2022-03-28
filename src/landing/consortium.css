@@ -1,30 +1,31 @@
 .consortium-main {
-    padding:8.069444444444445vw;
+    padding:85px 85px 60px 85px;
 }
 
 .consortium-title {
-    font-weight: 400 !important;
-    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
     line-height: 21px !important;
     padding-bottom: 20px;
+    color: #3E494A !important;
 }
 
 .consortium-heading{
 font-size: 3.3333333333333335vw !important;
 font-weight: 700 !important;
 line-height: 72px !important;
-padding-bottom: 20px;
 }
 
 .consortium-text{
     font-family: "Lora-Regular" !important;
-    font-size: 1.3888888888888888vw !important;
-    /* margin-bottom: 20px !important; */
+    font-size: 1.6666666666666667vw !important;
     line-height: 36px;
     color: #3B3B3B;
-    padding-bottom: 4.861111111111112vw;
-    
+    padding-bottom: 30px;
+   
 }
+
+
 
 .consortium-member{
     background-color: #00466D;
@@ -34,13 +35,16 @@ padding-bottom: 20px;
 
 .consortium-member .consortium-heading{
     font-size: 3.3333333333333335vw !important;
-font-weight: 500 !important;
+font-weight: 400 !important;
 line-height: 72px !important;
+padding: 10px 0;
 }
 .consortium-member .consortium-title{
-    font-size: 2vw !important;
-font-weight: 700 !important;
-line-height: 72px !important;
+    font-family: 'Lora-Regular';
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 46px !important;
+    color: #fff !important;
 }
 
 .consortium-member .consortium-text{
@@ -49,5 +53,6 @@ line-height: 72px !important;
     font-family: 'Lora-Regular';
     font-style: normal;
     line-height: 36px;
-    padding-top: 57px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

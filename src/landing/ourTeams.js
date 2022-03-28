@@ -26,7 +26,7 @@ function OurTeams() {
         //   justifyContent="center"
         //   alignItems="center"
         >
-          <Grid item xs={12} sm={6} md={6} lg={4}>
+          <Grid item xs={6} sm={6} md={6} lg={4}>
         <img alt="Padam Vijay" src={PadamVijay} className="image-responsive" />
         <Typography variant="h4" className="our-team-name">
           Padma Vijay
@@ -37,7 +37,7 @@ function OurTeams() {
 
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6} lg={4}>
+          <Grid item xs={6} sm={6} md={6} lg={4}>
         <img alt="Padam Vijay" src={PadamVijay} className="image-responsive" />
         <Typography variant="h4" className="our-team-name">
           Padma Vijay
@@ -48,7 +48,7 @@ function OurTeams() {
 
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6} lg={4}>
+          <Grid item xs={6} sm={6} md={6} lg={4}>
         <img alt="Padam Vijay" src={PadamVijay} className="image-responsive" />
         <Typography variant="h4" className="our-team-name">
           Padma Vijay

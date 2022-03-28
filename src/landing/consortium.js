@@ -61,7 +61,9 @@ const Consortium = () => {
 
       <Box className="consortium-member">
       <Typography className="consortium-heading">Consortium members</Typography>
-      <Typography className="consortium-title">National working group</Typography>
+      <Typography className="consortium-title">Where urban governance meets science
+</Typography>
+      <Typography className="consortium-heading">National working group</Typography>
 
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
   <Grid item xs={6} sm={6} md={4}>
@@ -78,7 +80,7 @@ const Consortium = () => {
   
 </Grid>
 
-<Typography className="consortium-title">National working group</Typography>
+<Typography className="consortium-heading">National working group</Typography>
 
 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 <Grid item xs={6} sm={6} md={4}>

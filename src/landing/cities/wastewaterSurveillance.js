@@ -21,8 +21,8 @@ function WastewaterSurveillance(props){
 
     return(
       <>
-        <Box className="" sx={{ mt: 3, mb:3 }}>
-        <Grid container spacing={2} columnSpacing={6} className="columnReverse">
+        <Box  sx={{ mt: 3, mb:3 }}>
+        <Grid container spacing={2} columnSpacing={3} className="columnReverse">
           <Grid item sm={12} xs={12} md={6} lg={8}>
           <Typography  className="cities_title">
              Surat

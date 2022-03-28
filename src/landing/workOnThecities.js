@@ -20,7 +20,7 @@ function WorkOnThecities(){
           rowSpacing={3}
           columnSpacing={{ xs: 0, sm: 0, md: 6, lg: 4 }}
           justifyContent="center"
-          alignItems="center"
+          // alignItems="center"
         >
          
 
