@@ -22,27 +22,27 @@ import WorkOnThecities from "./workOnThecities";
 import { $ }  from 'react-jquery-plugin'
 
 function Home() {
-  const wbeRef = useRef(null);
+  // const wbeRef = useRef(null);
 
-  const OnexecuteScrollWbe = (props) => {
-    console.log(props + " Testing Props");
-    if (props === "wasteWaterBased") {
-      let _elmScroll = document.getElementById("wasteWaterBasedId");
-      _elmScroll.scrollIntoView();
-    } else if (props === "howWbeWork") {
-      let _elmScroll = document.getElementById("howWbeWorkId");
-      _elmScroll.scrollIntoView();
-    } else if (props === "decisionMakers") {
-      let _elmScroll = document.getElementById("decisionMakersId");
-      _elmScroll.scrollIntoView();
-    } else if (props === "coreComponents") {
-      let _elmScroll = document.getElementById("coreComponentsId");
-      _elmScroll.scrollIntoView();
-    } else if (props === "partners") {
-      let _elmScroll = document.getElementById("partnersId");
-      _elmScroll.scrollIntoView();
-    }
-  };
+  // const OnexecuteScrollWbe = (props) => {
+  //   console.log(props + " Testing Props");
+  //   if (props === "wasteWaterBased") {
+  //     let _elmScroll = document.getElementById("wasteWaterBasedId");
+  //     _elmScroll.scrollIntoView();
+  //   } else if (props === "howWbeWork") {
+  //     let _elmScroll = document.getElementById("howWbeWorkId");
+  //     _elmScroll.scrollIntoView();
+  //   } else if (props === "decisionMakers") {
+  //     let _elmScroll = document.getElementById("decisionMakersId");
+  //     _elmScroll.scrollIntoView();
+  //   } else if (props === "coreComponents") {
+  //     let _elmScroll = document.getElementById("coreComponentsId");
+  //     _elmScroll.scrollIntoView();
+  //   } else if (props === "partners") {
+  //     let _elmScroll = document.getElementById("partnersId");
+  //     _elmScroll.scrollIntoView();
+  //   }
+  // };
 
   useEffect(() => {
     $(window).scroll(() => {

@@ -1,12 +1,12 @@
 .about-us-main {
-    padding: 145px;
-    background: #F9F9F9;
+    padding: 85px 85px 60px;
+    /* background: #F9F9F9; */
 }
 
 .about-us-main .about-us-title {
     font-style: normal;
     font-weight: 500;
-    font-size: 1.395vw !important;
+    font-size: 24px !important;
     line-height: 28px;
     color: #3E494A;
     padding-bottom: 1.027vw;
@@ -14,40 +14,38 @@
 
 .aboutus-desc {
     font-style: normal;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     font-size: 3.871vw !important;
-    line-height: 150% !important;
+    line-height: 72px !important;
     color: #3B3B3B;
     padding-bottom: 5.959vw;
 }
 
 .aboutus-video-block img {
-    width: 78.699vw;
-    height: 41.096vw;
     background: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
 }
 
 .who-we-are-block-main {
     padding-top: 3.082vw;
-    padding-bottom: 7.603vw;
+    /* padding-bottom: 7.603vw; */
 }
 
 .who-we-are-block {
     font-style: normal;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: 3.288vw !important;
     line-height: 150% !important;
-    color: #3B3B3B;
+    color: #3B3B3B !important;
 }
 
 .who-we-are-right-block {
-    font-family: 'Lora' !important;
-    font-style: normal;
+    font-family: 'Lora-Regular' !important;
     font-weight: 400 !important;
     font-size: 1.644vw !important;
     line-height: 150% !important;
-    color: #3B3B3B;
-    margin-top: 16px !important;
+    color: #677171 !important;
+    /* margin-top: 16px !important; */
 }
 .our-approch-mainBox{
     margin: 0 48px;
@@ -58,20 +56,17 @@
     background-color: #fff !important;
 }
 .our-approch-block .approch-banner {
-    background: rgba(238, 242, 244, 0.3);
-    border: 1px solid #979797;
-    /* width: 100vw; */
-    height: 24.726vw;
+    opacity: 0.8;
 }
 
 .our-approach-title{
     font-size: 3.3333333333333335vw !important;
     color: #3B3B3B !important;
     line-height: 72px;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     position: absolute;
     /* width: fit-content; */
-    top: -3.5%;
+    top: -3%;
     left: 0%;
     background-color: #fff;
 }
@@ -91,15 +86,11 @@ width: 76px;;
 }
 
 .our-approach-right-side-text{
-font-size: 1.6666666666666667vw;
-line-height: 30.72px;
-color:#677171;
-font-family: 'Lora-Regular' !important;
-font-weight: 400 !important;
+
 padding: 0 0 0 40px;
 }
 
-.divider-approch:before, .divider-approch:after {
+/* .divider-approch:before, .divider-approch:after {
     border-right: 2px solid red;
     content: '';
     display: block;
@@ -121,12 +112,14 @@ padding: 0 0 0 40px;
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-}
+} */
 
 
 .our-approch-heading{
     margin-bottom: 10px !important;
     margin-top: 30px;
+    font-size: 2.083333333333333vw;
+    font-weight: 500;
 }
 
 .our-approuch-box{
@@ -141,8 +134,8 @@ padding: 0 0 0 40px;
 .right-rotate-text{
     position: absolute;
     transform: rotate(270deg);
-    left: 44%;
-    font-size: 24px;
+    left: 39%;
+    font-size: 30px;
     font-weight: 500;
     background-color: #fff;
 }

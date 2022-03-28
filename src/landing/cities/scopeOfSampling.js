@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Container } from "@mui/material";
 import * as React from "react";
 import ScopeSamplingImgae from "../../images/city-images/zone_west.png";
 import Sps_small from "../../images/city-images/sps_small.png";
@@ -26,6 +26,7 @@ function ScopeOfSampling() {
 
   return (
     <>
+    <Container maxWidth="lg" className="city">
       <Box>
         <Grid container spacing={2}>
           <Grid item sm={12} xs={12} md={6}>
@@ -113,6 +114,13 @@ During the deployment from 1st Jan, 2022, estimated up to 31st March, 2022, the 
 
             <p className="surat-content"><small>Total of 14 samples are being collected; 9 from SPSs and 5 from outlet manholes originating from residential complexes.</small></p>
      
+
+     
+      </Box>
+      </Container>
+
+      <Box className="scopeOfSamplingImageBox">
+      <Container maxWidth="lg" className="city">
         <Grid container spacing={4} >
           <Grid item xs={4}>
             <img
@@ -140,7 +148,8 @@ During the deployment from 1st Jan, 2022, estimated up to 31st March, 2022, the 
         <p className="surat-content">
         Apart from these, the zone also has manholes if we go upstream, which in turn gets connected to the sewage pumping stations. 
         </p>
-      </Box>
+</Container>
+        </Box>
     </>
   );
 }

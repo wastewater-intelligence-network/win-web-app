@@ -46,7 +46,9 @@ function ContactUs() {
       <NewHeaderSticky  />
       </div>
       <Box className="contact-us-main">
-        <Typography
+      <Box className="contact-us-over-bg"></Box>
+      <Box className="contact-us-banner-text">
+      <Typography
           className="contact-us-title"
         >
           Contact us
@@ -54,6 +56,10 @@ function ContactUs() {
         <Typography variant="body2" className="contact-us-desc">
           Lets have a talk
         </Typography>
+      </Box>
+
+      
+        
       </Box>
 
       <Box className="address-block-main">
