@@ -28,6 +28,7 @@ import Consortium from "./landing/consortium";
 import Surat from "./landing/cities/surat";
 import NewHeader from "./landing/newHeader";
 import FileUpload from "./components/FileUpload";
+import SampleStatus from "./components/SampleStatus";
 import { useNavigate } from 'react-router-dom';
 import Privacy from "./landing/privacy";
 
@@ -54,6 +55,7 @@ var token = localStorage.getItem("login_token");
         <Route path="/setting/team" element={ token ? <Teams /> : <Login /> } />
         <Route path="/setting/collectionpoint" element={ token ? <CollectionPoint /> : <Login /> } />
         <Route path="/setting/fileupload" element={ token ? <FileUpload /> : <Login /> } />
+        <Route path="/setting/samplestatus" element={ token ? <SampleStatus /> : <Login /> } />
         <Route path="/schedule" element={token ? <Schedules />  : <Login /> } />
         <Route path="/print" element={token ? <PrintSticker /> :<Login /> } />
         <Route path="/print-list" element={<PrintStickerList />} />
@@ -66,7 +68,7 @@ var token = localStorage.getItem("login_token");
         <Route path="/surat" element={<Surat />} />
         <Route path="/newheader" element={<NewHeader />} />
         <Route path="/privacy" element={<Privacy />} />
-
+        
 
 
         <Route path="/" element={<Home />} />

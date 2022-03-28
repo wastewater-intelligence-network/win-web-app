@@ -23,7 +23,7 @@ function QuickSearchToolbar(props) {
         alignItems="center"
       >
         <Grid>
-          <h5>{props.title} ({props.dataCount})</h5>
+          {/* <h5>{props.title} ({props.dataCount})</h5> */}
         </Grid>
         <Grid>
           <Box>
@@ -119,6 +119,10 @@ const showSchedule = (params, event) => {
   props.showSchedule(params, event);
 }
 
+const ShowSampleStatus = (params, event) => {
+  props.ShowSampleStatus(params, event);
+}
+
   return (
     <Box sx={{ display:"flex", height: 500, width: 100 + "%" }}>
      <div style={{ flexGrow: 1 }}>
@@ -134,7 +138,7 @@ const showSchedule = (params, event) => {
           },
         }}
         onCellClick={(params, event) => { 
-          props.title === 'Schedule' ? showSchedule(params) : showSchedule(params)
+          props.title === 'Schedule' ? showSchedule(params) : ShowSampleStatus(params)
         }}
       />
       </div>
