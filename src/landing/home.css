@@ -561,6 +561,42 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
 
   @media only screen and (max-width: 600px) {
 
+    /* home page styling */
+    .header-main-sticky {
+        display: none !important;
+    }
+
+    .first-heading {
+        padding: 10px 0;
+    }
+
+    .subheading, .wbeDetailsContent, .wbeDetailsContent {
+        line-height: 25px !important;
+    }
+
+    .WBEWork-title, .workinthecities-title, .footer-upper-section h4 {
+        font-size: 18px !important;
+    }
+
+    .css-urj5pv-MuiGrid-root {
+        max-height: 300px !important;
+    }
+
+    .wbe-details-box {
+        padding-bottom: 5px !important;
+    }
+
+    .ptpb-80 {
+        padding: 40px 0;
+    }
+
+
+
+
+
+    /* home page styling ends */
+
+
     .mainContainer{
         text-align: center !important;
         /* margin-top: 60px !important; */
@@ -731,6 +767,9 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
 
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    .header-main-sticky {
+        display: none !important;
+    }
 
     .firstTitle {
         font-size: 36px !important;

@@ -16,12 +16,12 @@ function TopHeader() {
           alignItems="center"
           className="top-header-inner"
         >
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={8} sm={8}>
             <Box>
             <Link to={'/'}>  <img alt="Logo" src={Logo} className="header-logo" /></Link>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={3}>
+          <Grid item sx={{ display: { xs: 'none', sm: 'block' } }} sm={3}>
             <TextField
               fullWidth
               id="filled-search"
@@ -43,7 +43,7 @@ function TopHeader() {
 
           </Grid>
 
-          <Grid item xs={12} sm={1}>
+          <Grid item xs={4} sm={1}>
             <NavLink id="login_button"
               to="/login"
               className={({ isActive }) =>
