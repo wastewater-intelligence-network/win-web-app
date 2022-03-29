@@ -62,74 +62,67 @@ function ContactUs() {
       <Box className="address-block-main">
         <Grid
           container
-          rowSpacing={0}
-          columnSpacing={0}
-          className="address-block-main-container"
-        >
-          <Grid item xs={12} sm={6} md={6} lg={3}>
-            <Box className="address-block bg-white">
-              <div className="logo-block"></div>
-              <Typography variant="body2" className="address-desc">
-                1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road,
-                New Delhi, Delhi 110003
-              </Typography>
-              <Typography variant="body2" className="address-url-txt">
-                win@niua.org
-              </Typography>
+          rowSpacing={3} className="address-block-main-container">
+          <Grid item xs={12} sm={4} md={4} className="address-block">
+            <div className="logo-block">
 
-              <Typography variant="body2" className="address-contact-no">
-                +91 96XX XX XXXX
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={3}>
-            <Box className="address-block bg-blue">
-              <div className="logo-block"></div>
-              <Typography variant="body2" className="address-desc">
-                1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road,
-                New Delhi, Delhi 110003
-              </Typography>
-              <Typography variant="body2" className="address-url-txt">
-                win@niua.org
-              </Typography>
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
 
-              <Typography variant="body2" className="address-contact-no">
-                +91 96XX XX XXXX
-              </Typography>
-            </Box>
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={3}>
-            <Box className="address-block bg-white">
-              <div className="logo-block"></div>
-              <Typography variant="body2" className="address-desc">
-                1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road,
-                New Delhi, Delhi 110003
-              </Typography>
-              <Typography variant="body2" className="address-url-txt">
-                win@niua.org
-              </Typography>
+          <Grid item xs={12} sm={4} md={4} className="address-block">
+            <div className="logo-block">
 
-              <Typography variant="body2" className="address-contact-no">
-                +91 96XX XX XXXX
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={3}>
-            <Box className="address-block bg-blue">
-              <div className="logo-block"></div>
-              <Typography variant="body2" className="address-desc">
-                1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road,
-                New Delhi, Delhi 110003
-              </Typography>
-              <Typography variant="body2" className="address-url-txt">
-                win@niua.org
-              </Typography>
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
 
-              <Typography variant="body2" className="address-contact-no">
-                +91 96XX XX XXXX
-              </Typography>
-            </Box>
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
           </Grid>
+          <Grid item xs={12} sm={4} md={4} className="address-block">
+            <div className="logo-block">
+
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
+
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
+          </Grid>
+          {/* <Grid item xs={12} sm={3} md={3} className="address-block">
+            <div className="logo-block">
+
+            </div>
+            <Typography variant="body2" className="address-desc">
+              1st and 2nd Floor, Core 4B, India Habitat Centre, Lodhi Road, New Delhi, Delhi 110003
+            </Typography>
+            <Typography variant="body2" className="address-url-txt">
+              win@niua.org
+            </Typography>
+
+            <Typography variant="body2" className="address-contact-no">
+              +91 96XX XX XXXX
+            </Typography>
+          </Grid> */}
         </Grid>
       </Box>
 
