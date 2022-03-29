@@ -767,7 +767,57 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
             display: block;
         }
 
+
+
+        /* Cities mobile */
+
+        .onthispage_box {
+            margin-top: 0px !important;
+            padding: 16px !important;
+            margin-left: 0px !important;
+        }
+
+        .cities_heading {
+            font-size: 18px !important;
+            line-height: 30px !important;
+            text-align: center;
+        }
+
+        .surat-content {
+            font-size: 16px !important;
+            line-height: 31px;
+        }
+
+        .cities_2ndheading {
+            font-size: 18px !important;
+            line-height: 27px !important;
+            text-align: center;
+        }
+        .cities_sub_heading {
+            font-size: 16px !important;
+            line-height: 27px !important;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .zone_fact_name {
+            font-size: 16px !important;
+            line-height: 27px !important;
+        }
+        .scopeOfSamplingImageBox {
+            background-color: #fff;
+            padding: 16px;
+            margin-top: 30px;
+        }
+        .samplingLocationBox {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
         
+        .p_top {
+            padding-top: 0px;
+            padding-bottom: 25px;
+            padding-left: 16px;
+        }
 }
 /* Active Selected Menu Items */
 /* .active_menu {
