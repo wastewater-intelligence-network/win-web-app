@@ -69,7 +69,7 @@ function Leftsidebar() {
             className={({ isActive }) => 
             isActive ? "tab-active" : "nonActive" }
           >
-            Collection Point
+            Collection Points
           </NavLink>
           <NavLink
             to="/setting/fileupload"

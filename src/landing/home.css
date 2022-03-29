@@ -606,9 +606,9 @@ border: 1px solid rgba(0, 95, 148, 0.300918) !important;
         padding: 40px 0;
     }
 
-
-
-
+    #login_button {
+        float: right;
+    }
 
     /* home page styling ends */
 

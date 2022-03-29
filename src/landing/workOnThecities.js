@@ -50,6 +50,7 @@ function WorkOnThecities() {
             <h4 className="workinthecities-title moretext-cities">See Our cities & process ?</h4>
 
             <NavLink className="moretext-cities" to="/surat" style={{ textDecoration: 'none' }}>  <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> </NavLink>
+            <NavLink className="moretext-cities" to="/consortium" style={{ textDecoration: 'none' }}>  <Button variant="outlined" className="work-cities-btn">Consortium</Button> </NavLink>
             {/* <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
                 <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> */}
             <br />
