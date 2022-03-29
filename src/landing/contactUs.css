@@ -76,29 +76,29 @@
     padding-top: 15.24px; 
 }
 
-.address-block:nth-child(odd) {
-    background: #fff;
+.bg-white {
+    background-color: #fff;
+    
 }
 
-.address-block:nth-child(even) {
-    background: #005F94;
+
+.bg-blue {
+    background: #005F94 !important;
+    
 }
 
-.address-block:nth-child(even)  .address-url-txt, .address-block:nth-child(even) .address-contact-no, .address-block:nth-child(even) .address-desc {
-    color: #fff;
+.bg-blue .address-desc, .bg-blue .address-url-txt, .bg-blue .address-contact-no{
+    color: #fff !important;
 }
 
-.address-block:nth-child(even) .logo-block {
-    background: #fff;
-}
 
-.contact-us-form-block-container {
+/* .contact-us-form-block-container {
     height: 761px;
-}
+} */
 
 .contact-us-form-left-block {
     background-image: url("../images/contact-us/write-to-us-image.png");
-    height: 100%;
+    /* height: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,7 +106,7 @@
 
 .contact-us-form-right-block {
     background: #F9F9F9;
-    padding: 101px 54px 113px 44px !important;
+    padding: 60px !important;
 }
 
 .write-to-us-txt {
@@ -117,7 +117,7 @@
 }
 
 .form-group-main {
-    width: 490px;
+    /* width: 490px; */
     padding-top: 34px;
 
 }
@@ -136,14 +136,14 @@
     background: #FFFFFF;
     border: 1px solid #D0D0D0;
     box-sizing: border-box;
-    width: 490px;
+    /* width: 490px; */
     height: 48px;
     border: 1px solid #D0D0D0;
 }
 
 .form-group-main textarea {
     border: 1px solid #D0D0D0;
-    padding: 8.5px 14px;
+    /* padding: 8.5px 14px; */
 }
 
 .form-group-main button {
@@ -154,3 +154,45 @@
     box-shadow: 0px 7.33px #005F94;
 }    
 
+
+/*Css For Mobile   */
+
+
+@media screen and (max-width:600px){
+
+    .contact-us-main{
+        min-height: 200px !important;
+        background-size: cover !important;
+        background-position: right !important;
+    }
+
+    .contact-us-over-bg {
+        background-color: #00000078;
+    }
+
+    .address-block {
+        padding: 30px 30px 30px !important;
+    }
+
+    .address-desc {
+        font-family: 'Lora-Regular' !important;
+        font-size: 16px !important;
+        padding-top: 20px !important;
+        text-align: center;
+    }    
+
+    .address-url-txt, .address-contact-no {
+        font-weight: 700 !important;
+        font-size: 18px !important;
+        padding-top: 10px !important;
+        text-align: center;
+    }
+
+    .contact-us-form-left-block{
+        display: none;
+    }
+    .contact-us-form-right-block {
+        padding: 30px 60px !important;
+    }
+    
+}
