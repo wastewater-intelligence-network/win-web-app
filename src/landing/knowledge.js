@@ -195,7 +195,7 @@ function Knowledge(props) {
               src={Image2}
             />
 
-            <Grid container spacing={2}>
+            <Grid container spacing={2} >
               <Grid item sm={12} xs={12} md={6}>
                 <img
                   alt="sampling"
@@ -274,10 +274,10 @@ function Knowledge(props) {
           <Box sx={{backgroundColor:'#AED5EA', p:2}}>
 
           <Grid container rowSpacing={2} columnSpacing={2}>
-           <Grid item xs={4}>
-               <img alt="last" src={Image6}  className="image-responsive"/>
+           <Grid item xs={12} md={4}>
+               <img alt="last" src={Image6}  className="image-responsive last-image-mobile"/>
            </Grid> 
-           <Grid item xs={8}>
+           <Grid item xs={12} md={8}>
            <Typography variant="h4" className="knowledge_2nd_sub_heading">
                 Sub Heading 2
               </Typography>

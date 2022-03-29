@@ -48,3 +48,37 @@ margin: 26px 0;
 .knowledge_image_section img{
 width: 100%;
 }
+
+
+@media screen and (max-width:600px) {
+
+    .cities_title {
+        font-size: 16px !important;
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .knowledge_heading {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .knowledge_sub_heading {
+        font-size: 18px !important;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .knowledge_2nd_sub_heading {
+        font-size: 16px !important;
+        padding-bottom: 16px !important;
+        text-align: center;
+    }
+    .knowledge_image_section{
+        margin-bottom: 250px;
+
+    }
+    .last-image-mobile{
+    display: block;
+    margin: auto;
+    }
+    
+}
