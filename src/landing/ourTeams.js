@@ -8,7 +8,7 @@ function OurTeams() {
     <>
       <Box className="ourteam-block">
         <Typography variant="h4" className="our-team-title">
-          Our Team
+          Our team
         </Typography>
 
         <Typography variant="body2" className="our-team-sub-title">

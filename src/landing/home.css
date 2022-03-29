@@ -287,6 +287,14 @@ line-height: 36px !important;
 color: #677171 !important;
 }
 
+.moreless-button-parent {
+    text-align: center;
+}
+
+.moretext, .moretext-cities {
+    display: none;
+}
+
 .p-0100{
     padding: 0 100px !important;
 }

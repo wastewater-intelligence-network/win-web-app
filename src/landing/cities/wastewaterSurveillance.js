@@ -28,7 +28,7 @@ function WastewaterSurveillance(props){
              Surat
             </Typography>
             <Typography variant="h4" className="cities_heading ">
-              Wastewater Surveillance in Surat
+              Wastewater surveillance in surat
             </Typography>
             <p className="surat-content">
               Surat Municipal Corporation (SMC) in close coordination with
