@@ -8,6 +8,7 @@ import { Button, Card, Container, Divider, Grid } from "@mui/material";
 import WbeWork from "./wbeWorke";
 import WbeWorkDetails from "./wbeWorkDetails";
 import DecisionMakers from "./decisionMakers";
+import DecisionMakersMobile from "./DecisionMakersMobile";
 import CoreComponents from "./coreComponents";
 import Footer from "./footer";
 import Partners from "./partners";
@@ -183,9 +184,15 @@ function Home() {
 
       <WorkOnThecities />
 
-      <Box sx={{ backgroundColor: "#fff" }}>
-        <Box className="mainBox pb-80">
+      <Box sx={{ backgroundColor: "#fff", display: { xs: 'none', sm: 'block' } }}>
+        <Box className="mainBox pb-80 decision-makers-desktop">
           <DecisionMakers />
+        </Box>
+      </Box>
+  
+      <Box sx={{ backgroundColor: "#fff", display: { xs: 'block', sm: 'none' } }}>
+        <Box className="mainBox decision-makers-mobile">
+          <DecisionMakersMobile />
         </Box>
       </Box>
 
