@@ -54,7 +54,7 @@ function ContactUs() {
           Contact us
         </Typography>
         <Typography variant="body2" className="contact-us-desc">
-          Lets have a talk
+          Let's have a talk
         </Typography>
       </Box>
 
@@ -66,7 +66,7 @@ function ContactUs() {
         <Grid
           container
           rowSpacing={3} className="address-block-main-container">
-          <Grid item xs={12} sm={3} md={3} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block">
             <div className="logo-block">
 
             </div>
@@ -81,7 +81,7 @@ function ContactUs() {
               +91 96XX XX XXXX
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={3} md={3} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block">
             <div className="logo-block">
 
             </div>
@@ -96,7 +96,7 @@ function ContactUs() {
               +91 96XX XX XXXX
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={3} md={3} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block">
             <div className="logo-block">
 
             </div>
@@ -111,7 +111,7 @@ function ContactUs() {
               +91 96XX XX XXXX
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={3} md={3} className="address-block">
+          {/* <Grid item xs={12} sm={3} md={3} className="address-block">
             <div className="logo-block">
 
             </div>
@@ -125,7 +125,7 @@ function ContactUs() {
             <Typography variant="body2" className="address-contact-no">
               +91 96XX XX XXXX
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
 
