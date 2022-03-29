@@ -63,7 +63,7 @@ function ContactUs() {
         <Grid
           container
           rowSpacing={3} className="address-block-main-container">
-          <Grid item xs={12} sm={4} md={4} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block bg-white">
             <div className="logo-block">
 
             </div>
@@ -78,7 +78,7 @@ function ContactUs() {
               +91 96XX XX XXXX
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4} md={4} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block bg-blue">
             <div className="logo-block">
 
             </div>
@@ -93,7 +93,7 @@ function ContactUs() {
               +91 96XX XX XXXX
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4} md={4} className="address-block">
+          <Grid item xs={12} sm={4} md={4} className="address-block bg-white">
             <div className="logo-block">
 
             </div>
