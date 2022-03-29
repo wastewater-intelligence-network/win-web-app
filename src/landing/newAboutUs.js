@@ -45,7 +45,7 @@ const Newaboutus = () => {
         <Typography className="about-us-title">About us</Typography>
 
         <Typography variant="body2" className="aboutus-desc">
-          Through WIN, We foresee governance in India taking a thought-level
+          Through WIN, we foresee governance in India taking a thought-level
           shift backed by on-ground action from a reactive approach to a
           pre-emptive and proactive approach.
         </Typography>

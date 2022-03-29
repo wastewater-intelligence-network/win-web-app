@@ -28,7 +28,7 @@ function WbeSurveillance() {
                 className="side_heading"
                 sx={{ typography: { sm: "h3", xs: "h6" } }}
               >
-                WBE for Surveillance
+                WBE for surveillance
               </Typography>
               <Typography sx={{ mb: 3 }} className="wbeDetailsContent" variant="h6">
                 WBE has been used for decades to track diseases as well as the efficacy of vaccination among other use cases. Due to its cost-effectiveness in terms of both time and money vis-à-vis door-to-door testing on a regular basis, WBE with a collective sample of a given catchment population can provide a bird’s eye view of trends from sampling over time in a city, zone, ward, area, lane or even a housing colony or a school – thereby making the catchment population number and boundary a key variable in successful WBE analysis.

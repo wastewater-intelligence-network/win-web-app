@@ -45,7 +45,7 @@ const Consortium = () => {
       <Box className="consortium-main">
         <Typography className="consortium-title">Consortium</Typography>
         <Typography className="consortium-heading">
-          STRUCTURE OF WIN CONSORTIUM
+          Structure of win consortium
         </Typography>
 
         <Typography className="consortium-text">

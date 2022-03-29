@@ -66,7 +66,7 @@ function Knowledge(props) {
         Sampling Strategy: Where, How, and What to Sample
             </Typography>
           <Typography variant="h4" className="knowledge_heading">
-            National Wastewater Surveillance System (NWSS)
+            National wastewater surveillance system (NWSS)
           </Typography>
           <Grid
             container

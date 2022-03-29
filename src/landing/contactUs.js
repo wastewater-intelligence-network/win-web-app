@@ -54,7 +54,7 @@ function ContactUs() {
         <Box className="contact-us-banner-text">
           <Typography className="contact-us-title">Contact us</Typography>
           <Typography variant="body2" className="contact-us-desc">
-            Lets have a talk
+            Let's have a talk
           </Typography>
         </Box>
       </Box>
