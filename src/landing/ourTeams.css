@@ -40,3 +40,50 @@ margin-top: 30px;
     font-family: 'Lora-Regular';
     
 }
+
+.ourteam-block .our-team-organisation{
+    font-size: 1.6666666666666667vw !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    font-family: 'Lora-Regular';
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .ourteam-block {
+        padding: 16px;
+    }
+    .ourteam-block .our-team-title {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .ourteam-block .our-team-sub-title {
+        text-align: center;
+        font-size: 14px !important;
+        padding: 10px 0 0;
+    }
+    .ourteam-block .our-team-category {
+        font-size: 16px !important;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .ourteam-block .our-team-name {
+        text-align: center;
+        font-size: 16px !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .ourteam-block .our-team-designation {
+        font-size: 14px !important;
+        text-align: center;
+    }
+
+    .ourteam-block .our-team-organisation{
+        font-size: 12px !important;
+        text-align: center;
+    }
+}

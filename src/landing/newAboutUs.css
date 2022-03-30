@@ -189,3 +189,30 @@ padding: 0 0 0 40px;
   }
   
   
+
+  @media screen and (max-width:600px) {
+      
+    .about-us-main {
+        padding: 30px;
+    }
+    .about-us-main .about-us-title{
+    text-align: center;
+
+
+    }
+    .aboutus-desc {
+        font-size: 16px !important;
+        line-height: 27px !important;
+        padding-bottom: 20px;
+    }
+
+    .who-we-are-block {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .who-we-are-right-block{
+        font-size: 16px !important;
+    }   
+
+
+  }
