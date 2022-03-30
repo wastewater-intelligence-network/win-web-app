@@ -43,21 +43,24 @@ function Teams() {
     userName:"Tusar",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"tusar@gmail.com"
+    email:"tusar@gmail.com",
+    id: 123,
   },
   {
     _id:124,
     userName:"Asishi",
     team: "Team 1",
     jobTitle:"Collector",
-    email:"asish@gmail.com"
+    email:"asish@gmail.com",
+    id:124,
   },
   {
     _id: 125,
     userName:"Kalia",
     team: "Team 2",
     jobTitle:"Collector",
-    email:"Binso@gmail.com"
+    email:"Binso@gmail.com",
+    id: 125,
   }
 ]
 
@@ -94,7 +97,7 @@ function Teams() {
           <Leftsidebar />
         </Grid>
         <Grid item xs={10} sx={{ pl: 0 }}>
-        <Datatable columns ={columns} rows = {data}  title= "teams" /> 
+        <Datatable columns ={columns} rows = {rows}  title= "teams" /> 
         </Grid>
       </Grid>
     
