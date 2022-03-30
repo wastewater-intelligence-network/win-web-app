@@ -58,6 +58,9 @@ function DecisionMakersMobile() {
 
   return (
     <>
+      <div className="decision-makers-mobile-heading">
+        Support decision makers
+      </div>
       <Slider {...settings}>
         <div className="decision-makers-mobile-main">
           <img style={{ maxWidth: "100%" }} alt="Iscf" src={EarlyWarning} />
