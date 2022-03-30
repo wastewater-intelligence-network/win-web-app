@@ -1,5 +1,18 @@
-..decision-makers-mobile {
-    padding: 20px 0 !important;
+.decision-makers-mobile {
+    padding: 20px 0 40px 0 !important;
+} 
+
+.decision-makers-mobile .content h3 {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+}
+
+.decision-makers-mobile .content p {
+    margin: 0 !important;
+}
+
+.decision-makers-mobile .slick-dots {
+    bottom: -11px !important;
 } 
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {

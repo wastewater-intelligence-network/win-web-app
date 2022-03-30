@@ -20,20 +20,7 @@
 
 .decision-makers-mobile-main .slick-slide :hover{
     background-color: #A9A9A9;
-}
-
-.decision-makers-mobile-main .content h3 {
-    margin-top: 10px !important;
-    margin-bottom: 0 !important;
-}
-
-.decision-makers-mobile-main .content p {
-    margin: 0 !important;
-}
-
-.slick-dots {
-    bottom: 8px !important;
-}    
+}   
 
 .decision-makers-mobile-main .slick-slider .slick-track {
     width: 3686px !important;
