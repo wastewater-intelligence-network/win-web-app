@@ -1,4 +1,4 @@
-..decision-makers-mobile {
+.decision-makers-mobile {
     padding: 20px 0 !important;
 } 
 
@@ -400,11 +400,25 @@ height: 310px;
 /* City Css */
 
 .city  th, td {
-    padding: 10px 15px;
+    padding: 6px 15px;
     text-align: left;
+    border: 1px solid #DCDCDC;
   }
   .city table {
     border-collapse: collapse;
+    border: 1.3px solid #5DADDA;
+    width: 100%;
+    margin: 5px;
+  }
+  .city table th{
+    text-align: center;
+    background-color: #DCDCDC;
+    border-bottom: 1px solid #5DADDA;
+  }
+
+  .secondTable{
+      margin-top: 50px;
+      margin-bottom: 50px;
   }
 
   .cities_title{
