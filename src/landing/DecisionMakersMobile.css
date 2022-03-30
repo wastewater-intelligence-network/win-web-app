@@ -1,4 +1,16 @@
 /* Slick Carousel arrows custom */
+
+.decision-makers-mobile-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #101010;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
 .decision-makers-mobile-main .slick-next:before, .decision-makers-mobile-main .slick-prev:before {
     color: #000;
 }
