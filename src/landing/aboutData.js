@@ -1,6 +1,6 @@
     
 
-let about_us_data = {
+export const  about_us_data = {
 
     leadership:[
         {

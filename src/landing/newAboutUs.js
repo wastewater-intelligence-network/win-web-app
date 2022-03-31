@@ -13,6 +13,7 @@ import Scale from "../images/about-us/scale.svg";
 import OurTeams from "./ourTeams";
 import NewHeaderSticky from "./newHeaderSticky";
 import { $ } from "react-jquery-plugin";
+import OurApproch from "./ourApproch";
 const Newaboutus = () => {
   // sticky header animation
   React.useEffect(() => {
@@ -75,7 +76,7 @@ const Newaboutus = () => {
         </Grid>
       </Box>
 
-      <Box className="our-approch-block">
+      <Box sx={{  display: { xs: 'none', sm: 'block' }}} className="our-approch-block">
         <img
           alt="our-approch"
           className="image-responsive approch-banner"
@@ -95,10 +96,10 @@ const Newaboutus = () => {
                   Our approach
                 </Typography>
 
-                <div class="our-approch">
-                  <img src={Explore} class="our-approch-object" alt="" />
-                  <div class="our-approch-body">
-                    <h3 class="our-approch-heading"> Explore</h3>
+                <div className="our-approch">
+                  <img src={Explore} className="our-approch-object" alt="" />
+                  <div className="our-approch-body">
+                    <h3 className="our-approch-heading"> Explore</h3>
                     <Typography
                       variant="body2"
                       className="who-we-are-right-block"
@@ -111,10 +112,10 @@ const Newaboutus = () => {
                   </div>
                 </div>
 
-                <div class="our-approch">
-                  <img src={Experiment} class="our-approch-object" alt="" />
-                  <div class="our-approch-body">
-                    <h3 class="our-approch-heading"> Experiment</h3>
+                <div className="our-approch">
+                  <img src={Experiment} className="our-approch-object" alt="" />
+                  <div className="our-approch-body">
+                    <h3 className="our-approch-heading"> Experiment</h3>
                     <Typography
                       variant="body2"
                       className="who-we-are-right-block"
@@ -128,10 +129,10 @@ const Newaboutus = () => {
                   </div>
                 </div>
 
-                <div class="our-approch">
-                  <img src={Scale} class="our-approch-object" alt="" />
-                  <div class="our-approch-body">
-                    <h3 class="our-approch-heading"> Scale-up/retry/discard</h3>
+                <div className="our-approch">
+                  <img src={Scale} className="our-approch-object" alt="" />
+                  <div className="our-approch-body">
+                    <h3 className="our-approch-heading"> Scale-up/retry/discard</h3>
                     <Typography
                       variant="body2"
                       className="who-we-are-right-block"
@@ -166,6 +167,9 @@ const Newaboutus = () => {
           </Grid>
         </Box>
       </Box>
+<Box sx={{ backgroundColor:"#fff",  display: { xs: 'block', sm: 'none' }}}>
+<OurApproch />
+</Box>
 
       <OurTeams />
 
