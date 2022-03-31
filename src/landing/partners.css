@@ -13,15 +13,15 @@
     align-items: center;
 }
 
-.slick-slide img {
+.partners_slider .slick-slide img {
     display: block;
     margin: auto !important;
     width: 150px;
 }
 
-.slick-slide :hover{
+/* .slick-slide :hover{
     background-color: #A9A9A9;
-}
+} */
 
 .slick-next {
     right: 16px !important;

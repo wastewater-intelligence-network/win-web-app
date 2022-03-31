@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import WBESurveillance from "../images/WBE_surveillance.png";
@@ -41,7 +41,9 @@ function WbeSurveillance() {
               <Typography className="wbeDetailsContent moretext" variant="h6">
                 WBE has been acting as an early warning system for the coronavirus pandemic given the incubation period of the earlier variants was between 4-14 days and most cases were asymptomatic leading to the need for a solution that would not rely on citizens getting themselves tested after a half-month gap and multiplying the infections in that period by a manifold.
               </Typography>
-              <button className="moreless-button">Read more</button>
+              <Box sx={{float:"right"}}>
+              <Button className="moreless-button" variant="contained">Read more</Button>
+              </Box>
             </Grid>
           </Grid>
         </Box>

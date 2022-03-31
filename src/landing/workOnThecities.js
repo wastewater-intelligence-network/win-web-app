@@ -54,9 +54,12 @@ function WorkOnThecities() {
             {/* <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button>
                 <Button variant="outlined" className="work-cities-btn">Surat Deployment</Button> */}
             <br />
-            <button className="moreless-button-cities">Read more</button>
+            
           </Grid>
         </Grid>
+        <Box>
+              <Button className="moreless-button-cities" variant="contained">Read more</Button>
+              </Box>
       </Box>
 
       {/* </Box> */}

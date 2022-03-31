@@ -7,26 +7,26 @@
     width: 100%;
   }
   /* over ride carousel css */
-  .carousel {
+  .our-approuch-mobile-box .carousel {
     position: relative;
   }
   
-  .carousel.pointer-event {
+  .our-approuch-mobile-box .carousel.pointer-event {
     touch-action: pan-y;
   }
   
-  .carousel-inner {
+  .our-approuch-mobile-box .carousel-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
   }
-  .carousel-inner::after {
+  .our-approuch-mobile-box .carousel-inner::after {
     display: block;
     clear: both;
     content: "";
   }
   
-  .carousel-item {
+  .our-approuch-mobile-box .carousel-item {
     position: relative;
     display: none;
     float: left;
@@ -37,9 +37,7 @@
     transition: transform 0.6s ease-in-out;
   }
   
-  .carousel-item .MuiGrid-root {
-    height: 63vh !important;
-  }
+  
   
   @media (prefers-reduced-motion: reduce) {
     .carousel-item {
@@ -89,8 +87,8 @@
     }
   }
   
-  .carousel-control-prev,
-  .carousel-control-next {
+  .our-approuch-mobile-box .carousel-control-prev,
+  .our-approuch-mobile-box .carousel-control-next {
     position: relative;
     /* top: 0;  */
         bottom: 0;
@@ -161,7 +159,7 @@
   
   } */
   
-  .carousel-indicators {
+  .our-approuch-mobile-box .carousel-indicators {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -175,7 +173,7 @@
     /* margin-left: 15%; */
     list-style: none;
   }
-  .carousel-indicators [data-bs-target] {
+  .our-approuch-mobile-box .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
     width: 30px;
@@ -206,7 +204,7 @@
     font-weight: bold;
   }
   
-  .carousel-caption {
+  .our-approuch-mobile-box .carousel-caption {
     position: absolute;
     right: 15%;
     bottom: 1.25rem;
@@ -230,13 +228,13 @@
   
   
   
-  .carousel {
+  .our-approuch-mobile-box .carousel {
     position: relative;
     margin-bottom: 70px !important;
     min-height: 350px;
   }
   
-  .carousel .active {
+  .our-approuch-mobile-box .carousel .active {
    color: #000 !important;
    text-decoration: none !important;
    
@@ -244,11 +242,11 @@
   
   
   
-  .carousel-indicators{
+  .our-approuch-mobile-box .carousel-indicators{
     margin-bottom: -60px !important;
   }
   
-  .carousel-indicators [data-bs-target]{
+  .our-approuch-mobile-box .carousel-indicators [data-bs-target]{
     /* background-color:#1976d2 !important; */
     background-color: #EDEDED !important;
     width: 215px;
@@ -259,11 +257,11 @@
     line-height: 70px;
   }
   
-  .carousel-indicators .active {
+  .our-approuch-mobile-box .carousel-indicators .active {
   
     background-color: #1976d2 !important;
   }
-  .next_prevous_btn{
+  .our-approuch-mobile-box .next_prevous_btn{
     position: absolute;
         bottom: -50px;
         width: 60px;
@@ -273,45 +271,20 @@
     
     }
   
-  .WbeWorkDetails-heading{
-  font-size: 3.3333333333333335vw !important;
-  color: #3E494A !important;
-  line-height: 72px !important;
-  /* font-weight: 700 !important; */
-  }
-  
-  .wbe-details-box{
-  padding-top: 40px;
-  padding-bottom: 80px;
-  }
-  
-  .WBEWork-title{
-    font-weight: 500;
-    font-size: 1.6666666666666667vw;
-    line-height: 28px;
-    color: #3E494A;
-    margin-bottom: 10px !important
-  }
   
   
   @media only screen and (max-width: 600px){
-  .WbeWorkDetails-heading {
-      font-size: 23px !important;
-      color: #3E494A !important;
-      line-height: 40px !important;
-      font-weight: 700 !important;
-      text-align: center;
-  }
+ 
   
   
-  .carousel-indicators [data-bs-target]{
+    .our-approuch-mobile-box .carousel-indicators [data-bs-target]{
     width: 215px;
     height: 5px;
     font-size: 14px;
     line-height: 30px !important;
   }
   
-  .carousel-indicators button span{
+  .our-approuch-mobile-box  .carousel-indicators button span{
     display: none !important;
   }
   }

@@ -43,7 +43,7 @@ function TopHeader() {
 
           </Grid>
 
-          <Grid item xs={4} sm={1}>
+          <Grid item xs={4} sm={1} sx={{textAlign:'right'}}>
             <NavLink id="login_button"
               to="/login"
               className={({ isActive }) =>

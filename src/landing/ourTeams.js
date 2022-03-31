@@ -3,15 +3,20 @@ import { Box, Grid, Link, Typography } from "@mui/material";
 import "./aboutData.js";
 import "./ourTeams.css";
 import Default_user from "../images/about-us/photo.jpg";
-import Padam_Vijay from "../images/padam.jpg";
-import Uday from "../images/uday.jpg";
-import Mahreen from "../images/mahreen.jpg";
-import Shilpa from "../images/shilpa.jpg";
-import Abhisikha_Das from "../images/abhisikha.jpg";
-import Abhishek_Upperwal from "../images/abhishek.jpg";
+
 import { about_us_data } from "./aboutData.js";
 
 function OurTeams() {
+  const getImageUrl = (imageSrc) => {
+    let image;
+    try {
+      image = require(`../images/about-us/${imageSrc}`);
+    } catch (error) {
+      image = Default_user;
+
+    }
+    return image;
+  };
   return (
     <>
       <Box className="ourteam-block">
@@ -24,39 +29,26 @@ function OurTeams() {
         </Typography>
 
         <Typography variant="h4" className="our-team-category">
-        Leadership
+          Leadership
         </Typography>
 
         <Grid
           container
           rowSpacing={3}
           columnSpacing={{ xs: 2 }}
-          //   justifyContent="center"
+            justifyContent="center"
           //   alignItems="center"
         >
           {about_us_data.leadership.map((item) => {
             return (
-              <Grid item xs={6} sm={6} md={6} lg={3}>
+              <Grid item xs={6} sm={6} md={6} lg={3} key={item.id}>
                 <img
                   className="image-responsive"
+                  style={{height:"250px"}}
                   alt="Sample"
-                  src={
-                    item.profile_image_src === "Padam_Vijay"
-                      ? Padam_Vijay
-                      : item.profile_image_src === "Uday"
-                      ? Uday
-                      : item.profile_image_src === "Mahreen"
-                      ? Mahreen
-                      : item.profile_image_src === "Shilpa"
-                      ? Shilpa
-                      : item.profile_image_src === "Abhisikha_Das"
-                      ? Abhisikha_Das
-                      : item.profile_image_src === "Abhishek_Upperwal"
-                      ? Abhishek_Upperwal
-                      : Default_user
-                  }
-                />
-
+                  src={getImageUrl(item.image_src)}
+                  />
+                 
                 <Typography variant="h4" className="our-team-name">
                   <Link href={item.about_url} target="_blank" underline="none">
                     {item.name}
@@ -72,8 +64,9 @@ function OurTeams() {
             );
           })}
         </Grid>
-<hr/>
-        <Typography variant="h4" className="our-team-category">
+{/* Leadership End*/}
+
+<Typography variant="h4" className="our-team-category">
           NIUA
         </Typography>
 
@@ -81,31 +74,18 @@ function OurTeams() {
           container
           rowSpacing={3}
           columnSpacing={{ xs: 2 }}
-          //   justifyContent="center"
+            justifyContent="center"
           //   alignItems="center"
         >
           {about_us_data.niua.map((item) => {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
-                <img
+              <img
                   className="image-responsive"
+                  style={{height:"250px"}}
                   alt="Sample"
-                  src={
-                    item.profile_image_src === "Padam_Vijay"
-                      ? Padam_Vijay
-                      : item.profile_image_src === "Uday"
-                      ? Uday
-                      : item.profile_image_src === "Mahreen"
-                      ? Mahreen
-                      : item.profile_image_src === "Shilpa"
-                      ? Shilpa
-                      : item.profile_image_src === "Abhisikha_Das"
-                      ? Abhisikha_Das
-                      : item.profile_image_src === "Abhishek_Upperwal"
-                      ? Abhishek_Upperwal
-                      : Default_user
-                  }
-                />
+                  src={getImageUrl(item.image_src)}
+                  />
 
                 <Typography variant="h4" className="our-team-name">
                   <Link href={item.about_url} target="_blank" underline="none">
@@ -122,6 +102,169 @@ function OurTeams() {
             );
           })}
         </Grid>
+
+
+
+{/* NIUA End */}
+
+<Typography variant="h4" className="our-team-category">
+        ProjectManagement
+        </Typography>
+
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 2 }}
+          //   justifyContent="center"
+          //   alignItems="center"
+        >
+          {about_us_data.projectManagement.map((item) => {
+            return (
+              <Grid item xs={6} sm={6} md={6} lg={3}>
+              <img
+                  className="image-responsive"
+                  style={{height:"250px"}}
+                  alt="Sample"
+                  src={getImageUrl(item.image_src)}
+                  />
+
+                <Typography variant="h4" className="our-team-name">
+                  <Link href={item.about_url} target="_blank" underline="none">
+                    {item.name}
+                  </Link>
+                </Typography>
+                <Typography variant="body2" className="our-team-designation">
+                  {item.designation}
+                </Typography>
+                <Typography variant="body2" className="our-team-organisation">
+                  {item.organisation}
+                </Typography>
+              </Grid>
+            );
+          })}
+        </Grid>
+
+
+{/* ProjectManagement End */}
+
+<Typography variant="h4" className="our-team-category">
+        SMCS & SSCDL
+        </Typography>
+
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 2 }}
+            justifyContent="center"
+          //   alignItems="center"
+        >
+          {about_us_data.sMC_sSCDL.map((item) => {
+            return (
+              <Grid item xs={6} sm={6} md={6} lg={3}>
+              <img
+                  className="image-responsive"
+                  style={{height:"250px"}}
+                  alt="Sample"
+                  src={getImageUrl(item.image_src)}
+                  />
+
+                <Typography variant="h4" className="our-team-name">
+                  <Link href={item.about_url} target="_blank" underline="none">
+                    {item.name}
+                  </Link>
+                </Typography>
+                <Typography variant="body2" className="our-team-designation">
+                  {item.designation}
+                </Typography>
+                <Typography variant="body2" className="our-team-organisation">
+                  {item.organisation}
+                </Typography>
+              </Grid>
+            );
+          })}
+        </Grid>
+
+{/* SMCS & SSCDL */}
+
+
+<Typography variant="h4" className="our-team-category">
+        VNSGU
+        </Typography>
+
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 2 }}
+            justifyContent="center"
+          //   alignItems="center"
+        >
+          {about_us_data.VNSGU.map((item) => {
+            return (
+              <Grid item xs={6} sm={6} md={6} lg={3}>
+              <img
+                  className="image-responsive"
+                  style={{height:"250px"}}
+                  alt="Sample"
+                  src={getImageUrl(item.image_src)}
+                  />
+
+                <Typography variant="h4" className="our-team-name">
+                  <Link href={item.about_url} target="_blank" underline="none">
+                    {item.name}
+                  </Link>
+                </Typography>
+                <Typography variant="body2" className="our-team-designation">
+                  {item.designation}
+                </Typography>
+                <Typography variant="body2" className="our-team-organisation">
+                  {item.organisation}
+                </Typography>
+              </Grid>
+            );
+          })}
+        </Grid>
+        
+
+        {/* VNSGU */}
+
+
+        <Typography variant="h4" className="our-team-category">
+        Technical Advisors
+        </Typography>
+
+        <Grid
+          container
+          rowSpacing={3}
+          columnSpacing={{ xs: 2 }}
+          //   justifyContent="center"
+          //   alignItems="center"
+        >
+          {about_us_data.technicalAdvisors.map((item) => {
+            return (
+              <Grid item xs={6} sm={6} md={6} lg={3}>
+              <img
+                  className="image-responsive"
+                  style={{height:"250px"}}
+                  alt="Sample"
+                  src={getImageUrl(item.image_src)}
+                  />
+
+                <Typography variant="h4" className="our-team-name">
+                  <Link href={item.about_url} target="_blank" underline="none">
+                    {item.name}
+                  </Link>
+                </Typography>
+                <Typography variant="body2" className="our-team-designation">
+                  {item.designation}
+                </Typography>
+                <Typography variant="body2" className="our-team-organisation">
+                  {item.organisation}
+                </Typography>
+              </Grid>
+            );
+          })}
+        </Grid>
+
       </Box>
     </>
   );
