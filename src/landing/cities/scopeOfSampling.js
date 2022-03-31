@@ -94,6 +94,68 @@ During the deployment from 1st Jan, 2022, estimated up to 31st March, 2022, the 
 
             </Grid>
 
+            <Box>
+            <table>
+              <tr>
+                <td></td>
+                <td>West Zone (Rander)</td>
+                <td>Sewage network</td>
+              </tr>
+              <tr>
+                <td>Coverage</td>
+                <td>518.0 Hact.</td>
+                <td>98.18 %</td>
+              </tr>
+              <tr>
+                <td>Population catered</td>
+                <td>2.85 Lacs</td>
+                <td>99.36 %</td>
+              </tr>
+
+              <tr>
+                <td>Length of sewer network </td>
+                <td>270.51 kms</td>
+                <td>75.0 % underground</td>
+              </tr>
+            </table>
+
+            </Box>
+
+            <Box className="secondTable">
+            <table>
+            <tr>
+              <th colSpan={4}>STPs</th>
+            </tr>
+              <tr>
+                <td></td>
+                <td>Bhesan STP:</td>
+                <td>Asharma STP:</td>
+              </tr>
+              <tr>
+                <td>Technology</td>
+                <td>Conventional Activated Sludge Process</td>
+                <td>Moving Bed Bio Reactor Process</td>
+              </tr>
+              <tr>
+                <td>SPSs connected</td>
+                <td>5 SPSs</td>
+                <td>4 SPSs</td>
+              </tr>
+
+              <tr>
+                <td>Capacity </td>
+                <td>100 MLD</td>
+                <td>100 MLD</td>
+              </tr>
+              <tr>
+                <td>Future expansion</td>
+                <td>160 MLD</td>
+                <td>31MLD</td>
+              </tr>
+            </table>
+
+            </Box>
+
 
             {westzoneFact.data.map((item) => {
               return (

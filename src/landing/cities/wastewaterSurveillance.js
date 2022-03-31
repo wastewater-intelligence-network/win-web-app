@@ -86,7 +86,10 @@ function WastewaterSurveillance(props){
             </Box>
           </Grid>
         </Grid>
+        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
         <img alt="surat banner" src={SurveillanceSuratBanner} className="image-responsive" />
+        </Box>
+        
       </Box>
       <Box>
         
