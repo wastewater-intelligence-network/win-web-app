@@ -22,19 +22,19 @@ function BannerLogos() {
           alignItems="center"
         >
           <Grid item xs={6} sm={4} md={2}>
-            <img style={{ maxWidth: "100%"}} alt="Iscf" src={Iscf} />
+            <img className="image-responsive m-width-100"  alt="Iscf" src={Iscf} />
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
-            <img style={{ maxWidth: "100%"}} alt="Nius" src={Niua} />
+            <img className="image-responsive m-width-100" alt="Nius" src={Niua} />
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
-            <img style={{ maxWidth: "100%"}} alt="Mohua" src={Mohua} />
+            <img className="image-responsive m-width-100" alt="Mohua" src={Mohua} />
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
-            <img style={{ maxWidth: "100%"}} alt="Smc" src={Smc} />
+            <img className="image-responsive m-width-100" alt="Smc" src={Smc} />
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
-            <img style={{ maxWidth: "100%"}} alt="Sscdl" src={Sscdl} />
+            <img className="image-responsive m-width-100" alt="Sscdl" src={Sscdl} />
           </Grid>
           
         </Grid>

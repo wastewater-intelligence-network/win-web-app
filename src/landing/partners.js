@@ -90,7 +90,7 @@ function Partners() {
           
         </Grid>
       </Box> */}
-
+<Box className="partners_slider">
 
       <Slider {...settings}>
         <div>
@@ -113,7 +113,8 @@ function Partners() {
           <img style={{ maxWidth: "100%" }} alt="Icmr" src={icmr} />
         </div>
       </Slider>
-    </>
+      </Box>
+      </>
   );
 }
 

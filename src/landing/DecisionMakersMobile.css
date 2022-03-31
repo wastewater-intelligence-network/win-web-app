@@ -8,7 +8,8 @@
     color: #101010;
     text-align: center;
     margin: 0;
-    padding-top: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
 }
 
 .decision-makers-mobile-main .slick-next:before, .decision-makers-mobile-main .slick-prev:before {
@@ -30,10 +31,13 @@
     margin: auto !important;
 }
 
-.decision-makers-mobile-main .slick-slide :hover{
+/* .decision-makers-mobile-main .slick-slide :hover{
     background-color: #A9A9A9;
-}
+} */
 
+.decision-makers-mobile-main .content{
+     margin-bottom: 30px;
+}
 .decision-makers-mobile-main .content h3 {
     margin-top: 10px !important;
     margin-bottom: 0 !important;
