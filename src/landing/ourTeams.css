@@ -57,6 +57,10 @@ margin-top: 30px;
     
 }
 
+.big-height-250{
+    height: 250px;
+    width: 100%;
+}
 
 @media screen and (max-width:600px) {
     .ourteam-block {
@@ -93,5 +97,9 @@ margin-top: 30px;
     .ourteam-block .our-team-organisation{
         font-size: 12px !important;
         text-align: center;
+    }
+    .big-height-250{
+        height: 180px !important;
+        width: 100%;
     }
 }

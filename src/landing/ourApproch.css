@@ -309,6 +309,7 @@
     .mobile-approch img{
         display: block;
         margin: auto;
+        height: auto !important;
     }
     .our-approach-mobile-title{
     text-align: center;

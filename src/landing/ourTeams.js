@@ -43,8 +43,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3} key={item.id}>
                 <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />
@@ -81,8 +81,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
               <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />
@@ -122,8 +122,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
               <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />
@@ -162,8 +162,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
               <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />
@@ -202,8 +202,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
               <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />
@@ -243,8 +243,8 @@ function OurTeams() {
             return (
               <Grid item xs={6} sm={6} md={6} lg={3}>
               <img
-                  className="image-responsive"
-                  style={{height:"250px"}}
+                  className="image-responsive big-height-250"
+                  
                   alt="Sample"
                   src={getImageUrl(item.image_src)}
                   />

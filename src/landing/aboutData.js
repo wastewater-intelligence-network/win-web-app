@@ -9,7 +9,7 @@ export const  about_us_data = {
             about_url:"",
             designation:"Joint Secretary ",
             organisation:"Ministry of Housing and Urban Affairs",
-            image_src:"Kunal_Kumar"
+            image_src:"Kunal_Kumar.jpg"
         },
         {
             id :2,
@@ -17,7 +17,7 @@ export const  about_us_data = {
             about_url:"",
             designation:"Director",
             organisation:"Ministry of Housing and Urban Affairs",
-            image_src:"Rahul_Kapoor"
+            image_src:"Rahul_Kapoor.jpg"
         },
         {
             id :3,
@@ -25,7 +25,7 @@ export const  about_us_data = {
             about_url:"",
             designation:"Director",
             organisation:"National organisation of Urban Affairs",
-            image_src:"Hitesh_Vaidya"
+            image_src:"Hitesh_Vaidya.jpg"
         },
     ],
 
@@ -36,7 +36,7 @@ export const  about_us_data = {
         about_url: "https://niua.org/cdg/Our-people",
         designation: "Consultant",
         organisation: "CDG, National organisation of Urban Affairs",
-        profile_image_src: "Padam_Vijay",
+        image_src: "Padam_Vijay.jpg",
       },
       {
         id: 2,
@@ -45,7 +45,7 @@ export const  about_us_data = {
           "https://niua.org/c-cube/content/dr-umamaheshwaran-rajasekar",
         designation: "Chair Urban Resilience – Global Resilience Cities Network",
         organisation: "National organisation of Urban Affairs",
-        profile_image_src: "Mahesh_Rajasekhar",
+        image_src: "Mahesh_Rajasekhar.jpg",
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ export const  about_us_data = {
         about_url: "https://www.niua.org/people1?id=359",
         designation: "Project Coordinator",
         organisation: "National organisation of Urban Affairs",
-        profile_image_src: "Uday_Bhonde",
+        image_src: "Uday_Bhonde.jpg",
       },
       {
         id: 4,
@@ -61,7 +61,7 @@ export const  about_us_data = {
         about_url: "https://www.niua.org/people1?id=789",
         designation: "Program Manager",
         organisation: "National organisation of Urban Affairs",
-        profile_image_src: "Mahreen_Matto",
+        image_src: "Mahreen_Matto.jpg",
       },
       
     ],
@@ -72,7 +72,7 @@ projectManagement:[
         about_url: "https://www.linkedin.com/in/shilpa-shashidharan-b2537279/",
         designation: "Engineer and Management Professional",
         organisation: "National Institute of Urban Affairs",
-        profile_image_src: "Shilpa_Shashidharan",
+        image_src: "Shilpa_Shashidharan.jpg",
       },
       {
         id: 2,
@@ -80,7 +80,7 @@ projectManagement:[
         about_url: "https://www.linkedin.com/in/abhisikha-das-579327154/",
         designation: "Program Associate",
         organisation: "National organisation of Urban Affairs",
-        profile_image_src: "Abhisikha_Das",
+        image_src: "Abhisikha_Das.jpg",
       },
       {
         id: 3,
@@ -88,7 +88,7 @@ projectManagement:[
         about_url: "https://www.linkedin.com/in/upperwal/",
         designation: "Consultant",
         organisation: "National Institute of Urban Affairs",
-        profile_image_src: "Abhishek_Upperwal",
+        image_src: "Abhishek_Upperwal.jpg",
       },
       {
         id: 4,
@@ -96,7 +96,7 @@ projectManagement:[
         about_url: "https://www.linkedin.com/in/mdfcp/",
         designation: "Fellow",
         organisation: "National Institute of Urban Affairs",
-        profile_image_src: "Manual_Diego",
+        image_src: "Manual_Diego.jpg",
       },
       {
         id: 5,
@@ -104,7 +104,7 @@ projectManagement:[
         about_url: "https://www.linkedin.com/in/yogada-joshi-428637157/",
         designation: "Program Associate",
         organisation: "National Institute of Urban Affairs",
-        profile_image_src: "Yogada_Sandeep",
+        image_src: "Yogada_Sandeep.jpg",
       },
 ],
 
@@ -115,7 +115,7 @@ sMC_sSCDL: [
         designation: "Former CEO and Deputy Commissioner, SMC",
         organisation: "SSCDL",
         about_url: "",
-        profile_image_src: "Chitanya_Y",
+        image_src: "Chitanya_Y.jpg",
         
       },
      
@@ -123,7 +123,7 @@ sMC_sSCDL: [
         id: 2,
         name: "Ms. Swati Desai",
         about_url: "",
-        profile_image_src: "Swati_Desai",
+        image_src: "Swati_Desai.jpg",
         designation:"CEO",
         organisation:"SSCDL"
       },
@@ -131,7 +131,7 @@ sMC_sSCDL: [
         id: 3,
         name: "Dr. Kanhaiya Arora",
         about_url: "",
-        profile_image_src: "Kanhaiya_Arora",
+        image_src: "Kanhaiya_Arora.jpeg",
         designation:"",
         organisation:""
       },
@@ -139,7 +139,7 @@ sMC_sSCDL: [
         id: 4,
         name: "Dr. Ketan Garasia",
         about_url: "",
-        profile_image_src: "Ketan_Garasia",
+        image_src: "Ketan_Garasia.jpeg",
         designation:"",
         organisation:""
       },
@@ -147,7 +147,7 @@ sMC_sSCDL: [
         id: 5,
         name: "Dr. Manish Patel",
         about_url: "",
-        profile_image_src: "Manish_Patel.jpg",
+        image_src: "Manish_Patel.jpeg",
         designation:"",
         organisation:""
       },
@@ -155,7 +155,7 @@ sMC_sSCDL: [
         id: 6,
         name: "Mr. Nirav Patel ",
         about_url: "",
-        profile_image_src: "Nirav_Patel",
+        image_src: "Nirav_Patel.jpg",
         designation:"",
         organisation:""
       },
@@ -164,7 +164,7 @@ sMC_sSCDL: [
         id: 7,
         name: "Mr. Bharat Khunt ",
         about_url: "",
-        profile_image_src: "Bharat_Khunt",
+        image_src: "Bharat_Khunt.jpg",
         designation:"",
         organisation:""
       },
@@ -173,7 +173,7 @@ sMC_sSCDL: [
         id: 8,
         name: "Mr. Bhairav Desai",
         about_url: "",
-        profile_image_src: "Bhairav_Desai.JPEG",
+        image_src: "Bhairav_Desai.jpeg",
         designation:"Executive engineer",
         organisation:"SMC drainage department"
       },
@@ -182,7 +182,7 @@ sMC_sSCDL: [
         id: 9,
         name: "Dr. Ashish Naik",
         about_url: "",
-        profile_image_src: "Ashish_Naik.JPG",
+        image_src: "Ashish_Naik.jpg",
         designation:"Deputy commissioner",
         organisation:"Health and Hospital, SMC"
       },
@@ -191,7 +191,7 @@ sMC_sSCDL: [
         id: 10,
         name: "Dr Pradeep Umrigar",
         about_url: "",
-        profile_image_src: "Pradeep_Umrigar.JPEG",
+        image_src: "Pradeep_Umrigar.jpeg",
         designation:"Medical officer of Health",
         organisation:"SMC"
       },
@@ -200,7 +200,7 @@ sMC_sSCDL: [
           id:11,
           name:"Shreyas Shah",
           about_url:"",
-          profile_image_src:"Shreyas_Shah",
+          image_src:"Shreyas_Shah.jpeg",
           designation:"Deputy Engineer",
           organisation:"SMC",
 
@@ -210,7 +210,7 @@ sMC_sSCDL: [
         id:12,
         name:"Roma Patel",
         about_url:"",
-        profile_image_src:"Roma_Patel",
+        image_src:"Roma_Patel.jpg",
         designation:"",
         organisation:"",
 
@@ -220,7 +220,7 @@ sMC_sSCDL: [
         id:13,
         name:"Neha Sharan",
         about_url:"",
-        profile_image_src:"Neha_Sharan",
+        image_src:"Neha_Sharan.jpg",
         designation:"Senior scientific assistant",
         organisation:"SMC",
 
@@ -230,7 +230,7 @@ sMC_sSCDL: [
         id:14,
         name:"Hardik",
         about_url:"",
-        profile_image_src:"Hardik",
+        image_src:"Hardik.jpg",
         designation:"supervisor",
         organisation:"",
 
@@ -240,7 +240,7 @@ sMC_sSCDL: [
         id:15,
         name:"Bariya",
         about_url:"",
-        profile_image_src:"Bariya",
+        image_src:"Bariya.jpg",
         designation:"",
         organisation:"",
 
@@ -250,7 +250,7 @@ sMC_sSCDL: [
         id:16,
         name:"Sanjay",
         about_url:"",
-        profile_image_src:"Sanjay",
+        image_src:"Sanjay.jpg",
         designation:"",
         organisation:"",
 
@@ -260,7 +260,7 @@ sMC_sSCDL: [
         id:17,
         name:"Nirmal",
         about_url:"",
-        profile_image_src:"Nirmal",
+        image_src:"Nirmal.jpg",
         designation:"",
         organisation:"",
 
@@ -270,7 +270,7 @@ sMC_sSCDL: [
         id:18,
         name:"Niyati Desai",
         about_url:"",
-        profile_image_src:"Niyati_Desai",
+        image_src:"Niyati_Desai.jpg",
         designation:"",
         organisation:"",
 
@@ -282,7 +282,7 @@ sMC_sSCDL: [
         id:19,
         name:"Parth Shah",
         about_url:"",
-        profile_image_src:"Parth_Shah",
+        image_src:"Parth_Shah.jpg",
         designation:"",
         organisation:"",
 
@@ -297,7 +297,7 @@ sMC_sSCDL: [
       id: 1,
       name:'Dr. Pravin Dudhagara',
       about_url:'',
-      profile_image_src:'Pravin_Dudhagara',
+      image_src:'Pravin_Dudhagara.jpeg',
       designation:'Assistant professor',
       organisation:'Department of bioscience, Veer Narmad South Gujarat University'
     },
@@ -306,7 +306,7 @@ sMC_sSCDL: [
       id: 2,
       name:'Nisha Mavani ',
       about_url:'',
-      profile_image_src:'Nisha_Mavani.jpg',
+      image_src:'Nisha_Mavani.jpg',
       designation:'Junior research fellow',
       organisation:'Department Of Bioscience, Veer Narmad South Gujarat University'
     },
@@ -318,7 +318,7 @@ sMC_sSCDL: [
         id:1,
         name:'Dr. Aditi Nag',
         about_url: '',
-        profile_image_src: 'Aditi_Nag',
+        image_src: 'Aditi_Nag.jpg',
         designation: '',
         organisation: ''
     },
@@ -327,7 +327,7 @@ sMC_sSCDL: [
       id:2,
       name:'Dr. Sudipti Arora',
       about_url: '',
-      profile_image_src: 'Sudipti_Arora',
+      image_src: 'Sudipti_Arora.jpg',
       designation: '',
       organisation: ''
   },
@@ -335,7 +335,7 @@ sMC_sSCDL: [
     id:3,
     name:'Dr. Paromita Chakraborty',
     about_url: '',
-    profile_image_src: 'Paromita_Chakraborty',
+    image_src: 'Paromita_Chakrabortyjpg',
     designation: '',
     organisation: ''
 },
@@ -344,7 +344,7 @@ sMC_sSCDL: [
   id:4,
   name:'Dr. Pravin Dudhagara',
   about_url: '',
-  profile_image_src: 'Pravin_Dudhagara',
+  image_src: 'Pravin_Dudhagara.jpg',
   designation: '',
   organisation: ''
 },
@@ -353,7 +353,7 @@ sMC_sSCDL: [
   id:5,
   name:'Honeywell - Development partner ',
   about_url: '',
-  profile_image_src: 'Honeywell',
+  image_src: 'Honeywell.jpg',
   designation: '',
   organisation: ''
 },
