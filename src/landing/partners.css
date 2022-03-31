@@ -16,6 +16,7 @@
 .slick-slide img {
     display: block;
     margin: auto !important;
+    width: 150px;
 }
 
 .slick-slide :hover{

@@ -10,10 +10,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./partners.css";
-import Logo01 from "../images/partners/logo-01.svg"
-import Logo02 from "../images/partners/logo-02.svg"
-import Logo03 from "../images/partners/logo-03.svg"
-import Logo04 from "../images/partners/logo-04.svg"
+
+import university from "../images/partners/university.jpg";
+import drblal from "../images/partners/drblal.jpg";
+import srm from "../images/partners/srm.jpg";
+import honeywell from "../images/partners/honeywell.jpg";
+import smimer from "../images/partners/smimer.jpg";
+import icmr from "../images/partners/icmr.jpg";
 
 function Partners() {
 
@@ -91,27 +94,23 @@ function Partners() {
 
       <Slider {...settings}>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Iscf" src={Logo01} />
+          <img style={{ maxWidth: "100%" }} alt="University" src={university} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Nius" src={Logo02} />
+          <img style={{ maxWidth: "100%" }} alt="Drblal" src={drblal} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Mohua" src={Logo03} />
+          <img style={{ maxWidth: "100%" }} alt="Srm" src={srm} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Smc" src={Logo01} />
+          <img style={{ maxWidth: "100%" }} alt="Honeywell" src={honeywell} />
         </div>
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo04} />
-        </div>
-
-        <div>
-          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo02} />
+          <img style={{ maxWidth: "100%" }} alt="Smimer" src={smimer} />
         </div>
 
         <div>
-          <img style={{ maxWidth: "100%" }} alt="Sscdl" src={Logo01} />
+          <img style={{ maxWidth: "100%" }} alt="Icmr" src={icmr} />
         </div>
       </Slider>
     </>
