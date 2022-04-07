@@ -8,8 +8,8 @@ import {
 } from "@mui/material";
 import * as React from "react";
 import Header from "./header";
-import NUIA from "../Icons/niua-white.svg";
-import SMC from "../Icons/smc-white.svg";
+import NUIA from "../Icons/logo.svg";
+import SMC from "../Icons/smc-black.svg";
 import SSCDL from "../Icons/sscdl.svg";
 import Footer from "./footer";
 import HomeIcon from "@mui/icons-material/Home";
@@ -86,7 +86,7 @@ function ContactUs() {
           </Grid>
           <Grid item xs={12} sm={4} md={4} className="address-block bg-blue">
             <div className="logo-block">
-            <img alt="NUIA" src={SMC} className="image-responsive" />
+            <img alt="NUIA" src={SSCDL} className="image-responsive" />
 
             </div>
             <Typography variant="body2" className="logo_name">
@@ -105,7 +105,7 @@ function ContactUs() {
           </Grid>
           <Grid item xs={12} sm={4} md={4} className="address-block bg-white">
             <div className="logo-block">
-            <img alt="NUIA" src={SSCDL} className="image-responsive" />
+            <img alt="NUIA" src={SMC} className="image-responsive" />
 
             </div>
             <Typography variant="body2" className="logo_name">
