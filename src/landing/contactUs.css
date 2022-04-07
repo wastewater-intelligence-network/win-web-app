@@ -108,7 +108,7 @@ height: 50px;
 } */
 
 .contact-us-form-left-block {
-    background-image: url("../images/contact-us/write-to-us-image.png");
+    /* background-image: url("../images/contact-us/write-to-us-image.png"); */
     /* height: 100%; */
     background-position: center;
     background-repeat: no-repeat;

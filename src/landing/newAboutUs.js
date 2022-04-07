@@ -51,13 +51,13 @@ const Newaboutus = () => {
           pre-emptive and proactive approach.
         </Typography>
 
-        <Typography variant="body2" className="aboutus-video-block">
+        {/* <Typography variant="body2" className="aboutus-video-block">
           <img
             src={Video_placeholder}
             alt="aboutus-video-block"
             className="image-responsive"
           />
-        </Typography>
+        </Typography> */}
 
         <Grid container rowSpacing={3} className="who-we-are-block-main">
           <Grid item xs={12}>

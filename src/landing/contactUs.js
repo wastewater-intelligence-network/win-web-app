@@ -154,7 +154,7 @@ function ContactUs() {
             md={6}
             className="contact-us-form-left-block"
           ></Grid>
-          <Grid
+          {/* <Grid
             item
             xs={12}
             sm={6}
@@ -189,7 +189,7 @@ function ContactUs() {
                 </Grid>
               </Grid>
             </div>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
 

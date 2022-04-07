@@ -59,7 +59,7 @@ const Consortium = () => {
         </Typography>
       </Box>
 
-      <Box className="consortium-member">
+      {/* <Box className="consortium-member">
       <Typography className="consortium-heading">Consortium members</Typography>
       <Typography className="consortium-title">Where urban governance meets science
 </Typography>
@@ -104,7 +104,7 @@ To know more or to get in touch regarding the consortium.
 </Typography>
 
 
-      </Box>
+      </Box> */}
       <Box>
 <img alt="banner" src={ConsortiumBanner} className="image-responsive" />
 </Box>

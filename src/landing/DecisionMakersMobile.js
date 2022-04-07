@@ -10,7 +10,7 @@ import Containmentzones from "../images/decision-makers/containment-zones.png";
 import TestingStrategy from "../images/decision-makers/testing-strategy.png";
 import TimelyUpdates from "../images/decision-makers/timely-updates.png";
 import TrackingTheSpread from "../images/decision-makers/tracking-spread.png";
-import { formControlUnstyledClasses } from "@mui/material/node_modules/@mui/base";
+import { formControlUnstyledClasses } from "@mui/base";
 
 function DecisionMakersMobile() {
 

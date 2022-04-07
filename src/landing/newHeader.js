@@ -118,13 +118,13 @@ function NewHeader(props) {
               </span>
             </div>
           </div> */}
-          <NavLink
+          {/* <NavLink
             to="/knowledge"
             className={({ isActive }) => 
             isActive ? "active" : "nonActive" }
           >
             Knowledge
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             to="/consortium"
