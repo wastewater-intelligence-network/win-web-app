@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import * as React from "react";
+import { useEffect } from "react";
 import Header from "./header";
 import Footer from "./footer";
 import Structure from "../images/structure.jpg";
@@ -31,6 +32,12 @@ const Consortium = () => {
 
 });
 // End//
+
+useEffect(() => {
+
+  console.log('ABout US')
+  window.scrollTo(0, 0)
+}, [])
 
 
   return (

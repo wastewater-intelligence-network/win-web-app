@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid } from "@mui/material";
-import * as React from "react";
+import * as React from 'react';
+import { useEffect } from "react";
 import NewHeader from "./newHeader";
 import Footer from "./footer";
 import Structure from "../images/structure.jpg";
@@ -33,6 +34,12 @@ const Newaboutus = () => {
     });
   });
   // End//
+
+  useEffect(() => {
+
+    console.log('ABout US')
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>

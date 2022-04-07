@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid, Divider } from "@mui/material";
 import * as React from "react";
+import { useEffect } from "react";
 import Header from "../header";
 import Footer from "../footer";
 import { $ }  from 'react-jquery-plugin'
@@ -30,6 +31,12 @@ function Surat() {
     }
 
   };
+
+  useEffect(() => {
+
+    console.log('ABout US')
+    window.scrollTo(0, 0)
+  }, [])
 
   // sticky header animation
   React.useEffect(() => {

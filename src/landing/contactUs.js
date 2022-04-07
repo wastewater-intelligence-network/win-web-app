@@ -7,6 +7,7 @@ import {
   Button,
 } from "@mui/material";
 import * as React from "react";
+import { useEffect } from "react";
 import Header from "./header";
 import NUIA from "../Icons/logo.svg";
 import SMC from "../Icons/smc-black.svg";
@@ -44,6 +45,13 @@ function ContactUs() {
     });
   });
   // End//
+
+  useEffect(() => {
+
+    console.log('ABout US')
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <>
       <div className="header-main">
