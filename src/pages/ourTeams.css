@@ -1,0 +1,105 @@
+
+.ourteam-block{
+    background-color: #00466D;
+    padding: 54px;
+    color: #fff !important;
+
+}
+
+.ourteam-block .our-team-title{
+font-size: 3.3333333333333335vw !important;
+font-weight: 400 !important;
+color: #fff !important;
+}
+
+.ourteam-block .our-team-sub-title{
+    font-size: 1.6666666666666667vw !important;
+    padding: 10px 0 0;
+    font-family: 'Lora-Regular';
+    font-weight: 400;
+}
+
+.ourteam-block .our-team-category{
+    font-size: 3.3333333333333335vw !important;
+    font-weight: 400 !important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ourteam-block .our-team-name{
+font-size: 2.083333333333333vw !important;
+font-weight: 400 !important;
+margin-bottom: 14px;
+margin-top: 30px;
+}
+
+.ourteam-block .our-team-name a{
+    color: #fff !important;
+}
+.ourteam-block .our-team-name a:hover{
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+.ourteam-block .our-team-designation{
+    font-size: 1.6666666666666667vw !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    font-family: 'Lora-Regular';
+    
+}
+
+.ourteam-block .our-team-organisation{
+    font-size: 1.3vw !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    font-family: 'Lora-Regular';
+    padding-top: 5px;
+    
+}
+
+.big-height-250{
+    height: 250px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .ourteam-block {
+        padding: 16px;
+    }
+    .ourteam-block .our-team-title {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .ourteam-block .our-team-sub-title {
+        text-align: center;
+        font-size: 14px !important;
+        padding: 10px 0 0;
+    }
+    .ourteam-block .our-team-category {
+        font-size: 16px !important;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .ourteam-block .our-team-name {
+        text-align: center;
+        font-size: 16px !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .ourteam-block .our-team-designation {
+        font-size: 14px !important;
+        text-align: center;
+    }
+
+    .ourteam-block .our-team-organisation{
+        font-size: 12px !important;
+        text-align: center;
+    }
+    .big-height-250{
+        height: 180px !important;
+        width: 100%;
+    }
+}

@@ -1,0 +1,7 @@
+.Privacy {
+    padding: 0 90px;
+}
+
+.Privacy > p, .Privacy > ul > li > p {
+    font-size: 15px !important;
+}

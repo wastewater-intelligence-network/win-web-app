@@ -1,0 +1,84 @@
+.knowledge_heading {
+    font-weight: 400 !important;
+    font-size: 3.3333333333333vw !important;
+    /* line-height: 72px !important; */
+    color: #3B3B3B !important;
+    padding-bottom: 20px;
+}
+
+.knowledge_sub_heading{
+    font-weight: 500 !important;
+    font-size: 2.083333333333333vw !important;
+    line-height: 30px !important;
+    color: #3B3B3B !important;
+    padding-bottom: 20px;
+}
+
+.knowledge_2nd_sub_heading{
+    font-weight: 500 !important;
+    font-size: 1.6666666666666667vw !important;
+    line-height: 30px !important;
+    color: #3B3B3B !important;
+    padding-bottom: 20px;
+}
+
+.knowledge_content{
+font-weight: 400 !important;
+font-size: 18px !important;
+line-height: 27px;
+color: #677171;
+margin-top: 0 !important;
+}
+
+.knowledge_onthispage_box {
+    /* margin-top: 50px; */
+    box-shadow: 0px 0px 13px rgb(0 0 0 / 10%);
+    border-radius: 9px;
+    padding: 16px;
+}
+
+.box_section{
+margin: 26px 0;
+}
+
+.sideimage img{
+    width: 100%;
+}
+
+.knowledge_image_section img{
+width: 100%;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .cities_title {
+        font-size: 16px !important;
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .knowledge_heading {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .knowledge_sub_heading {
+        font-size: 18px !important;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .knowledge_2nd_sub_heading {
+        font-size: 16px !important;
+        padding-bottom: 16px !important;
+        text-align: center;
+    }
+    .knowledge_image_section{
+        margin-bottom: 250px;
+
+    }
+    .last-image-mobile{
+    display: block;
+    margin: auto;
+    }
+    
+}

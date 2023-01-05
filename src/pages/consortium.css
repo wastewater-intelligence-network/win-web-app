@@ -1,0 +1,110 @@
+.consortium-main {
+    padding:85px 85px 60px 85px;
+}
+
+.consortium-title {
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 21px !important;
+    padding-bottom: 20px;
+    color: #3E494A !important;
+}
+
+.consortium-heading{
+font-size: 3.3333333333333335vw !important;
+font-weight: 700 !important;
+line-height: 72px !important;
+}
+
+.consortium-text{
+    font-family: "Lora-Regular" !important;
+    font-size: 1.6666666666666667vw !important;
+    line-height: 36px;
+    color: #3B3B3B;
+    padding-bottom: 30px;
+   
+}
+
+
+
+.consortium-member{
+    background-color: #00466D;
+    color: #fff !important;
+    padding:64px 54px 0;
+}
+
+.consortium-member .consortium-heading{
+    font-size: 3.3333333333333335vw !important;
+font-weight: 400 !important;
+line-height: 72px !important;
+padding: 10px 0;
+}
+.consortium-member .consortium-title{
+    font-family: 'Lora-Regular';
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 46px !important;
+    color: #fff !important;
+}
+
+.consortium-member .consortium-text{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lora-Regular';
+    font-style: normal;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    
+    .consortium-main {
+        padding: 32px !important;
+    }
+    .consortium-title{
+        padding-bottom: 0 !important;
+        font-size: 16px !important;
+    }
+    .consortium-heading{
+        text-align: center;
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        line-height: 56px !important;
+    }
+
+    .consortium-text{
+        padding-bottom: 20px !important;
+        font-size: 16px !important;
+        line-height: 30px !important;
+    }
+    .consortium-member {
+        background-color: #00466D;
+        color: #fff !important;
+        padding: 0px 30px 0;
+    }
+
+    .consortium-member .consortium-heading {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 27px !important;
+        padding: 20px 0;
+    }
+
+    .consortium-member .consortium-title {
+        font-family: 'Lora-Regular';
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        line-height: 32px !important;
+        color: #fff !important;
+    }
+
+    .consortium-member .consortium-text {
+        font-size: 14px !important;
+        padding-top: 10px !important;
+        text-align: center;
+    }
+
+}

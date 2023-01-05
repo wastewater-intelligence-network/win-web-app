@@ -45,6 +45,10 @@
   font-family: quicksand; 
 } */
 
+a {
+  text-decoration: none;
+}
+
 .list-group-item-black{
 background-color: black !important;
 color: #fff !important;
@@ -195,6 +199,11 @@ color: #fff !important;
            
   }
 
-
-
 /* Settings Tabs css end */
+
+
+.highlight {
+  background-color: #1976D2;
+  color: #fff;
+  padding: 1px 5px;
+}
